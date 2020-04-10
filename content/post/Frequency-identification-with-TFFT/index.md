@@ -93,5 +93,4 @@ Now we can determine the period from the frequencies:
 
 What happens here is that we do interpolation of the initial Fourier spectrum with sines by padding the original sequence with zeroes as if the total number of points is $n/b$. With $b= 2/n$, we've half a million points. _Mathematica_ does not calculate the whole DFT of the "virtually" padded sequence, however, but estimates only the first $n$ values. That's why we need to shift our spectrum there by multiplying the data with complex exponent sequence `Exp[2 Pi I (pos - 2) N[Range[0, n - 1]]/n]`.
 
-I was not able to perform the same trick in Matalb, Python, or Julia.
-Please let me know if you know how to do it.
+I was not able to perform the same trick in Matlab, Python, or Julia. Please let me know if you know how to do it.
