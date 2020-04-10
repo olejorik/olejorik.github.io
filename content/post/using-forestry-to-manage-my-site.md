@@ -18,3 +18,6 @@ highlight_languages = ""
 preview_only = false
 
 +++
+After entering forestry.io, granting them access to the source repo of website and performing initial setup, I've got an environment where I can create and edit posts. There is an opportunity to preview the post, and all the post meta-fields can be filled in here. 
+
+The difference is minimal. It might be helpful for a company web-site, where the users should not bother about git commit _etc_
