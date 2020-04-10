@@ -20,8 +20,40 @@
 
 [[main]]
   name = "Publications"
-  url = "#featured"
+  url = "#publications"
   weight = 40
+
+[[main]]
+    name = "Fun"
+    identifier = "Fun"
+    url = "#fun"
+    weight = 50
+    page = "#fun"
+
+[[main]]
+  name = "Fun with ..."
+  url = "#fun"
+  parent = "Fun"
+  weight = 10
+
+[[main]]
+    name = "Fun with (de)convolution"
+    parent = "Fun"
+    url = "red/"
+    weight = 20
+
+[[main]]
+    name = "Fun with plotting"
+    parent = "Fun"
+    url = "funnyplots/"
+    weight = 30
+
+[[main]]
+    name = "Fun with aikido"
+    parent = "Fun"
+    url = "aikido/"
+    weight = 40
+
 
 [[main]]
   name = "Contact"
