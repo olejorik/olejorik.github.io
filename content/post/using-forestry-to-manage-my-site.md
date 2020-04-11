@@ -1,7 +1,7 @@
 +++
 authors = []
 categories = []
-date = ""
+date = 2020-04-10T22:00:00Z
 draft = true
 featured = false
 lastmod = ""
@@ -12,7 +12,7 @@ summary = "forestry.io provides a user-friendly web-interface to manage static w
 tags = ["website"]
 title = "Using forestry to manage my site"
 [image]
-caption = ""
+caption = "Editing web site with forestry"
 focal_point = ""
 highlight_languages = ""
 preview_only = false
