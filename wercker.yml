@@ -14,3 +14,11 @@ build:
     - arjen/hugo-build:
         version: "0.68.3"
         theme: academic
+deploy:
+  steps:
+    - install-packages:
+        packages: git ssh-client
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        domain: olejorik.github.io
+        basedir: public
