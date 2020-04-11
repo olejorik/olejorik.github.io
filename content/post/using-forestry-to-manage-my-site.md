@@ -1,8 +1,7 @@
 +++
 authors = []
 categories = ["What have I learned today"]
-date = 2020-04-09T22:00:00Z
-draft = true
+date = 2020-04-10T22:00:00Z
 featured = false
 lastmod = ""
 math = false
@@ -12,7 +11,7 @@ summary = "forestry.io provides a user-friendly web-interface to manage static w
 tags = ["website"]
 title = "Using forestry to manage my site"
 [image]
-caption = ""
+caption = "Editing web site with forestry"
 focal_point = ""
 highlight_languages = ""
 preview_only = false
@@ -20,10 +19,14 @@ preview_only = false
 +++
 After entering forestry.io, granting them access to the source repo of website and performing initial setup, I've got an environment where I can create and edit posts. There is an opportunity to preview the post, and all the post meta-fields can be filled in here.
 
+![](/uploads/Screenshot_20200411-114213.png "Using forestry.io to edit this post")
+
 This difference is minimal. It might be helpful for a company web-site, where the users should not bother about `git commit` _etc._
 
 I was not able to create a post as page bundle, maybe there should be some other template used, but I didn't find it. In addition, every time I press **Save draft,** a new commit is created? This might make the repo history unreadable (in case anyone would ever want to read it).
 
-There is however one good thing---I can use Grammarly tool to check my English. :-)
+There is however one good thing---I can use Grammarly tool to check my English. :smiley:
 
 So my conclusion is -- it's a good tool, and because of Grammarly, I might use it from time to time for "postprocessing".
+
+Update: forestry might be also very helpful to edit posts from a mobile device. For the changes in source to become visible in the published site, an automated deployment should be arranged in some way. [Here](https://forestry.io/docs/hosting/) is a manual how to set it up.
