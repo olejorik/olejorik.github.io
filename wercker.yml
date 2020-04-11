@@ -22,3 +22,4 @@ deploy:
         token: $GIT_TOKEN
         domain: olejorik.github.io
         basedir: public
+

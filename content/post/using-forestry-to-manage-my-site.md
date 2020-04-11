@@ -29,4 +29,6 @@ There is however one good thing---I can use Grammarly tool to check my English. 
 
 So my conclusion is -- it's a good tool, and because of Grammarly, I might use it from time to time for "postprocessing".
 
-Update: forestry might be also very helpful to edit posts from a mobile device. For the changes in source to become visible in the published site, an automated deployment should be arranged in some way. [Here](https://forestry.io/docs/hosting/) is a manual how to set it up.
+**Update:** forestry might be also very helpful to edit posts from a mobile device. For the changes in source to become visible in the published site, an automated deployment should be arranged in some way. [Here](https://forestry.io/docs/hosting/) is a manual how to set it up.
+
+**Update2:** automated deployment took me some time to set up. I'll describe it in a separate post.
