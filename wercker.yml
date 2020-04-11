@@ -1,4 +1,7 @@
-- script:
+box: debian
+build:
+  steps:
+  - script:
         name: install git
         code: |
             apt-get update
@@ -14,9 +17,6 @@
         code: |
             git submodule update --init --recursive
 
-box: debian
-build:
-  steps:
     - arjen/hugo-build:
         version: "0.68.3"
         theme: academic
