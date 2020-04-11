@@ -25,7 +25,7 @@ This difference is minimal. It might be helpful for a company web-site, where th
 
 I was not able to create a post as page bundle, maybe there should be some other template used, but I didn't find it. In addition, every time I press **Save draft,** a new commit is created? This might make the repo history unreadable (in case anyone would ever want to read it).
 
-There is however one good thing---I can use Grammarly tool to check my English. :smiley:
+There is however one good thing---I can use Grammarly tool to check my English. :wink:
 
 So my conclusion is -- it's a good tool, and because of Grammarly, I might use it from time to time for "postprocessing".
 
