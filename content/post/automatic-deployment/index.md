@@ -1,7 +1,8 @@
 ---
 title: Automatic Deployment
 subtitle: ''
-summary: ''
+summary: How to make a rendered version of a Hugo site to be always up to date to
+  its source
 authors: []
 tags:
 - website
