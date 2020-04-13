@@ -32,7 +32,7 @@ that is the next $q$ point is obtained by projection the last $p$ point on $\mat
 
 Prove that 
 1. $\exists\ \hat q = \lim_{n\to\inf}  q_n$ and
-2. If $\mathcal P \cap \mathcal Q \neq \varnothing$, then $\hat q \in \mathcal P$ and line $O \hat q$ is tangent to $\mathcal Q$ otherwise.
+2. If $\mathcal P \cap \mathcal Q \neq \varnothing$, then $\hat q \in \mathcal P$; otherwise,  line $O \hat q$ is tangent to $\mathcal Q$.
 
 You can click and drag object in the illustration below.
 
