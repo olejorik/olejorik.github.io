@@ -11,7 +11,7 @@ menu:
   puzzles:
     name: RED puzzles
     weight: 1
-draft: true
+draft: false
 
 ---
 ## Puzzles
