@@ -16,4 +16,4 @@ weight = 100
 
 +++
 
-It would be too boring to have only professional activities in life. In my free time, I enjoy [aikido](/aikido/), listening and (learning) playing music, reading, solving [geometrical puzzles](/red/), and just spending time with my family and friends. Sometime I share with them unexpectedly beautiful things I stumble upon in my research, which I also publish [here](/funnyImages/). 
+It would be too boring to have only professional activities in life. In my free time, I enjoy [aikido](/aikido/), listening and (learning) playing music, reading, solving [geometrical puzzles](/red/), and just spending time with my family and friends. Sometime I share with them unexpectedly beautiful things I stumble upon in my research, which I also publish [here](/funnyplots/). 
