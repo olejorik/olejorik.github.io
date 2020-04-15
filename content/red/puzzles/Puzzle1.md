@@ -34,7 +34,7 @@ Prove that
 1. $\exists\ \hat q = \lim_{n\to\inf}  q_n$ and
 2. If $\mathcal P \cap \mathcal Q \neq \varnothing$, then $\hat q \in \mathcal P$; otherwise,  line $O \hat q$ is tangent to $\mathcal Q$.
 
-You can click and drag object in the illustration below.
+You can click and drag objects in the illustration below.
 
 <div id="ggb-element"></div> 
 
