@@ -35,7 +35,7 @@ You can click and drag objects in the illustration below.
 
 
 <script>  
-    var ggbApp = new GGBApplet({"appName": "graphing", "width": 691, "height": 630, "showToolBar": false, "showAlgebraInput": false, "showMenuBar": false, 
+    var ggbApp = new GGBApplet({"width": 691, "height": 630, "showToolBar": false, "showAlgebraInput": false, "showMenuBar": false, 
     "showZoomButtons": true, "showFullScreenButton": true,
     "enableShiftDragZoom": true, "showResetIcon":true,
     // "allowUpScale": true,
