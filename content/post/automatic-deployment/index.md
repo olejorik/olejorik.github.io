@@ -6,6 +6,7 @@ summary: How to make a rendered version of a Hugo site to be always up to date t
 authors: []
 tags:
 - website
+- tools
 categories: []
 date: 2020-04-13T09:41:52.000+00:00
 lastmod: 2020-04-13T09:41:52.000+00:00

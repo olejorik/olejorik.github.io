@@ -24,7 +24,7 @@ all_day: false
 publishDate: 2020-04-15T16:14:01+02:00
 
 authors: []
-tags: []
+tags: ["julia"]
 
 # Is this a featured talk? (true/false)
 featured: false
