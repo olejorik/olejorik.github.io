@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fun with plotting | Oleg Soloviev</title>
+    <link>https://olejorik.github.io/funnyplots/</link>
+      <atom:link href="https://olejorik.github.io/funnyplots/index.xml" rel="self" type="application/rss+xml" />
+    <description>Fun with plotting</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Sun, 08 Dec 2019 12:49:11 +0000</lastBuildDate>
+    <image>
+      <url>https://olejorik.github.io/funnyplots/featured.jpg</url>
+      <title>Fun with plotting</title>
+      <link>https://olejorik.github.io/funnyplots/</link>
+    </image>
+    
+    <item>
+      <title>SH</title>
+      <link>https://olejorik.github.io/funnyplots/sh/</link>
+      <pubDate>Wed, 15 Apr 2020 18:31:24 +0200</pubDate>
+      <guid>https://olejorik.github.io/funnyplots/sh/</guid>
+      <description>&lt;p&gt;Each Shack-Hartmann pattern conceals a lot of beauty, you need just to look at differently. Here are some examples.&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed1.png&#34; data-caption=&#34;Automatic location of SH spots via local density&#34;&gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed1_hue7d832a91e66f87a6e3857a8b90907bb_119259_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;191&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed2.png&#34; data-caption=&#34;Automatic location of SH spots via local density&#34;&gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed2_hue7d832a91e66f87a6e3857a8b90907bb_121236_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;191&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed3.png&#34; data-caption=&#34;Automatic location of SH spots via local density&#34;&gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed3_hue7d832a91e66f87a6e3857a8b90907bb_172756_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;191&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed5.png&#34; data-caption=&#34;Automatic location of SH spots via local density with different window size&#34;&gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed5_hu13b4c6aa3dce0825013ac958701adab4_163515_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;141&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/matrix-reloaded.png&#34; data-caption=&#34;Fourier of a SH pattern with the alternative conjugation&#34;&gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/matrix-reloaded_hu731677f187c42da935a6203038799bf8_399364_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;190&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/xmas-cookies.png&#34; data-caption=&#34;Rearrangement of a SH pattern into a plenoptic pattern&#34;&gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/xmas-cookies_hubd41dc1e2c299e66c00823cf2acd2b89_934037_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;190&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pop art</title>
+      <link>https://olejorik.github.io/funnyplots/popart/</link>
+      <pubDate>Sun, 08 Dec 2019 14:00:49 +0100</pubDate>
+      <guid>https://olejorik.github.io/funnyplots/popart/</guid>
+      <description>&lt;p&gt;I was trying to prove the convergence of TIP algorithm and suddenly realized I was doing pop art instead&amp;hellip;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44349816_1858886554167122_442418628336287744_n.jpg&#34; &gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44349816_1858886554167122_442418628336287744_n_hu939aac388f19887d5bb25974568ae5a0_28098_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;187&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44372869_1858886540833790_3052665146846478336_n.jpg&#34; &gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44372869_1858886540833790_3052665146846478336_n_hu0c44ed0ba9c82cb1becadc663085922b_42629_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;190&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44389155_1858886484167129_3017508077864747008_n.jpg&#34; &gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44389155_1858886484167129_3017508077864747008_n_huf6bd8c4a31ae1a3128e6efe666acac56_80381_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;185&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44406446_1858886534167124_4096598184120287232_n.jpg&#34; &gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44406446_1858886534167124_4096598184120287232_n_hu7e2edb4b0d1cda4d4b5a0cd4fb63a174_39910_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;188&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44430891_1858886617500449_1930411718777765888_n.jpg&#34; &gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44430891_1858886617500449_1930411718777765888_n_hubc9671d915d3fa712c766b123f2e6dbe_34884_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;187&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44437758_1858886470833797_8798397839097987072_n.jpg&#34; &gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44437758_1858886470833797_8798397839097987072_n_hu61899c5e36c3b13adde496cb27537c39_50034_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;188&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44497055_1858886467500464_8931224972651659264_n.jpg&#34; &gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44497055_1858886467500464_8931224972651659264_n_hu1b0bd5e2505faf7320a0daacd493ea54_35719_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;188&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/default.jpg&#34; &gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/default_hub5681d475b8bd8cb32b8dbd6260978a0_32082_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;231&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

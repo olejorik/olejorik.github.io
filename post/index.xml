@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Oleg Soloviev</title>
+    <link>https://olejorik.github.io/post/</link>
+      <atom:link href="https://olejorik.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Mon, 27 Dec 2021 16:08:14 +0100</lastBuildDate>
+    <image>
+      <url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url>
+      <title>Posts</title>
+      <link>https://olejorik.github.io/post/</link>
+    </image>
+    
+    <item>
+      <title>Making presentation template in Ipe</title>
+      <link>https://olejorik.github.io/post/ipe_presentation_template/</link>
+      <pubDate>Mon, 27 Dec 2021 16:08:14 +0100</pubDate>
+      <guid>https://olejorik.github.io/post/ipe_presentation_template/</guid>
+      <description>&lt;p&gt;For approximately 50% or more, doing science is communicating your findings and results to the others.
+Besides &amp;ldquo;summing it up&amp;rdquo; in a paper, we need from time to time to make presentations to be shown on screen for our team members, students, bosses, and our colleagues from other organisations.
+Those of us who need to insert a lot of math in their presentations, eventually meet the dilemma of choosing between the convenience of visual arrangement
+of things in MS PowerPoint and the easiness of typesetting beautiful math expressions provided by $\LaTeX$ (combined with  
+&lt;a href=&#34;https://ctan.org/pkg/beamer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Beamer&lt;/a&gt;, its excellent package for preparing presentations).&lt;/p&gt;
+&lt;p&gt;For my TU-related presentations, I&amp;rsquo;ve completely switched to Beamer approximately 7 years ago, and after some steep learning curve (&lt;em&gt;not of $\LaTeX$&lt;/em&gt;, which I managed to master somewhere in 20th century, but of Beamer, which has 247 page-long 
+&lt;a href=&#34;https://mirror.koddos.net/CTAN/macros/latex/contrib/beamer/doc/beameruserguide.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;manual&lt;/a&gt;), I&amp;rsquo;ve got used to it, made some convenient keyboard shortcuts in 
+&lt;a href=&#34;https://www.texstudio.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TeXstudio&lt;/a&gt; and was quite satisfied with my tool.&lt;/p&gt;
+&lt;p&gt;Except for some minor but quite irritating and time demanding issues of alignment between different views of the same slide and difficulties of visually fine-tuning content of a slide (read: move a couple of pixel this to the left and rotate slightly clockwise that object and draw an arrow from this word to that part of the picture in another column and make it not jumping when a new portion of the figure is revealed in the following view).&lt;/p&gt;
+&lt;p&gt;Most of the pictures for my presentations and lectures I was drawing in my favourite graphics editor with ability to embed $\LaTeX$ labels named 
+&lt;a href=&#34;https://ipe.otfried.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ipe&lt;/a&gt;, which I was using since my PhD times. And maybe because I was using it for so long time, I was completely not aware that  besides preparing nice pictures for a presentation, I could do the whole presentation in it too!&lt;/p&gt;
+&lt;p&gt;Last month, after recommending Ipe to one more colleague, I’ve looked again in its manual and I’ve discovered that it has this nice functionality. Of course, the very next presentation I’ve done for my TU Delft colleagues was made completely in Ipe.  And it was quite a relief, I should say! Everything was very easy to fine-tune visually, you can enjoy a lot of snapping modes, you can add new views and reveal parts of the drawing without fear that everything would jump suddenly, and of course you can type everything you need in $\LaTeX$!&lt;/p&gt;
+&lt;p&gt;The only thing I needed to learn is how to make a template for a presentation according to the recommended TU Delft house style. As I’ve spent quite a long time on this (
+&lt;a href=&#34;https://i11git.iti.kit.edu/anon-gitweb/?p=Misc/ipe.git;a=summary&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this resource&lt;/a&gt; of Karlsruhe Institute of Technology was extremely helpful), I thought it would be good to share it here with everyone interested in using Ipe for presentations and preparing their own templates. So I made this&lt;/p&gt;
+&lt;h2 id=&#34;mini-tutorial-on-making-custom-templates-in-ipe&#34;&gt;Mini-tutorial on making custom templates in Ipe&lt;/h2&gt;
+&lt;p&gt;The instructions below are for TU Delft style, but of course, they can be easily adjusted to your needs.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open IPE and save the empty file in a separate folder. I have folder &lt;code&gt;TUD-slides&lt;/code&gt; and file name &lt;code&gt;TUD-slides-template.ipe&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As recommended in 
+&lt;a href=&#34;https://ipe.otfried.org/manual/onepage.html#sec:stylesheets&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ipe manual on stylesheets&lt;/a&gt;, let’s create &lt;code&gt;TUD-slides.isy&lt;/code&gt; file in the same folder: open a text editor with good XML support (notepad++ or VS code), type the following lines&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;ipestyle name=&amp;quot;TUD-slides&amp;quot;&amp;gt;
+
+&amp;lt;/ipestyle&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and save it in the same folder as &lt;code&gt;TUD-slides.isy&lt;/code&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;in Ipe, go to &lt;em&gt;Edit -&amp;gt; stylesheets&lt;/em&gt;, delete &lt;code&gt;basic&lt;/code&gt;, add &lt;code&gt;presentation&lt;/code&gt; and our new &lt;code&gt;TUD-slides&lt;/code&gt;:
+&lt;img src=&#34;style_sheets.png&#34; alt=&#34;image-20211128111847175&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Let’s start with adding styles and symbols to our style sheet to make a template according to 
+&lt;a href=&#34;https://www.tudelft.nl/huisstijl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TU Delft house style&lt;/a&gt;.
+First, let’s define 
+&lt;a href=&#34;https://www.tudelft.nl/huisstijl/bouwstenen/kleur&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the primary and secondary colours&lt;/a&gt;. For this, we need to convert the given RGB values from the range  0..255 to the range 0..1. A simple way to do it is to create a filled rectangle in Ipe, set it absolute colour as RGB given by TUD style (e.g. &lt;code&gt;0,163,144&lt;/code&gt;), then right-click it and show it as XML &lt;img src=&#34;set_color.png&#34; alt=&#34;image-20211128115342504&#34;&gt;
+From this you can copy-paste the values &amp;ldquo;0 0.639 0.565&amp;rdquo; to the style file, like
+&lt;code&gt;&amp;lt;color name=&amp;quot;TUD-green&amp;quot; value=&amp;quot;0 0.639 0.565&amp;quot;/&amp;gt;&lt;/code&gt;. You can select a fancier name using  
+&lt;a href=&#34;https://chir.ag/projects/name-that-color/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this site&lt;/a&gt;, for instance here it gives “persian-green”.
+Now our style file looks like&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;ipestyle name=&amp;quot;TUD-slides&amp;quot;&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-cyan&amp;quot; value=&amp;quot;0 0.651 0.839&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-black&amp;quot; value=&amp;quot;0 0 0&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-white&amp;quot; value=&amp;quot;1 1 1&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-allports&amp;quot; value=&amp;quot;0 0.4 0.635&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-persian-green&amp;quot; value=&amp;quot;0 0.639 0.565&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-blue-lagoon&amp;quot; value=&amp;quot;0 0.443 0.533&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-bermuda&amp;quot; value=&amp;quot;0.51 0.843 0.776&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-hippie-blue&amp;quot; value=&amp;quot;0.38 0.643 0.706&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-cerulean&amp;quot; value=&amp;quot;0 0.718 0.827&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-feijoa&amp;quot; value=&amp;quot;0.6 0.824 0.549&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-saffron&amp;quot; value=&amp;quot;0.945 0.745 0.243&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-persian-red&amp;quot; value=&amp;quot;0.765 0.192 0.184&amp;quot;/&amp;gt;
+ &amp;lt;color name=&amp;quot;TUD-burnt-sienna&amp;quot; value=&amp;quot;0.922 0.447 0.275&amp;quot;/&amp;gt;
+&amp;lt;/ipestyle&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Save it and use &lt;em&gt;Edit -&amp;gt; Update style sheets&lt;/em&gt;. Now all TUD colours should be available in Ipe:
+&lt;img src=&#34;TUD_colors.png&#34; alt=&#34;image-20211128120234622&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now let’s proceed with a slide layout according to 
+&lt;a href=&#34;https://www.tudelft.nl/en/tu-delft-corporate-design/presentations&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;power-point examples&lt;/a&gt; or 
+&lt;a href=&#34;https://www.tudelft.nl/en/tu-delft-corporate-design/downloads&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;latex-beamer examples&lt;/a&gt;. Although the beamer examples are a little bit outdated, they seem to me more suitable for presenting scientific information.
+Let’s make a horizontal colour band with white TUD logo on it.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Draw the band with TUD-cyan fill colour.&lt;/li&gt;
+&lt;li&gt;For placing a logo, we can either place a png image (&lt;em&gt;File -&amp;gt; Insert image&lt;/em&gt;)or use an ability of IPE of &lt;code&gt;\includegraphics&lt;/code&gt; command from Latex package &lt;code&gt;pgf&lt;/code&gt; or convert the eps file to IPE. I’ve used the second option. For this:
+&lt;ol&gt;
+&lt;li&gt;Make &lt;code&gt;figs&lt;/code&gt; subfolder and download there the logo in eps format.&lt;/li&gt;
+&lt;li&gt;I’ve added &lt;code&gt;\usepackage{pgf}&lt;/code&gt; to the preamble using Edit -&amp;gt; Document properties&lt;/li&gt;
+&lt;li&gt;I’ve converted the &lt;code&gt;.eps&lt;/code&gt; logo to &lt;code&gt;.pdf&lt;/code&gt; format using utility &lt;code&gt;ps2pdf&lt;/code&gt; (you should have it installed if you have MikTeX):
+&lt;code&gt; ps2pdf14 -dEPSCrop TU_P5_white.eps TU_P5_white.pdf&lt;/code&gt;
+Then I created a text label and entered there &lt;code&gt;\includegraphics[height=48pt]{figs/TU_P5_white.pdf}&lt;/code&gt;, where 48 pt was the height of my colour bar.&lt;/li&gt;
+&lt;li&gt;To make the log exactly 48 pt height, enter any absolute value for the text label size. The reason is that it is stretched in the presentation stylesheet.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now let’s add useful information to this colour bar, like name of the presenter and the presentation short title (useful if someone joins your talk in its middle) and page numbers. Name and presentation title we might want to use in several places, so let’s code them in the preamble as Latex commands first: &lt;em&gt;Edit-&amp;gt;Document properties&lt;/em&gt; and add there&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;   \newcommand{\name}{My Name}
+   \newcommand{\prestitle}{Template for Ipe Presentations}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you can create a text label with something like
+&lt;code&gt;\name{} $\cdot$ \prestitle&lt;/code&gt; inside. Make it centre-aligned and of white colour.
+Your canvas should look like this now:
+&lt;img src=&#34;footer.png&#34; alt=&#34;image-20211128132009314&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;The font used does not correspond to the house style of TU Delft. It should use Arial for body text and Georgia for quotes. This can be done if we will use $Lua\LaTeX$ or $Xe\LaTeX$ as compiler and use package &lt;code&gt;fontspec&lt;/code&gt;. Provided you have installed the fonts in your system, add to the Latex preamble the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-\usepackage{fontspec}&#34;&gt;\usepackage{fontspec}
+    \newfontfamily\tudtitlefamily[
+        Extension = .ttf%,
+    ]{TUDelft-UltraLight}
+    \newfontfamily\tudrmfamily[
+        Extension = .ttf,
+        BoldFont = *_Bold,
+        ItalicFont = *_Italic,
+        BoldItalicFont = *_Bold_Italic]{Georgia}
+    \newfontfamily\tudsffamily[
+        Extension = .ttf,
+        BoldFont = *_Bold,
+        ItalicFont = *_Italic,
+        BoldItalicFont = *_Bold_Italic]{Arial}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and change the Latex engine to lualatex:
+&lt;img src=&#34;lualatex.png&#34; alt=&#34;image-20211128132717986&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(I’ve changed it, please see later).
+Set the absolute value for the line to 20 pt.&lt;/p&gt;
+&lt;p&gt;Finally, add a text label with dummy page numbering. Now you should have something like that:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;pagenumbers.png&#34; alt=&#34;image-20211128134901169&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Now let’s make a symbol from the colour bar, logo, and status line. Select them (without the page number) and group together (&lt;em&gt;Ctrl+G&lt;/em&gt;). Make a symbol from this group: &lt;em&gt;Ipelets-&amp;gt;symbol&amp;gt;create symbol (in top stylesheet)&lt;/em&gt; with the name &lt;code&gt;Background&lt;/code&gt; (note the capital “B”).
+Check that the symbol works by creating a new page. It should have this colour bar.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Save the changes in the style file: &lt;em&gt;Edit -&amp;gt;  Style sheets&lt;/em&gt;, select TUD-slides and press save. Overwrite your old file. Notepad++ should show your the updated version&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now you can delete this group but still see the same symbol.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Let’s style the page number. Switch on the page numbering in &lt;em&gt;Document properties&lt;/em&gt;. You will see black number in the lower left corner. We are going to change it to our style. First, update the stylesheet. Now, according to &lt;a href=&#34;https://ipe.otfried.org/manual/onepage.html#sec:presentations&#34;&gt;https://ipe.otfried.org/manual/onepage.html#sec:presentations&lt;/a&gt; add&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;pagenumberstyle pos=&amp;quot;20 820&amp;quot; size=&amp;quot;Huge&amp;quot; color=&amp;quot;0.5 0 0&amp;quot; 
+  valign=&amp;quot;top&amp;quot;&amp;gt;\arabic{ipePage}/\arabic{ipePages}&amp;lt;/pagenumberstyle&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;to the stylesheet. Right-click your dummy page number, select &lt;em&gt;Edit as Xml&lt;/em&gt; and copy the parameters to the &lt;code&gt;pagenumberstyle&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;pagenumberstyle pos=&amp;quot;736 16&amp;quot; color=&amp;quot;TUD-white&amp;quot; type=&amp;quot;label&amp;quot; width=&amp;quot;38.78&amp;quot; 
+   height=&amp;quot;14.509&amp;quot; depth=&amp;quot;0.24&amp;quot; halign=&amp;quot;right&amp;quot; valign=&amp;quot;baseline&amp;quot;
+   size=&amp;quot;20&amp;quot;&amp;gt;\arabic{ipePage}/\arabic{ipePages}&amp;lt;/pagenumberstyle&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you can update the style sheet and delete your dummy page numbering and check how the page numbers are inserted automatically.&lt;/p&gt;
+&lt;p&gt;Before we proceed, let’s also move the Latex styling that user should not change to the style file. Make a new section in the style file&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;preamble&amp;gt;
+    
+&amp;lt;/preamble&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and move there font settings and packages.&lt;/p&gt;
+&lt;p&gt;On the first page, create a new layer called &lt;code&gt;BACKGROUND&lt;/code&gt; (note all capitals). Draw there the desired layout (you can use the defined commands like &lt;code&gt;\prestitle&lt;/code&gt; and &lt;code&gt;\name&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;title_page.png&#34; alt=&#34;image-20211128143010720&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Congratulations, the template is ready! To make a new presentation, just make a copy of the &lt;code&gt;TUD-slides&lt;/code&gt; folder (including &lt;code&gt;figs&lt;/code&gt;) subfolder, and edit &lt;code&gt;TUD-slides-template.ipe&lt;/code&gt; file.&lt;/p&gt;
+&lt;h3 id=&#34;possible-improvements&#34;&gt;Possible improvements&lt;/h3&gt;
+&lt;p&gt;You can convert the logo from PDF to Ipe format (using &lt;code&gt;pdftoipe&lt;/code&gt; script supplied with Ipe) and make a symbol of it, which you can save in a the stylesheet and make it self-contained and independent from a logo saved in external folder. You can then move the file to Ipe style folder (use &lt;em&gt;Help -&amp;gt; Show configuration&lt;/em&gt; to find out where it is located) and create new presentations in TU Delft style just by activating this stylesheet.&lt;/p&gt;
+&lt;p&gt;You can find the results of such modification 
+&lt;a href=&#34;https://github.com/olejorik/TU-Delft-slides-Ipe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Zernike Calculations in Julia</title>
+      <link>https://olejorik.github.io/post/zernikecalculations/</link>
+      <pubDate>Sun, 01 Nov 2020 13:58:59 +0100</pubDate>
+      <guid>https://olejorik.github.io/post/zernikecalculations/</guid>
+      <description>
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+    
+  &lt;a data-fancybox=&#34;gallery-Zernike&#34; href=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/Zenike66.png&#34; &gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/Zenike66_hu3fe1497f3dd4946ad613be645e724abd_763998_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;89&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+    
+  &lt;a data-fancybox=&#34;gallery-Zernike&#34; href=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/ZenikeCcc66.png&#34; &gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/ZenikeCcc66_hu4e8f541489b963a17c99c90659987393_1453049_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;89&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-Zernike&#34; href=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/zx_66.png&#34; data-caption=&#34;x-derivative of the first 66 Zernike polynomials&#34;&gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/zx_66_hu8a4212f563f5a20675dba754535cb1b7_642123_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;89&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-Zernike&#34; href=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/zy_66_Set1_6.png&#34; data-caption=&#34;y-derivative of the first 66 Zernike polynomials&#34;&gt;
+  &lt;img data-src=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/zy_66_Set1_6_huc18919f13473b142b4f078e9671f9be9_1270963_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;89&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+&lt;p&gt;In optics, Zernike polynomials play a big role, and in many computer simulations of optical problems, it&amp;rsquo;s very important to be able to calculate their values on a polar or Cartesian grid. While this problem seems trivial (the exact formulae for Zernike polynomials are known) and is often used as MSc student assignment, it might become challenging for higher degrees of the polynomials due to their fast oscillating nature.&lt;/p&gt;
+&lt;p&gt;Recently, a fast and robust method of calculation of the Zernike polynomials and their derivatives in Cartesian coordinates was published 
+&lt;a href=&#34;#1&#34;&gt;[1]&lt;/a&gt;. I decided to give it a try and to program it in Julia, as the existing Julia&amp;rsquo;s implementations were not so far from the MSc student&amp;rsquo;s homework versions and are quite slow.&lt;/p&gt;
+&lt;p&gt;It was indeed really easy to translate the published pseudo-code in Julia. The implementation appeared to be indeed very fast, so I could not resist to play with some visualisations.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-z_50xy&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://olejorik.github.io/post/zernikecalculations/z50_tab20_hua8df025c5b14ab8462bb7e3b72ef2e7d_147604_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;$Z_{50}(x,y)$&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://olejorik.github.io/post/zernikecalculations/z50_tab20_hua8df025c5b14ab8462bb7e3b72ef2e7d_147604_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;600&#34; height=&#34;400&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    $Z_{50}(x,y)$
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;If you have Julia and Pluto installed, you can test the Zernike generation on your computer by downloading 
+&lt;a href=&#34;https://gist.github.com/olejorik/211e9a8763dc8e4508ba6f13dd939aca&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this Pluto notebook.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Alternatively, if you just want to play with the visualisations,
+you can use online Julia installation (warning: it will take some minutes to initialise, but then it runs quickly).
+For this, go to this page: &lt;a href=&#34;http://pluto-on-binder.glitch.me/&#34;&gt;http://pluto-on-binder.glitch.me/&lt;/a&gt; and enter this link in the input box &lt;a href=&#34;https://gist.github.com/olejorik/211e9a8763dc8e4508ba6f13dd939aca&#34;&gt;https://gist.github.com/olejorik/211e9a8763dc8e4508ba6f13dd939aca&lt;/a&gt;.
+The page will generate link to a virtual machine running my notebook with interactive Zernike calculations.
+You can change the notebooks inputs (use Shift+Enter to update the cells).&lt;/p&gt;
+&lt;p&gt;&lt;a name=&#34;1&#34;&gt;&lt;/a&gt;
+[1] T. B. Andersen, “Efficient and robust recurrence relations for the Zernike circle polynomials and their derivatives in Cartesian coordinates,” Opt. Express, vol. 26, no. 15, p. 18878, Jul. 2018&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Running Julia in WSL</title>
+      <link>https://olejorik.github.io/post/juliawsl/</link>
+      <pubDate>Mon, 05 Oct 2020 21:12:19 +0200</pubDate>
+      <guid>https://olejorik.github.io/post/juliawsl/</guid>
+      <description>&lt;p&gt;From its first days, Windows 10 provided a full-featured Linux (sub)system, called WSL. To get access to it and use it, one needed just to activate the developer mode and voilà &amp;mdash; you typed &lt;code&gt;bash&lt;/code&gt; and got Ubuntu 2016 (in terminal only). I tried it, installed python via conda, watched how the free space on my fast but small system drive (SSD) quickly disappeared and forgot it.&lt;/p&gt;
+&lt;p&gt;Recently, I&amp;rsquo;ve seen on Internet some news about WSL2, the second version of this Linux subsystem. Publications praised the diversity of the distributives (you are not limited to Ubuntu anymore), a closer integration with Windows (you can call Windows programs from Linux, and the filesystems of Windows and Linux can be accessed bidirectionally), and I also saw some manuals how to install WSL on another drive. Finally I&amp;rsquo;ve got some time to try it, and it worked even better than I expected! Namely, the benefit I&amp;rsquo;ve got is a faster version of Julia on my computer (not to mention enjoying 24K colours in REPL and normal work of all commands in the shell mode 😉).&lt;/p&gt;
+&lt;p&gt;Here are the results from a simple benchmarking of convolving a 512 x 512 image with a 48 x 48 blur kernel. (In our 
+&lt;a href=&#34;https://olejorik.github.io/project/madein4&#34;&gt;MADEin4&lt;/a&gt; project, we need to simulate a position-dependent blur, so the convolution speed is a very important parameter for us).&lt;/p&gt;
+&lt;p&gt;The screenshots below show (left to right) the speed of this convolution (two different algorithms) calculated by Julia running in WSL and Julia running in Windows, both versions 1.5.2 (and the same convolution made in &lt;em&gt;Mathematica 12.1&lt;/em&gt; for comparison purposes). You can see that the faster version of the algorithm (the second benchmark test) in WSL is almost twice faster as in its Windows version and is approximately as fast as &lt;em&gt;Mathematica&lt;/em&gt; implementation.&lt;/p&gt;
+&lt;!-- ![Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica](convolutions_speed.png) --&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-convolution-speed-in-juliawsl-juliawindows-and-in-mathematica&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://olejorik.github.io/post/juliawsl/convolutions_speed_hu46d83dbd953546cbf5e5132c7f05ab5b_793815_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://olejorik.github.io/post/juliawsl/convolutions_speed_hu46d83dbd953546cbf5e5132c7f05ab5b_793815_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1989&#34; height=&#34;970&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;how-to-install-wsl2-where-you-want-it&#34;&gt;How to install WSL2 where you want it&lt;/h2&gt;
+&lt;p&gt;Here are the successive steps that I did, following the nice instructions of 
+&lt;a href=&#34;https://damsteen.nl/blog/2018/08/29/installing-wsl-manually-on-non-system-drive&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; tutorial. Everything can be done directly in PowerShell, or, if you are not familiar with it, in a more Windows manner using your mouse.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Press Windows key and type &amp;ldquo;Optional Features&amp;rdquo;, press enter to open the following settings page and select there &amp;ldquo;More Windows features&amp;rdquo;:
+&lt;img src=&#34;Enable.png&#34; alt=&#34;Enabling WSL&#34;&gt;
+or just open PowerShell and enable the WSL2 by executing:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I needed to do it despite that I had already  the WSL enabled (WSL1, the &amp;ldquo;Legacy version&amp;rdquo;), and I needed to reboot after this command.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;If you have not yet created a directory where you want to have your Linux, create it. You can use the following PowerShell command or a less exotic way like right-click in the explorer window and so on:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;New-Item D:\Linux -ItemType Directory
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;code&gt;cd&lt;/code&gt; there. Again, you can use the special PS command (it also can change the drive):&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Set-Location D:\Linux
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Now you need to download the desired Linux distro and place it in this directory. Go to 
+&lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; page, choose what you want, right-click and save it or again you can use the PowerShell: copy the link address and substitute it in the command below.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Rename the downloaded &amp;ldquo;.appx&amp;rdquo; file in &amp;ldquo;.zip&amp;rdquo; file and extract it (here shown on example of Debian distro)
+&lt;img src=&#34;Extract.png&#34; alt=&#34;Extract the renamed archive&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Rename-Item .\Ubuntu.appx Ubuntu.zip
+Expand-Archive .\Ubuntu.zip -Verbose
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Congratulations! You&amp;rsquo;ve almost done. Now you can change to the extracted directory and double click the &amp;ldquo;&lt;em&gt;linux_distro&lt;/em&gt;.exe&amp;rdquo; file
+&lt;img src=&#34;Execute.png&#34; alt=&#34;Run to finish the installation&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;or execute in the PowerShell&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;.\Ubuntu\ubuntu2004.exe
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Input you username and password (remember them well or save them immediately in your password manager, like KeePass), and after some time the installation will be finished.&lt;/p&gt;
+&lt;p&gt;You can use your WSL2 now!&lt;/p&gt;
+&lt;p&gt;7.(OPTIONAL) Because I had still traces of the old WSL system (although I have uninstalled it), I needed to issue the following command to make my new WSL2 act as default Linux subsystem (&lt;em&gt;e.g.&lt;/em&gt; I can invoke it by typing &lt;code&gt;bash&lt;/code&gt; in terminal):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;wsl --set-default-version 2
+wslconfig /s Ubuntu-20.04
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    You can also launch it by executing &lt;code&gt;wsl&lt;/code&gt; or &lt;code&gt;ubuntu&lt;/code&gt; commands
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Also I recommend to instal the new 
+&lt;a href=&#34;https://aka.ms/terminal&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Windows Terminal&lt;/a&gt;, where you will have immediately easy access to all you Linuxes :-)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;WindowsTerminal.png&#34; alt=&#34;Using Windows Terminal and WSL2&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;how-to-install-official-release-of-julia-in-your-wsl&#34;&gt;How to install &amp;ldquo;official&amp;rdquo; release of Julia in your WSL&lt;/h2&gt;
+&lt;p&gt;To install Julia in your WSL, you can use the packages provided by the distro, but chances are high you&amp;rsquo;ve got some old version. Instead, install the latest stable release from jullialang.org.&lt;/p&gt;
+&lt;p&gt;Basically, you need to follow the 
+&lt;a href=&#34;https://julialang.org/downloads/platform/#linux_and_freebsd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;instructions from their webpage&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For more detailed instruction, 
+&lt;a href=&#34;https://ferrolho.github.io/blog/2019-01-26/how-to-install-julia-on-ubuntu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;follow this tutorial.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To summarize, it&amp;rsquo;s as easy as downloading, unpacking, copying to &lt;code&gt;/opt&lt;/code&gt; directory, and making a link:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.2-linux-x86_64.tar.gz
+
+$ tar -xvzf julia-1.5.2-linux-x86_64.tar.gz
+
+$ sudo cp -r julia-1.5.2 /opt/
+
+$ sudo ln -s /opt/julia-1.5.2/bin/julia /usr/local/bin/julia
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you can try to type &lt;code&gt;julia&lt;/code&gt; and see it working!&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; in Debian installation, I was not able to use &lt;code&gt;wget&lt;/code&gt; command shown above; the system complained about not valid security certificates of julialang.org. The problem was solved by installing CA-certificates:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo apt-get install ca-certificates
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    My Ubuntu 20.04 installation appeared to be extremely slow in installing julia packages (&amp;ldquo;updating registry&amp;rdquo;); julia itself was running fast.
+Debian installation does not have such problem and is now my default WSL.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;how-to-use-your-installation-in-vs-code-or-jupyter-lab&#34;&gt;How to use your installation in VS code or Jupyter lab&lt;/h2&gt;
+&lt;h2 id=&#34;vs-code&#34;&gt;VS Code&lt;/h2&gt;
+&lt;p&gt;To connect VS Code to WSL, I followed its 
+&lt;a href=&#34;https://code.visualstudio.com/docs/remote/wsl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;manual page&lt;/a&gt;.
+As I&amp;rsquo;ve had VS Code already installed, I needed to add &lt;code&gt;%USERPROFILE%\AppData\Local\Programs\Microsoft VS Code\bin&lt;/code&gt; to my path manually.&lt;/p&gt;
+&lt;p&gt;Then I navigated to my Windows folder with Julia projects (thus &lt;em&gt;not in WSL filesystem&lt;/em&gt;) and opened it from bash by executing &lt;code&gt;code .&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In addition, I installed in this version of VS Code the julia extension (see 
+&lt;a href=&#34;https://techytok.com/julia-vscode/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; for more detailed instructions).&lt;/p&gt;
+&lt;h3 id=&#34;jupyter-lab&#34;&gt;Jupyter lab&lt;/h3&gt;
+&lt;p&gt;You can install in your distro conda, Python and Jupyter as usual, and set julia to use them, but in this case, I decided to keep everything within the julia installation.&lt;/p&gt;
+&lt;p&gt;First as usual, &lt;code&gt;] add IJulia&lt;/code&gt; and launch Jupyter lab from within julia:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; using IJulia
+
+julia&amp;gt; IJulia.jupyterlab()
+install Jupyter via Conda, y/n? [y]: y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Give julia some time to install everything necessary and wait until  the activity in the terminal ends with a message beginning like&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;[ Info: running setenv(`/home/oleg/.julia/conda/3/bin/jupyter lab`,[&amp;quot;PATH=/home/oleg/.julia/conda/3/bin: 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Actually, now the jupyter server is installed and running, but if you don&amp;rsquo;t have a browser installed in WSL, you cannot go further. Press Ctrl+C here. Now we are going  to create and edit jupyter config file so any existing Windows browser could be used.&lt;/p&gt;
+&lt;p&gt;To create the config file, execute in bash&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ~/.julia/conda/3/bin/jupyter notebook --generate-config
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The system will display something like&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Writing default config to: /home/oleg/.jupyter/jupyter_notebook_config.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now open this file in VS Code&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ code ~/.jupyter/jupyter_notebook_config.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and find and edit there the default browser setting (line beginning with &lt;code&gt;c.NotebookApp.browser &lt;/code&gt;). I set it to MS Edge, which I don&amp;rsquo;t use usually, so my Jupyter lab activities are kept separately from my usual web browsing:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;c.NotebookApp.browser = u&#39;/mnt/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe %s&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In addition, disable the redirect file behaviour by changing the line starting with &lt;code&gt;c.NotebookApp.use_redirect_file&lt;/code&gt; to&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;c.NotebookApp.use_redirect_file = False
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now yuo should be able to launch Jupyter lab either from julia&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; using IJulia
+julia&amp;gt; IJulia.jupyerlab()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or from bash&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ~/.julia/conda/3/bin/jupyter lab
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automatic Deployment</title>
+      <link>https://olejorik.github.io/post/automatic-deployment/</link>
+      <pubDate>Mon, 13 Apr 2020 09:41:52 +0000</pubDate>
+      <guid>https://olejorik.github.io/post/automatic-deployment/</guid>
+      <description>&lt;p&gt;When maintaining a static website with Hugo, the workflow is to create a source of a post in Markdown, run Hugo to generate the html pages, and upload the resulted html to the web. The repeating last two steps can be automated in a script or a batch file that can be run on a local computer, so every time the content is updated, its rendered version is uploaded to the web. If however, the content is edited with some online services, like Forestry, how can you update the rendered html pages?&lt;/p&gt;
+&lt;p&gt;This can be done with automated deployment workflows. For this, you need to have an account on one of the multiple services that provide you (often free of charge for a small or a personal project) a virtual machine, where the source of your site can be downloaded, Hugo installed and run on the source, and in case of success, the rendered html pages uploaded to the destination. Sounds really high tech and fantastic, but it seems to be quite a common practice amongst the professional developers, called Continuous Integration/Continuous Deployment (CI/CD). The links to instructions for several services are collected on 
+&lt;a href=&#34;https://forestry.io/docs/hosting/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a Forestry doc page&lt;/a&gt; and 
+&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on Hugo doc pages&lt;/a&gt; as well.&lt;/p&gt;
+&lt;p&gt;For an occasional user of this method, however, it is easy to make a mistake in setting it up and running. Moreover, different services have different requirements and limitations. GitLab, for instance, provides built-in CI/CD, but publishes the results on their webpages which have way too long url, in my opinion. Here I describe the steps which finally lead me to a successful implementation.&lt;/p&gt;
+&lt;p&gt;I have followed the steps for 
+&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;automatic deployment with Wercker&lt;/a&gt;, with some changes. My site source repo was already set up on GitHub, and I was hosting the rendered version on GitHub pages, so I proceeded directly to the step of 
+&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#set-up-wercker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wercker setup&lt;/a&gt;. Wercker is a service that can monitor the status of my site source repo, and after I push some content to it, it performs the automated deployment steps. It seems that Wercker&amp;rsquo;s interface has been updated since the time the manual was written, and some steps that require changes are indicated below.&lt;/p&gt;
+&lt;p&gt;I have logged in with my GitHub account, so the link between Wercker and GitHub was automatically created. Then I proceeded till 
+&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#add-your-project&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Add your project&lt;/a&gt; step, which now should be changed to &lt;em&gt;Add application&lt;/em&gt;.
+Use the boxed plus button in the top right corner:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;add_application_wercker.png&#34; alt=&#34;Use this button to add a new application&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The application is created in 4 steps, where I have pointed to the repo with my website source and accepted all default options. Now I was at 
+&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#app-successfully-created&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;App successfully created&lt;/a&gt; step and there were some small differences. The screen I saw was like that: &lt;img src=&#34;get_build_running.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I saw there Hugo icon, clicked it, obtained some config file,and &amp;hellip; And actually I didn&amp;rsquo;t need it.&lt;/p&gt;
+&lt;p&gt;Instead, I needed to go to the &amp;ldquo;Steps store&amp;rdquo; (again top right corner), to find there &amp;ldquo;hugo build&amp;rdquo; steps script, and to read its documentation to understand how to use it. &lt;img src=&#34;steps_store.png&#34; alt=&#34;&amp;ldquo;Hugo build steps&amp;rdquo;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Finally, I understood that all I needed to do is simply to create  a file named &lt;code&gt;wercker.yml&lt;/code&gt; in the root of my source repo with the following content:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;box: debian
+build:
+  steps:
+      - arjen/hugo-build:
+        version: &amp;quot;0.68.3&amp;quot;
+        theme: academic
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and push it to the GitHub repo.&lt;/p&gt;
+&lt;p&gt;Wercker has started its job and&amp;hellip; failed.&lt;/p&gt;
+&lt;p&gt;After some investigation, I realized that the reason was that the &amp;ldquo;academic&amp;rdquo; theme which I use was installed as a submodule (so it is not a part of my repo), and thus it was not downloaded from git. To fix that, I added steps to the &lt;code&gt;wercker.yml&lt;/code&gt; which installed git and downloaded the submodule. Now the file looked as shown below, and Wercker has completed the build successfully!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;box: debian
+build:
+  steps:
+    - script: 
+        name: install git
+        code: |
+            apt-get update
+            apt-get install git -y
+    - script:
+        name: initialize git submodules
+        code: |
+            git submodule update --init --recursive
+
+    - arjen/hugo-build:
+        version: &amp;quot;0.68.3&amp;quot;
+        theme: academic
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I proceeded with the manual up to the step 
+&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#set-the-apps-deploy-target&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Set the App’s Deploy Target&lt;/a&gt;, where I was stuck again, because there were no button &amp;ldquo;Deploy target&amp;rdquo; in the Wercker interface. Instead, I needed to create a new pipeine and to call it &lt;code&gt;deploy&lt;/code&gt;, and to add it to the workflow after the &lt;code&gt;build&lt;/code&gt; pipeline: &lt;img src=&#34;add_pipeline.png&#34; alt=&#34;Create new pipeline&#34;&gt; &lt;img src=&#34;deploy_pipeline.png&#34; alt=&#34;Setting of the deploy pipeline&#34;&gt; &lt;img src=&#34;add_deploy.png&#34; alt=&#34;Add deploy pipeline to the workflow&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Then I added the corresponding instructions to the Wercker config file as shown below, pushed it to GitHub and everything worked!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;box: debian
+build:
+  steps:
+    - script: 
+        name: install git
+        code: |
+            apt-get update
+            apt-get install git -y
+    - script:
+        name: initialize git submodules
+        code: |
+            git submodule update --init --recursive
+
+    - arjen/hugo-build:
+        version: &amp;quot;0.68.3&amp;quot;
+        theme: academic
+deploy:
+  steps:
+    - install-packages:
+        packages: git ssh-client
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        basedir: public
+        repo: olejorik/olejorik.github.io
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Actually, it was a trial-and-error process (as can be seen in the commit history of the site), but I omit all these details 😉.&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;To make your rendered version of a Hugo website automatically updated after every change you push the source repo, log in to Wercker with your GitHub account, add an application with two pipelines in a workflow, named &lt;code&gt;build&lt;/code&gt; and &lt;code&gt;deploy&lt;/code&gt; and add a corresponding &lt;code&gt;wercker.yml&lt;/code&gt; file to the root of your source repo.&lt;/p&gt;
+&lt;p&gt;After everything works as expected, you might want to delete the submodule &lt;code&gt;public&lt;/code&gt; from the source repo.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using forestry to manage my site</title>
+      <link>https://olejorik.github.io/post/using-forestry-to-manage-my-site/</link>
+      <pubDate>Fri, 10 Apr 2020 22:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/post/using-forestry-to-manage-my-site/</guid>
+      <description>&lt;p&gt;After entering forestry.io, granting them access to the source repo of website and performing initial setup, I&amp;rsquo;ve got an environment where I can create and edit posts. There is an opportunity to preview the post, and all the post meta-fields can be filled in here.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://olejorik.github.io/uploads/Screenshot_20200411-114213.png&#34; alt=&#34;&#34; title=&#34;Using forestry.io to edit this post&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This difference is minimal. It might be helpful for a company web-site, where the users should not bother about &lt;code&gt;git commit&lt;/code&gt; &lt;em&gt;etc.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I was not able to create a post as page bundle, maybe there should be some other template used, but I didn&amp;rsquo;t find it. In addition, every time I press &lt;strong&gt;Save draft,&lt;/strong&gt; a new commit is created? This might make the repo history unreadable (in case anyone would ever want to read it).&lt;/p&gt;
+&lt;p&gt;There is however one good thing&amp;mdash;I can use Grammarly tool to check my English. 😉&lt;/p&gt;
+&lt;p&gt;So my conclusion is &amp;ndash; it&amp;rsquo;s a good tool, and because of Grammarly, I might use it from time to time for &amp;ldquo;postprocessing&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; forestry might be also very helpful to edit posts from a mobile device. For the changes in source to become visible in the published site, an automated deployment should be arranged in some way. 
+&lt;a href=&#34;https://forestry.io/docs/hosting/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&lt;/a&gt; is a manual how to set it up.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update2:&lt;/strong&gt; automated deployment took me some time to set up. I&amp;rsquo;ll describe it in a separate post.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Frequency Identification With TFFT</title>
+      <link>https://olejorik.github.io/post/frequency-identification-with-tfft/</link>
+      <pubDate>Tue, 28 May 2019 07:06:44 +0000</pubDate>
+      <guid>https://olejorik.github.io/post/frequency-identification-with-tfft/</guid>
+      <description>&lt;!-- &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/mathematica.min.js&#34; &gt;&lt;/script&gt; --&gt;
+&lt;p&gt;In Mathematica&amp;rsquo;s 
+&lt;a href=&#34;https://reference.wolfram.com/language/ref/Fourier.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation devoted to &lt;code&gt;Fourier&lt;/code&gt; command&lt;/a&gt;, I&amp;rsquo;ve stumbled upon an curious example of the frequency identification from  noisy data.
+The most interesting part was that the frequency (or the period) was found with a high accuracy.
+And this was done by only changing the parameters of &lt;code&gt;Fourier&lt;/code&gt; command!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mma&#34;&gt;Fourier[data, Parameters -&amp;gt; {a,b}];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Fourier[data]&lt;/code&gt; calculates the Discrete Fourier Transform (DFT) of &lt;code&gt;data&lt;/code&gt; and has two optional parameters &lt;code&gt;{a,b}&lt;/code&gt;, which I always thought were used only to implement different definitions of DFT as used in mathematics or in signal processing, for instance.&lt;/p&gt;
+&lt;p&gt;The documentation page, however, gives a nice example of alternative use of the parameters. Below is a slightly modified version of the example.&lt;/p&gt;
+&lt;h2 id=&#34;code-example&#34;&gt;Code example&lt;/h2&gt;
+&lt;p&gt;Here is some periodic data with period $T =12.46$ with some noise added, plotted for the discrete values of $x = 1,\ldots,100$:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mma&#34;&gt;n = 1000;
+per = 12.46;
+pdata = Table[Sin[2 \[Pi] x/per], {x, n}] + RandomReal[{-1, 1}, {n}];
+ListPlot[pdata, AspectRatio -&amp;gt; 1/3, PlotStyle -&amp;gt; PointSize[.003], 
+ ImageSize -&amp;gt; 900] 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;noisy_data.gif&#34; alt=&#34;Noisy data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Looks quite random for us humans, doesn&amp;rsquo;t it? Let&amp;rsquo;s inspect it with Mathematica.&lt;/p&gt;
+&lt;p&gt;Find the maximum mode in the spectrum:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mma&#34;&gt;f = Abs[Fourier[pdata]];
+pos = Position[f, Max[f]][[1, 1]]
+
+Show[ListPlot[f], Graphics[{Red, Point[{pos, f[[pos]]}]}], 
+ PlotRange -&amp;gt; All]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;max_freq.gif&#34; alt=&#34;Frequency with maximum absolute value in the data spectrum&#34;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rough = n/(pos - 1) // N
+12.5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So roughly, the period is 12.5.&lt;/p&gt;
+&lt;p&gt;Find a high-resolution spectrum between modes where the maximum was found  by changing $b$ parameter to 1/500:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;fr = Abs[Fourier[pdata Exp[2 Pi I (pos - 2) N[Range[0, n - 1]]/n], 
+    FourierParameters -&amp;gt; {0, 2/n}]];
+frpos = Position[fr, Max[fr]][[1, 1]]
+
+617
+
+Show[ListPlot[fr], Graphics[{Red, Point[{frpos, fr[[frpos]]}]}], 
+ PlotRange -&amp;gt; All]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;hiResFreq.gif&#34; alt=&#34;Interpolated spectrum near the maximum&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now we can determine the period from the frequencies:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;N[n/(pos - 2 + 2 (frpos - 1)/n)]
+
+12.4639
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;explanations&#34;&gt;Explanations&lt;/h2&gt;
+&lt;p&gt;What happens here is that we do interpolation of the initial Fourier spectrum with sines by padding the original sequence with zeroes as if the total number of points is $n/b$. With $b= 2/n$, we&amp;rsquo;ve half a million points. &lt;em&gt;Mathematica&lt;/em&gt; does not calculate the whole DFT of the &amp;ldquo;virtually&amp;rdquo; padded sequence, however, but estimates only the first $n$ values. That&amp;rsquo;s why we need to shift our spectrum there by multiplying the data with complex exponent sequence &lt;code&gt;Exp[2 Pi I (pos - 2) N[Range[0, n - 1]]/n]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I was not able to perform the same trick in Matlab, Python, or Julia. Please let me know if you know how to do it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

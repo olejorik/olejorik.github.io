@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Imaging through turbulence | Oleg Soloviev</title>
+    <link>https://olejorik.github.io/tags/imaging-through-turbulence/</link>
+      <atom:link href="https://olejorik.github.io/tags/imaging-through-turbulence/index.xml" rel="self" type="application/rss+xml" />
+    <description>Imaging through turbulence</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url>
+      <title>Imaging through turbulence</title>
+      <link>https://olejorik.github.io/tags/imaging-through-turbulence/</link>
+    </image>
+    
+    <item>
+      <title>Multi-aperture digital telescopic system with super-resolution</title>
+      <link>https://olejorik.github.io/publication/bezzubik-20/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/bezzubik-20/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

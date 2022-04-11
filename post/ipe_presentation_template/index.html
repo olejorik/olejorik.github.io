@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Oleg  Soloviev">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Ipe, a powerful vector graphics editor for creating scientific drawings with inclusion of $\LaTeX$ annotations, is also suitable for creating complete presentations. In this mini tutorial, I explain how to create a stylesheet (or a template) in a given house style.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://olejorik.github.io/post/ipe_presentation_template/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63879327-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-63879327-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://olejorik.github.io/post/ipe_presentation_template/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Oleg Soloviev">
+  <meta property="og:url" content="https://olejorik.github.io/post/ipe_presentation_template/">
+  <meta property="og:title" content="Making presentation template in Ipe | Oleg Soloviev">
+  <meta property="og:description" content="Ipe, a powerful vector graphics editor for creating scientific drawings with inclusion of $\LaTeX$ annotations, is also suitable for creating complete presentations. In this mini tutorial, I explain how to create a stylesheet (or a template) in a given house style."><meta property="og:image" content="https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-12-27T16:08:14&#43;01:00">
+    
+    <meta property="article:modified_time" content="2021-12-27T16:08:14&#43;01:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://olejorik.github.io/post/ipe_presentation_template/"
+  },
+  "headline": "Making presentation template in Ipe",
+  
+  "datePublished": "2021-12-27T16:08:14+01:00",
+  "dateModified": "2021-12-27T16:08:14+01:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Oleg  Soloviev"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Oleg Soloviev",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Ipe, a powerful vector graphics editor for creating scientific drawings with inclusion of $\\LaTeX$ annotations, is also suitable for creating complete presentations. In this mini tutorial, I explain how to create a stylesheet (or a template) in a given house style."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Making presentation template in Ipe | Oleg Soloviev</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Oleg Soloviev</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Oleg Soloviev</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Fun</span><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            
+              <a class="dropdown-item" href="/#fun"><span>Fun with ...</span></a>
+            
+              <a class="dropdown-item" href="/red/"><span>Fun with (de)convolution</span></a>
+            
+              <a class="dropdown-item" href="/funnyplots/"><span>Fun with plotting</span></a>
+            
+              <a class="dropdown-item" href="/aikido/"><span>Fun with aikido</span></a>
+            
+          </div>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Making presentation template in Ipe</h1>
+
+  
+  <p class="page-subtitle">A mini tutorial</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    27 Dec 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    8 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>For approximately 50% or more, doing science is communicating your findings and results to the others.
+Besides &ldquo;summing it up&rdquo; in a paper, we need from time to time to make presentations to be shown on screen for our team members, students, bosses, and our colleagues from other organisations.
+Those of us who need to insert a lot of math in their presentations, eventually meet the dilemma of choosing between the convenience of visual arrangement
+of things in MS PowerPoint and the easiness of typesetting beautiful math expressions provided by $\LaTeX$ (combined with  
+<a href="https://ctan.org/pkg/beamer" target="_blank" rel="noopener">Beamer</a>, its excellent package for preparing presentations).</p>
+<p>For my TU-related presentations, I&rsquo;ve completely switched to Beamer approximately 7 years ago, and after some steep learning curve (<em>not of $\LaTeX$</em>, which I managed to master somewhere in 20th century, but of Beamer, which has 247 page-long 
+<a href="https://mirror.koddos.net/CTAN/macros/latex/contrib/beamer/doc/beameruserguide.pdf" target="_blank" rel="noopener">manual</a>), I&rsquo;ve got used to it, made some convenient keyboard shortcuts in 
+<a href="https://www.texstudio.org/" target="_blank" rel="noopener">TeXstudio</a> and was quite satisfied with my tool.</p>
+<p>Except for some minor but quite irritating and time demanding issues of alignment between different views of the same slide and difficulties of visually fine-tuning content of a slide (read: move a couple of pixel this to the left and rotate slightly clockwise that object and draw an arrow from this word to that part of the picture in another column and make it not jumping when a new portion of the figure is revealed in the following view).</p>
+<p>Most of the pictures for my presentations and lectures I was drawing in my favourite graphics editor with ability to embed $\LaTeX$ labels named 
+<a href="https://ipe.otfried.org/" target="_blank" rel="noopener">Ipe</a>, which I was using since my PhD times. And maybe because I was using it for so long time, I was completely not aware that  besides preparing nice pictures for a presentation, I could do the whole presentation in it too!</p>
+<p>Last month, after recommending Ipe to one more colleague, I’ve looked again in its manual and I’ve discovered that it has this nice functionality. Of course, the very next presentation I’ve done for my TU Delft colleagues was made completely in Ipe.  And it was quite a relief, I should say! Everything was very easy to fine-tune visually, you can enjoy a lot of snapping modes, you can add new views and reveal parts of the drawing without fear that everything would jump suddenly, and of course you can type everything you need in $\LaTeX$!</p>
+<p>The only thing I needed to learn is how to make a template for a presentation according to the recommended TU Delft house style. As I’ve spent quite a long time on this (
+<a href="https://i11git.iti.kit.edu/anon-gitweb/?p=Misc/ipe.git;a=summary" target="_blank" rel="noopener">this resource</a> of Karlsruhe Institute of Technology was extremely helpful), I thought it would be good to share it here with everyone interested in using Ipe for presentations and preparing their own templates. So I made this</p>
+<h2 id="mini-tutorial-on-making-custom-templates-in-ipe">Mini-tutorial on making custom templates in Ipe</h2>
+<p>The instructions below are for TU Delft style, but of course, they can be easily adjusted to your needs.</p>
+<ol>
+<li>
+<p>Open IPE and save the empty file in a separate folder. I have folder <code>TUD-slides</code> and file name <code>TUD-slides-template.ipe</code>.</p>
+</li>
+<li>
+<p>As recommended in 
+<a href="https://ipe.otfried.org/manual/onepage.html#sec:stylesheets" target="_blank" rel="noopener">Ipe manual on stylesheets</a>, let’s create <code>TUD-slides.isy</code> file in the same folder: open a text editor with good XML support (notepad++ or VS code), type the following lines</p>
+</li>
+</ol>
+<pre><code>&lt;ipestyle name=&quot;TUD-slides&quot;&gt;
+
+&lt;/ipestyle&gt;
+</code></pre>
+<p>and save it in the same folder as <code>TUD-slides.isy</code></p>
+<ol start="3">
+<li>
+<p>in Ipe, go to <em>Edit -&gt; stylesheets</em>, delete <code>basic</code>, add <code>presentation</code> and our new <code>TUD-slides</code>:
+<img src="style_sheets.png" alt="image-20211128111847175"></p>
+</li>
+<li>
+<p>Let’s start with adding styles and symbols to our style sheet to make a template according to 
+<a href="https://www.tudelft.nl/huisstijl" target="_blank" rel="noopener">TU Delft house style</a>.
+First, let’s define 
+<a href="https://www.tudelft.nl/huisstijl/bouwstenen/kleur" target="_blank" rel="noopener">the primary and secondary colours</a>. For this, we need to convert the given RGB values from the range  0..255 to the range 0..1. A simple way to do it is to create a filled rectangle in Ipe, set it absolute colour as RGB given by TUD style (e.g. <code>0,163,144</code>), then right-click it and show it as XML <img src="set_color.png" alt="image-20211128115342504">
+From this you can copy-paste the values &ldquo;0 0.639 0.565&rdquo; to the style file, like
+<code>&lt;color name=&quot;TUD-green&quot; value=&quot;0 0.639 0.565&quot;/&gt;</code>. You can select a fancier name using  
+<a href="https://chir.ag/projects/name-that-color/" target="_blank" rel="noopener">this site</a>, for instance here it gives “persian-green”.
+Now our style file looks like</p>
+<pre><code>&lt;ipestyle name=&quot;TUD-slides&quot;&gt;
+ &lt;color name=&quot;TUD-cyan&quot; value=&quot;0 0.651 0.839&quot;/&gt;
+ &lt;color name=&quot;TUD-black&quot; value=&quot;0 0 0&quot;/&gt;
+ &lt;color name=&quot;TUD-white&quot; value=&quot;1 1 1&quot;/&gt;
+ &lt;color name=&quot;TUD-allports&quot; value=&quot;0 0.4 0.635&quot;/&gt;
+ &lt;color name=&quot;TUD-persian-green&quot; value=&quot;0 0.639 0.565&quot;/&gt;
+ &lt;color name=&quot;TUD-blue-lagoon&quot; value=&quot;0 0.443 0.533&quot;/&gt;
+ &lt;color name=&quot;TUD-bermuda&quot; value=&quot;0.51 0.843 0.776&quot;/&gt;
+ &lt;color name=&quot;TUD-hippie-blue&quot; value=&quot;0.38 0.643 0.706&quot;/&gt;
+ &lt;color name=&quot;TUD-cerulean&quot; value=&quot;0 0.718 0.827&quot;/&gt;
+ &lt;color name=&quot;TUD-feijoa&quot; value=&quot;0.6 0.824 0.549&quot;/&gt;
+ &lt;color name=&quot;TUD-saffron&quot; value=&quot;0.945 0.745 0.243&quot;/&gt;
+ &lt;color name=&quot;TUD-persian-red&quot; value=&quot;0.765 0.192 0.184&quot;/&gt;
+ &lt;color name=&quot;TUD-burnt-sienna&quot; value=&quot;0.922 0.447 0.275&quot;/&gt;
+&lt;/ipestyle&gt;
+</code></pre>
+<p>Save it and use <em>Edit -&gt; Update style sheets</em>. Now all TUD colours should be available in Ipe:
+<img src="TUD_colors.png" alt="image-20211128120234622"></p>
+</li>
+<li>
+<p>Now let’s proceed with a slide layout according to 
+<a href="https://www.tudelft.nl/en/tu-delft-corporate-design/presentations" target="_blank" rel="noopener">power-point examples</a> or 
+<a href="https://www.tudelft.nl/en/tu-delft-corporate-design/downloads" target="_blank" rel="noopener">latex-beamer examples</a>. Although the beamer examples are a little bit outdated, they seem to me more suitable for presenting scientific information.
+Let’s make a horizontal colour band with white TUD logo on it.</p>
+<ol>
+<li>Draw the band with TUD-cyan fill colour.</li>
+<li>For placing a logo, we can either place a png image (<em>File -&gt; Insert image</em>)or use an ability of IPE of <code>\includegraphics</code> command from Latex package <code>pgf</code> or convert the eps file to IPE. I’ve used the second option. For this:
+<ol>
+<li>Make <code>figs</code> subfolder and download there the logo in eps format.</li>
+<li>I’ve added <code>\usepackage{pgf}</code> to the preamble using Edit -&gt; Document properties</li>
+<li>I’ve converted the <code>.eps</code> logo to <code>.pdf</code> format using utility <code>ps2pdf</code> (you should have it installed if you have MikTeX):
+<code> ps2pdf14 -dEPSCrop TU_P5_white.eps TU_P5_white.pdf</code>
+Then I created a text label and entered there <code>\includegraphics[height=48pt]{figs/TU_P5_white.pdf}</code>, where 48 pt was the height of my colour bar.</li>
+<li>To make the log exactly 48 pt height, enter any absolute value for the text label size. The reason is that it is stretched in the presentation stylesheet.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Now let’s add useful information to this colour bar, like name of the presenter and the presentation short title (useful if someone joins your talk in its middle) and page numbers. Name and presentation title we might want to use in several places, so let’s code them in the preamble as Latex commands first: <em>Edit-&gt;Document properties</em> and add there</p>
+</li>
+</ol>
+<pre><code>   \newcommand{\name}{My Name}
+   \newcommand{\prestitle}{Template for Ipe Presentations}
+</code></pre>
+<p>Now you can create a text label with something like
+<code>\name{} $\cdot$ \prestitle</code> inside. Make it centre-aligned and of white colour.
+Your canvas should look like this now:
+<img src="footer.png" alt="image-20211128132009314"></p>
+<ol start="7">
+<li>
+<p>The font used does not correspond to the house style of TU Delft. It should use Arial for body text and Georgia for quotes. This can be done if we will use $Lua\LaTeX$ or $Xe\LaTeX$ as compiler and use package <code>fontspec</code>. Provided you have installed the fonts in your system, add to the Latex preamble the following:</p>
+<pre><code class="language-\usepackage{fontspec}">\usepackage{fontspec}
+    \newfontfamily\tudtitlefamily[
+        Extension = .ttf%,
+    ]{TUDelft-UltraLight}
+    \newfontfamily\tudrmfamily[
+        Extension = .ttf,
+        BoldFont = *_Bold,
+        ItalicFont = *_Italic,
+        BoldItalicFont = *_Bold_Italic]{Georgia}
+    \newfontfamily\tudsffamily[
+        Extension = .ttf,
+        BoldFont = *_Bold,
+        ItalicFont = *_Italic,
+        BoldItalicFont = *_Bold_Italic]{Arial}
+</code></pre>
+<p>and change the Latex engine to lualatex:
+<img src="lualatex.png" alt="image-20211128132717986"></p>
+</li>
+</ol>
+<p>(I’ve changed it, please see later).
+Set the absolute value for the line to 20 pt.</p>
+<p>Finally, add a text label with dummy page numbering. Now you should have something like that:</p>
+<p><img src="pagenumbers.png" alt="image-20211128134901169"></p>
+<ol start="9">
+<li>
+<p>Now let’s make a symbol from the colour bar, logo, and status line. Select them (without the page number) and group together (<em>Ctrl+G</em>). Make a symbol from this group: <em>Ipelets-&gt;symbol&gt;create symbol (in top stylesheet)</em> with the name <code>Background</code> (note the capital “B”).
+Check that the symbol works by creating a new page. It should have this colour bar.</p>
+</li>
+<li>
+<p>Save the changes in the style file: <em>Edit -&gt;  Style sheets</em>, select TUD-slides and press save. Overwrite your old file. Notepad++ should show your the updated version</p>
+</li>
+<li>
+<p>Now you can delete this group but still see the same symbol.</p>
+</li>
+<li>
+<p>Let’s style the page number. Switch on the page numbering in <em>Document properties</em>. You will see black number in the lower left corner. We are going to change it to our style. First, update the stylesheet. Now, according to <a href="https://ipe.otfried.org/manual/onepage.html#sec:presentations">https://ipe.otfried.org/manual/onepage.html#sec:presentations</a> add</p>
+<pre><code>&lt;pagenumberstyle pos=&quot;20 820&quot; size=&quot;Huge&quot; color=&quot;0.5 0 0&quot; 
+  valign=&quot;top&quot;&gt;\arabic{ipePage}/\arabic{ipePages}&lt;/pagenumberstyle&gt;
+</code></pre>
+</li>
+</ol>
+<p>to the stylesheet. Right-click your dummy page number, select <em>Edit as Xml</em> and copy the parameters to the <code>pagenumberstyle</code></p>
+<pre><code>&lt;pagenumberstyle pos=&quot;736 16&quot; color=&quot;TUD-white&quot; type=&quot;label&quot; width=&quot;38.78&quot; 
+   height=&quot;14.509&quot; depth=&quot;0.24&quot; halign=&quot;right&quot; valign=&quot;baseline&quot;
+   size=&quot;20&quot;&gt;\arabic{ipePage}/\arabic{ipePages}&lt;/pagenumberstyle&gt;
+</code></pre>
+<p>Now you can update the style sheet and delete your dummy page numbering and check how the page numbers are inserted automatically.</p>
+<p>Before we proceed, let’s also move the Latex styling that user should not change to the style file. Make a new section in the style file</p>
+<pre><code>&lt;preamble&gt;
+    
+&lt;/preamble&gt; 
+</code></pre>
+<p>and move there font settings and packages.</p>
+<p>On the first page, create a new layer called <code>BACKGROUND</code> (note all capitals). Draw there the desired layout (you can use the defined commands like <code>\prestitle</code> and <code>\name</code>)</p>
+<p><img src="title_page.png" alt="image-20211128143010720"></p>
+<p>Congratulations, the template is ready! To make a new presentation, just make a copy of the <code>TUD-slides</code> folder (including <code>figs</code>) subfolder, and edit <code>TUD-slides-template.ipe</code> file.</p>
+<h3 id="possible-improvements">Possible improvements</h3>
+<p>You can convert the logo from PDF to Ipe format (using <code>pdftoipe</code> script supplied with Ipe) and make a symbol of it, which you can save in a the stylesheet and make it self-contained and independent from a logo saved in external folder. You can then move the file to Ipe style folder (use <em>Help -&gt; Show configuration</em> to find out where it is located) and create new presentations in TU Delft style just by activating this stylesheet.</p>
+<p>You can find the results of such modification 
+<a href="https://github.com/olejorik/TU-Delft-slides-Ipe" target="_blank" rel="noopener">here</a>.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/tools/">tools</a>
+  
+  <a class="badge badge-light" href="/tags/ipe/">Ipe</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://olejorik.github.io/post/ipe_presentation_template/&amp;text=Making%20presentation%20template%20in%20Ipe" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://olejorik.github.io/post/ipe_presentation_template/&amp;t=Making%20presentation%20template%20in%20Ipe" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Making%20presentation%20template%20in%20Ipe&amp;body=https://olejorik.github.io/post/ipe_presentation_template/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://olejorik.github.io/post/ipe_presentation_template/&amp;title=Making%20presentation%20template%20in%20Ipe" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Making%20presentation%20template%20in%20Ipe%20https://olejorik.github.io/post/ipe_presentation_template/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://olejorik.github.io/post/ipe_presentation_template/&amp;title=Making%20presentation%20template%20in%20Ipe" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu9d561746409ee959336009ff27cdfb96_155055_270x270_fill_q90_lanczos_center.jpg" alt="Oleg  Soloviev">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://olejorik.github.io/">Oleg  Soloviev</a></h5>
+      <h6 class="card-subtitle">Senior Research Fellow</h6>
+      <p class="card-text">Oleg Soloviev is a Senior Research Fellow at DCSC/3mE/TU Delft and a Senior Associate at Flexible Optical BV.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=44CkYdUAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/olejorik" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://bitbucket.org/oleg_soloviev" target="_blank" rel="noopener">
+        <i class="fab fa-bitbucket"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/olegsoloviev" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Oleg_Soloviev" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0003-3761-9192" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.mendeley.com/profiles/oleg-soloviev/" target="_blank" rel="noopener">
+        <i class="ai ai-mendeley"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/juliawsl/">Running Julia in WSL</a></li>
+      
+      <li><a href="/post/automatic-deployment/">Automatic Deployment</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/mathematica.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Oleg Soloviev 2018-2022 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

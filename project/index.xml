@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Oleg Soloviev</title>
+    <link>https://olejorik.github.io/project/</link>
+      <atom:link href="https://olejorik.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Mon, 21 Oct 2019 20:34:55 +0000</lastBuildDate>
+    <image>
+      <url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url>
+      <title>Projects</title>
+      <link>https://olejorik.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>Madein4</title>
+      <link>https://olejorik.github.io/project/madein4/</link>
+      <pubDate>Mon, 21 Oct 2019 20:34:55 +0000</pubDate>
+      <guid>https://olejorik.github.io/project/madein4/</guid>
+      <description>&lt;p&gt;&lt;em&gt;MADEin4 stands for &lt;strong&gt;Metrology Advances for Digitized ECS industry 4.0&lt;/strong&gt;, an ECSEL JU project focussing on the productivity enhancement in &amp;ldquo;Industry 4.0&amp;rdquo;.&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;glasses-for-ai&#34;&gt;Glasses for AI&lt;/h1&gt;
+&lt;p&gt;Our part in the project is to increase the throughput of the quality control lines. Currently, the most important (&lt;em&gt;e.g.&lt;/em&gt; with the most impact on human safety) quality control is performed by humans. In Industry 4.0, this task will be delegated to AI, which will classify the parts being defect or not based on the video input. If a human inspector has myopia, we can prescribe eyeglasses. But what if AI has difficulties with recognising the important features in the image? Would simple increasing the image resolution and sharpness help the  AI in its classification job?&lt;/p&gt;
+&lt;p&gt;These are the problems we are going to address in this project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>High Accuracy Eye Tracker for Proton Clinic environment</title>
+      <link>https://olejorik.github.io/project/eye-tracker/</link>
+      <pubDate>Sun, 25 Nov 2018 22:06:48 +0100</pubDate>
+      <guid>https://olejorik.github.io/project/eye-tracker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phase retrieval for high NA cases</title>
+      <link>https://olejorik.github.io/project/high-na-phase-retrieval/</link>
+      <pubDate>Thu, 28 Jun 2018 21:06:48 +0000</pubDate>
+      <guid>https://olejorik.github.io/project/high-na-phase-retrieval/</guid>
+      <description>&lt;p&gt;For high values of numerical apertures (think microscopes), the standard phase retrieval methods are not reliable.&lt;/p&gt;
+&lt;p&gt;In this project, we work on adjusting and expanding the low-NA algorithms to the high values of NA.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

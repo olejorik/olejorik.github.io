@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aberrations | Oleg Soloviev</title>
+    <link>https://olejorik.github.io/tags/aberrations/</link>
+      <atom:link href="https://olejorik.github.io/tags/aberrations/index.xml" rel="self" type="application/rss+xml" />
+    <description>Aberrations</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url>
+      <title>Aberrations</title>
+      <link>https://olejorik.github.io/tags/aberrations/</link>
+    </image>
+    
+    <item>
+      <title>Alias-free basis for modal sensorless adaptive optics using the second moment of intensity</title>
+      <link>https://olejorik.github.io/publication/soloviev-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/soloviev-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High speed wavefront sensorless aberration correction in digital micromirror based confocal microscopy</title>
+      <link>https://olejorik.github.io/publication/pozzi-2017949/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/pozzi-2017949/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rapid identication of coherent pupil functions from multiple intensity measurements</title>
+      <link>https://olejorik.github.io/publication/wilding-2017-a/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/wilding-2017-a/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

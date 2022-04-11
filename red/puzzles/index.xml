@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview | Oleg Soloviev</title>
+    <link>https://olejorik.github.io/red/puzzles/</link>
+      <atom:link href="https://olejorik.github.io/red/puzzles/index.xml" rel="self" type="application/rss+xml" />
+    <description>Overview</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url>
+      <title>Overview</title>
+      <link>https://olejorik.github.io/red/puzzles/</link>
+    </image>
+    
+    <item>
+      <title>Puzzle 1</title>
+      <link>https://olejorik.github.io/red/puzzles/puzzle1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://olejorik.github.io/red/puzzles/puzzle1/</guid>
+      <description>&lt;meta name=viewport content=&#34;width=device-width,initial-scale=1&#34;&gt;  
+&lt;meta charset=&#34;utf-8&#34;/&gt;
+&lt;script src=&#34;https://cdn.geogebra.org/apps/deployggb.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;Let set $\mathcal P$ be defined by a ray originated in point $O$ and passing through point $I$, and $\mathcal Q$ be some bounded convex set (shown as an ellipse here for sake of programming easiness). Let $p_0 \in \mathcal P$, and define iteratively $\{p_n\}, \{q_n\}, \ n \in \mathbb{N} $ as:&lt;/p&gt;
+&lt;p&gt;$$p_n \to q_{n+1} = \Pr_{\mathcal Q} p_n,$$
+$$ q_n \to p_n : p_n\in\mathcal{P}, (p_n-q_n, q_n) = 0,$$
+that is the next $q$ point is obtained by projection the last $p$ point on $\mathcal Q,$ and the next $p$ point is obtained by intersection of the perpendicular to line $O q$ in point $q$ and line $O I$.&lt;/p&gt;
+&lt;p&gt;Prove that&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$\exists\ \hat q = \lim_{n\to\inf}  q_n$ and&lt;/li&gt;
+&lt;li&gt;If $\mathcal P \cap \mathcal Q \neq \varnothing$, then $\hat q \in \mathcal P$; otherwise,  line $O \hat q$ is tangent to $\mathcal Q$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can click and drag objects in the illustration below.&lt;/p&gt;
+&lt;div id=&#34;ggb-element&#34;&gt;&lt;/div&gt; 
+&lt;script&gt;  
+    var ggbApp = new GGBApplet({&#34;width&#34;: 691, &#34;height&#34;: 630, &#34;showToolBar&#34;: false, &#34;showAlgebraInput&#34;: false, &#34;showMenuBar&#34;: false, 
+    &#34;showZoomButtons&#34;: true, &#34;showFullScreenButton&#34;: true,
+    &#34;enableShiftDragZoom&#34;: true, &#34;showResetIcon&#34;:true,
+    // &#34;allowUpScale&#34;: true,
+    &#34;material_id&#34;:&#34;xbrnhk7r&#34; }, true);
+    window.addEventListener(&#34;load&#34;, function() { 
+        ggbApp.inject(&#39;ggb-element&#39;);
+    });
+&lt;/script&gt;&lt;blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Puzzle 2</title>
+      <link>https://olejorik.github.io/red/puzzles/puzzle2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://olejorik.github.io/red/puzzles/puzzle2/</guid>
+      <description>&lt;p&gt;Puzzle 2 will be published soon&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

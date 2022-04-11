@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mathematica | Oleg Soloviev</title>
+    <link>https://olejorik.github.io/tags/mathematica/</link>
+      <atom:link href="https://olejorik.github.io/tags/mathematica/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mathematica</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Tue, 28 May 2019 07:06:44 +0000</lastBuildDate>
+    <image>
+      <url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url>
+      <title>Mathematica</title>
+      <link>https://olejorik.github.io/tags/mathematica/</link>
+    </image>
+    
+    <item>
+      <title>Frequency Identification With TFFT</title>
+      <link>https://olejorik.github.io/post/frequency-identification-with-tfft/</link>
+      <pubDate>Tue, 28 May 2019 07:06:44 +0000</pubDate>
+      <guid>https://olejorik.github.io/post/frequency-identification-with-tfft/</guid>
+      <description>&lt;!-- &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/mathematica.min.js&#34; &gt;&lt;/script&gt; --&gt;
+&lt;p&gt;In Mathematica&amp;rsquo;s 
+&lt;a href=&#34;https://reference.wolfram.com/language/ref/Fourier.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation devoted to &lt;code&gt;Fourier&lt;/code&gt; command&lt;/a&gt;, I&amp;rsquo;ve stumbled upon an curious example of the frequency identification from  noisy data.
+The most interesting part was that the frequency (or the period) was found with a high accuracy.
+And this was done by only changing the parameters of &lt;code&gt;Fourier&lt;/code&gt; command!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mma&#34;&gt;Fourier[data, Parameters -&amp;gt; {a,b}];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Fourier[data]&lt;/code&gt; calculates the Discrete Fourier Transform (DFT) of &lt;code&gt;data&lt;/code&gt; and has two optional parameters &lt;code&gt;{a,b}&lt;/code&gt;, which I always thought were used only to implement different definitions of DFT as used in mathematics or in signal processing, for instance.&lt;/p&gt;
+&lt;p&gt;The documentation page, however, gives a nice example of alternative use of the parameters. Below is a slightly modified version of the example.&lt;/p&gt;
+&lt;h2 id=&#34;code-example&#34;&gt;Code example&lt;/h2&gt;
+&lt;p&gt;Here is some periodic data with period $T =12.46$ with some noise added, plotted for the discrete values of $x = 1,\ldots,100$:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mma&#34;&gt;n = 1000;
+per = 12.46;
+pdata = Table[Sin[2 \[Pi] x/per], {x, n}] + RandomReal[{-1, 1}, {n}];
+ListPlot[pdata, AspectRatio -&amp;gt; 1/3, PlotStyle -&amp;gt; PointSize[.003], 
+ ImageSize -&amp;gt; 900] 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;noisy_data.gif&#34; alt=&#34;Noisy data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Looks quite random for us humans, doesn&amp;rsquo;t it? Let&amp;rsquo;s inspect it with Mathematica.&lt;/p&gt;
+&lt;p&gt;Find the maximum mode in the spectrum:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mma&#34;&gt;f = Abs[Fourier[pdata]];
+pos = Position[f, Max[f]][[1, 1]]
+
+Show[ListPlot[f], Graphics[{Red, Point[{pos, f[[pos]]}]}], 
+ PlotRange -&amp;gt; All]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;max_freq.gif&#34; alt=&#34;Frequency with maximum absolute value in the data spectrum&#34;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rough = n/(pos - 1) // N
+12.5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So roughly, the period is 12.5.&lt;/p&gt;
+&lt;p&gt;Find a high-resolution spectrum between modes where the maximum was found  by changing $b$ parameter to 1/500:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;fr = Abs[Fourier[pdata Exp[2 Pi I (pos - 2) N[Range[0, n - 1]]/n], 
+    FourierParameters -&amp;gt; {0, 2/n}]];
+frpos = Position[fr, Max[fr]][[1, 1]]
+
+617
+
+Show[ListPlot[fr], Graphics[{Red, Point[{frpos, fr[[frpos]]}]}], 
+ PlotRange -&amp;gt; All]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;hiResFreq.gif&#34; alt=&#34;Interpolated spectrum near the maximum&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now we can determine the period from the frequencies:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;N[n/(pos - 2 + 2 (frpos - 1)/n)]
+
+12.4639
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;explanations&#34;&gt;Explanations&lt;/h2&gt;
+&lt;p&gt;What happens here is that we do interpolation of the initial Fourier spectrum with sines by padding the original sequence with zeroes as if the total number of points is $n/b$. With $b= 2/n$, we&amp;rsquo;ve half a million points. &lt;em&gt;Mathematica&lt;/em&gt; does not calculate the whole DFT of the &amp;ldquo;virtually&amp;rdquo; padded sequence, however, but estimates only the first $n$ values. That&amp;rsquo;s why we need to shift our spectrum there by multiplying the data with complex exponent sequence &lt;code&gt;Exp[2 Pi I (pos - 2) N[Range[0, n - 1]]/n]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I was not able to perform the same trick in Matlab, Python, or Julia. Please let me know if you know how to do it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

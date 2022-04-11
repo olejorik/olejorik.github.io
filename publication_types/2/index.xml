@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Oleg Soloviev</title>
+    <link>https://olejorik.github.io/publication_types/2/</link>
+      <atom:link href="https://olejorik.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url>
+      <title>2</title>
+      <link>https://olejorik.github.io/publication_types/2/</link>
+    </image>
+    
+    <item>
+      <title>Extended scene deep learning wavefront sensing</title>
+      <link>https://olejorik.github.io/publication/de-bruijne-22/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/de-bruijne-22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Convex combination of alternating projection and Douglas–Rachford operators for phase retrieval</title>
+      <link>https://olejorik.github.io/publication/thao-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/thao-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phase retrieval of large-scale time-varying aberrations using a non-linear Kalman filtering framework</title>
+      <link>https://olejorik.github.io/publication/piscaer-21/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/piscaer-21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-aperture digital telescopic system with super-resolution</title>
+      <link>https://olejorik.github.io/publication/bezzubik-20/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/bezzubik-20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alias-free basis for modal sensorless adaptive optics using the second moment of intensity</title>
+      <link>https://olejorik.github.io/publication/soloviev-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/soloviev-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anisoplanatic adaptive optics in parallelized laser scanning microscopy</title>
+      <link>https://olejorik.github.io/publication/pozzi-202014222/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/pozzi-202014222/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hartmann–Shack wavefront reconstruction with bitmap image processing</title>
+      <link>https://olejorik.github.io/publication/bezzubik-2020972/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/bezzubik-2020972/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phase retrieval based on the vectorial model of point spread function</title>
+      <link>https://olejorik.github.io/publication/hieu-thao-20/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/hieu-thao-20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predictive wavefront sensorless adaptive optics for time-varying aberrations</title>
+      <link>https://olejorik.github.io/publication/piscaer-19/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/piscaer-19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast calculation of computer generated holograms for 3D photostimulation through compressive-sensing Gerchberg–Saxton algorithm</title>
+      <link>https://olejorik.github.io/publication/pozzi-20191/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/pozzi-20191/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Extended-image-based correction of aberrations using a deformable mirror with hysteresis</title>
+      <link>https://olejorik.github.io/publication/kazasidis-201827161/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/kazasidis-201827161/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modal-based phase retrieval using Gaussian radial basis functions</title>
+      <link>https://olejorik.github.io/publication/piscaer-20181233/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/piscaer-20181233/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimal model-based sensorless adaptive optics for epifluorescence microscopy</title>
+      <link>https://olejorik.github.io/publication/pozzi-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/pozzi-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pupil mask diversity for image correction in microscopy</title>
+      <link>https://olejorik.github.io/publication/wilding-201814832/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/wilding-201814832/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blind multi-frame deconvolution by tangential iterative projections (TIP)</title>
+      <link>https://olejorik.github.io/publication/wilding-201732305/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/wilding-201732305/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High speed wavefront sensorless aberration correction in digital micromirror based confocal microscopy</title>
+      <link>https://olejorik.github.io/publication/pozzi-2017949/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/pozzi-2017949/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nonlinear spline wavefront reconstruction through moment-based Shack-Hartmann sensor measurements</title>
+      <link>https://olejorik.github.io/publication/viegers-201711514/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/viegers-201711514/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optical path difference microscopy with a Shack-Hartmann wavefront sensor</title>
+      <link>https://olejorik.github.io/publication/gong-20172122/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/gong-20172122/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helder zicht in turbulente media door integratie van optica, mechanica en regeltechniek</title>
+      <link>https://olejorik.github.io/publication/helder-zicht/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/helder-zicht/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    PDF provided by NTvN for publication on personal website.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lensless coherent imaging by sampling of the optical field with digital micromirror device</title>
+      <link>https://olejorik.github.io/publication/vdovin-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/vdovin-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model-based wavefront sensorless adaptive optics system for large aberrations and extended objects</title>
+      <link>https://olejorik.github.io/publication/yang-201524587/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/yang-201524587/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Structured film for compensation of anthropogenic radiative forcing</title>
+      <link>https://olejorik.github.io/publication/vdovin-20151702/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/vdovin-20151702/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plenoptic wavefront sensor with scattering pupil</title>
+      <link>https://olejorik.github.io/publication/vdovin-20149314/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/vdovin-20149314/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Turbulent surveillance-or how to see a Kalashnikov from a safe distance</title>
+      <link>https://olejorik.github.io/publication/vdovin-201231/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/vdovin-201231/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speckle imaging through turbulent atmosphere based on adaptable pupil segmentation</title>
+      <link>https://olejorik.github.io/publication/loktev-20112656/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/loktev-20112656/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Correction of low order aberrations using continuous deformable mirrors</title>
+      <link>https://olejorik.github.io/publication/vdovin-20082859/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/vdovin-20082859/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hartmann-Shack test with random masks for modal wavefront reconstruction</title>
+      <link>https://olejorik.github.io/publication/soloviev-20059570/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/soloviev-20059570/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phase extraction from three and more interferograms registered with different unknown wavefront tilts</title>
+      <link>https://olejorik.github.io/publication/soloviev-20053743/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>https://olejorik.github.io/publication/soloviev-20053743/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
