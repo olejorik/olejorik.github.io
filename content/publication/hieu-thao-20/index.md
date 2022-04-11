@@ -10,5 +10,7 @@ publication: "*J. Opt. Soc. Am. A*"
 tags: ["Diffraction theory; Fast Fourier transforms; Fourier transforms; Imaging systems; Phase retrieval; Wavefront aberrations"]
 url_pdf: "http://josaa.osa.org/abstract.cfm?URI=josaa-37-1-16"
 doi: "10.1364/JOSAA.37.000016"
+projects:
+- High-NA-Phase-retrieval
 ---
 

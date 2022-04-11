@@ -8,5 +8,7 @@ abstract: "This manuscript presents an improvement of state-of-the-art Closed-Lo
 featured: false
 publication: "*Intelligent Systems Design and Applications*"
 doi: "10.1007/978-3-030-71187-0_60"
+projects:
+- madein4
 ---
 

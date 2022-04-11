@@ -51,7 +51,7 @@ date_format = "Jan 2006"
   company_url = ""
   location = "Saint Petersburg, Russia"
   date_start = "2014-10-01"
-  date_end = ""
+  date_end = "2019-12-01"
   description = """
   Research in imaging through turbulence, lecturing and coordinating MSc course "Physical optics and introduction to adaptive optics", MSc students supervision.
   """
