@@ -1,45 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Gleb Vdovin | Oleg Soloviev</title>
-    <link>https://olejorik.github.io/authors/gleb-vdovin/</link>
-      <atom:link href="https://olejorik.github.io/authors/gleb-vdovin/index.xml" rel="self" type="application/rss+xml" />
-    <description>Gleb Vdovin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url>
-      <title>Gleb Vdovin</title>
-      <link>https://olejorik.github.io/authors/gleb-vdovin/</link>
-    </image>
-    
-    <item>
-      <title>Extended scene deep learning wavefront sensing</title>
-      <link>https://olejorik.github.io/publication/de-bruijne-22/</link>
-      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/de-bruijne-22/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phase retrieval from overexposed PSF: a projection-based approach</title>
-      <link>https://olejorik.github.io/publication/10-1117-12-2609697/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/10-1117-12-2609697/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Helder zicht in turbulente media door integratie van optica, mechanica en regeltechniek</title>
-      <link>https://olejorik.github.io/publication/helder-zicht/</link>
-      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/helder-zicht/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    PDF provided by NTvN for publication on personal website.
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gleb Vdovin | Oleg Soloviev</title><link>https://olejorik.github.io/authors/gleb-vdovin/</link><atom:link href="https://olejorik.github.io/authors/gleb-vdovin/index.xml" rel="self" type="application/rss+xml"/><description>Gleb Vdovin</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><image><url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url><title>Gleb Vdovin</title><link>https://olejorik.github.io/authors/gleb-vdovin/</link></image><item><title>Extended scene deep learning wavefront sensing</title><link>https://olejorik.github.io/publication/de-bruijne-22/</link><pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/de-bruijne-22/</guid><description/></item><item><title>Phase retrieval from overexposed PSF: a projection-based approach</title><link>https://olejorik.github.io/publication/10-1117-12-2609697/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/10-1117-12-2609697/</guid><description/></item><item><title>Helder zicht in turbulente media door integratie van optica, mechanica en regeltechniek</title><link>https://olejorik.github.io/publication/helder-zicht/</link><pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/helder-zicht/</guid><description>&lt;div class="alert alert-note">
+&lt;div>
+PDF provided by NTvN for publication on personal website.
+&lt;/div>
+&lt;/div></description></item></channel></rss>

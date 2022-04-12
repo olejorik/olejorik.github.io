@@ -1,194 +1,137 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>WSL | Oleg Soloviev</title>
-    <link>https://olejorik.github.io/tags/wsl/</link>
-      <atom:link href="https://olejorik.github.io/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
-    <description>WSL</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Mon, 05 Oct 2020 21:12:19 +0200</lastBuildDate>
-    <image>
-      <url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url>
-      <title>WSL</title>
-      <link>https://olejorik.github.io/tags/wsl/</link>
-    </image>
-    
-    <item>
-      <title>Running Julia in WSL</title>
-      <link>https://olejorik.github.io/post/juliawsl/</link>
-      <pubDate>Mon, 05 Oct 2020 21:12:19 +0200</pubDate>
-      <guid>https://olejorik.github.io/post/juliawsl/</guid>
-      <description>&lt;p&gt;From its first days, Windows 10 provided a full-featured Linux (sub)system, called WSL. To get access to it and use it, one needed just to activate the developer mode and voilà &amp;mdash; you typed &lt;code&gt;bash&lt;/code&gt; and got Ubuntu 2016 (in terminal only). I tried it, installed python via conda, watched how the free space on my fast but small system drive (SSD) quickly disappeared and forgot it.&lt;/p&gt;
-&lt;p&gt;Recently, I&amp;rsquo;ve seen on Internet some news about WSL2, the second version of this Linux subsystem. Publications praised the diversity of the distributives (you are not limited to Ubuntu anymore), a closer integration with Windows (you can call Windows programs from Linux, and the filesystems of Windows and Linux can be accessed bidirectionally), and I also saw some manuals how to install WSL on another drive. Finally I&amp;rsquo;ve got some time to try it, and it worked even better than I expected! Namely, the benefit I&amp;rsquo;ve got is a faster version of Julia on my computer (not to mention enjoying 24K colours in REPL and normal work of all commands in the shell mode 😉).&lt;/p&gt;
-&lt;p&gt;Here are the results from a simple benchmarking of convolving a 512 x 512 image with a 48 x 48 blur kernel. (In our 
-&lt;a href=&#34;https://olejorik.github.io/project/madein4&#34;&gt;MADEin4&lt;/a&gt; project, we need to simulate a position-dependent blur, so the convolution speed is a very important parameter for us).&lt;/p&gt;
-&lt;p&gt;The screenshots below show (left to right) the speed of this convolution (two different algorithms) calculated by Julia running in WSL and Julia running in Windows, both versions 1.5.2 (and the same convolution made in &lt;em&gt;Mathematica 12.1&lt;/em&gt; for comparison purposes). You can see that the faster version of the algorithm (the second benchmark test) in WSL is almost twice faster as in its Windows version and is approximately as fast as &lt;em&gt;Mathematica&lt;/em&gt; implementation.&lt;/p&gt;
-&lt;!-- ![Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica](convolutions_speed.png) --&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure id=&#34;figure-convolution-speed-in-juliawsl-juliawindows-and-in-mathematica&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://olejorik.github.io/post/juliawsl/convolutions_speed_hu46d83dbd953546cbf5e5132c7f05ab5b_793815_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://olejorik.github.io/post/juliawsl/convolutions_speed_hu46d83dbd953546cbf5e5132c7f05ab5b_793815_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1989&#34; height=&#34;970&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-&lt;h2 id=&#34;how-to-install-wsl2-where-you-want-it&#34;&gt;How to install WSL2 where you want it&lt;/h2&gt;
-&lt;p&gt;Here are the successive steps that I did, following the nice instructions of 
-&lt;a href=&#34;https://damsteen.nl/blog/2018/08/29/installing-wsl-manually-on-non-system-drive&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; tutorial. Everything can be done directly in PowerShell, or, if you are not familiar with it, in a more Windows manner using your mouse.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Press Windows key and type &amp;ldquo;Optional Features&amp;rdquo;, press enter to open the following settings page and select there &amp;ldquo;More Windows features&amp;rdquo;:
-&lt;img src=&#34;Enable.png&#34; alt=&#34;Enabling WSL&#34;&gt;
-or just open PowerShell and enable the WSL2 by executing:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I needed to do it despite that I had already  the WSL enabled (WSL1, the &amp;ldquo;Legacy version&amp;rdquo;), and I needed to reboot after this command.&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;If you have not yet created a directory where you want to have your Linux, create it. You can use the following PowerShell command or a less exotic way like right-click in the explorer window and so on:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;New-Item D:\Linux -ItemType Directory
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;&lt;code&gt;cd&lt;/code&gt; there. Again, you can use the special PS command (it also can change the drive):&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Set-Location D:\Linux
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Now you need to download the desired Linux distro and place it in this directory. Go to 
-&lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; page, choose what you want, right-click and save it or again you can use the PowerShell: copy the link address and substitute it in the command below.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;Rename the downloaded &amp;ldquo;.appx&amp;rdquo; file in &amp;ldquo;.zip&amp;rdquo; file and extract it (here shown on example of Debian distro)
-&lt;img src=&#34;Extract.png&#34; alt=&#34;Extract the renamed archive&#34;&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;or&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Rename-Item .\Ubuntu.appx Ubuntu.zip
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WSL | Oleg Soloviev</title><link>https://olejorik.github.io/tags/wsl/</link><atom:link href="https://olejorik.github.io/tags/wsl/index.xml" rel="self" type="application/rss+xml"/><description>WSL</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Mon, 05 Oct 2020 21:12:19 +0200</lastBuildDate><image><url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url><title>WSL</title><link>https://olejorik.github.io/tags/wsl/</link></image><item><title>Running Julia in WSL</title><link>https://olejorik.github.io/post/juliawsl/</link><pubDate>Mon, 05 Oct 2020 21:12:19 +0200</pubDate><guid>https://olejorik.github.io/post/juliawsl/</guid><description>&lt;p>From its first days, Windows 10 provided a full-featured Linux (sub)system, called WSL. To get access to it and use it, one needed just to activate the developer mode and voilà &amp;mdash; you typed &lt;code>bash&lt;/code> and got Ubuntu 2016 (in terminal only). I tried it, installed python via conda, watched how the free space on my fast but small system drive (SSD) quickly disappeared and forgot it.&lt;/p>
+&lt;p>Recently, I&amp;rsquo;ve seen on Internet some news about WSL2, the second version of this Linux subsystem. Publications praised the diversity of the distributives (you are not limited to Ubuntu anymore), a closer integration with Windows (you can call Windows programs from Linux, and the filesystems of Windows and Linux can be accessed bidirectionally), and I also saw some manuals how to install WSL on another drive. Finally I&amp;rsquo;ve got some time to try it, and it worked even better than I expected! Namely, the benefit I&amp;rsquo;ve got is a faster version of Julia on my computer (not to mention enjoying 24K colours in REPL and normal work of all commands in the shell mode 😉).&lt;/p>
+&lt;p>Here are the results from a simple benchmarking of convolving a 512 x 512 image with a 48 x 48 blur kernel. (In our
+&lt;a href="https://olejorik.github.io/project/madein4">MADEin4&lt;/a> project, we need to simulate a position-dependent blur, so the convolution speed is a very important parameter for us).&lt;/p>
+&lt;p>The screenshots below show (left to right) the speed of this convolution (two different algorithms) calculated by Julia running in WSL and Julia running in Windows, both versions 1.5.2 (and the same convolution made in &lt;em>Mathematica 12.1&lt;/em> for comparison purposes). You can see that the faster version of the algorithm (the second benchmark test) in WSL is almost twice faster as in its Windows version and is approximately as fast as &lt;em>Mathematica&lt;/em> implementation.&lt;/p>
+&lt;!-- ![Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica](convolutions_speed.png) -->
+&lt;figure id="figure-convolution-speed-in-juliawsl-juliawindows-and-in-mathematica">
+&lt;a data-fancybox="" href="https://olejorik.github.io/post/juliawsl/convolutions_speed_hu46d83dbd953546cbf5e5132c7f05ab5b_793815_2000x2000_fit_lanczos_2.png" data-caption="Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica">
+&lt;img data-src="https://olejorik.github.io/post/juliawsl/convolutions_speed_hu46d83dbd953546cbf5e5132c7f05ab5b_793815_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1989" height="970">
+&lt;/a>
+&lt;figcaption>
+Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="how-to-install-wsl2-where-you-want-it">How to install WSL2 where you want it&lt;/h2>
+&lt;p>Here are the successive steps that I did, following the nice instructions of
+&lt;a href="https://damsteen.nl/blog/2018/08/29/installing-wsl-manually-on-non-system-drive" target="_blank" rel="noopener">this&lt;/a> tutorial. Everything can be done directly in PowerShell, or, if you are not familiar with it, in a more Windows manner using your mouse.&lt;/p>
+&lt;ol>
+&lt;li>Press Windows key and type &amp;ldquo;Optional Features&amp;rdquo;, press enter to open the following settings page and select there &amp;ldquo;More Windows features&amp;rdquo;:
+&lt;img src="Enable.png" alt="Enabling WSL">
+or just open PowerShell and enable the WSL2 by executing:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-powershell">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+&lt;/code>&lt;/pre>
+&lt;p>I needed to do it despite that I had already the WSL enabled (WSL1, the &amp;ldquo;Legacy version&amp;rdquo;), and I needed to reboot after this command.&lt;/p>
+&lt;ol start="2">
+&lt;li>If you have not yet created a directory where you want to have your Linux, create it. You can use the following PowerShell command or a less exotic way like right-click in the explorer window and so on:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-powershell">New-Item D:\Linux -ItemType Directory
+&lt;/code>&lt;/pre>
+&lt;ol start="3">
+&lt;li>&lt;code>cd&lt;/code> there. Again, you can use the special PS command (it also can change the drive):&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-powershell">Set-Location D:\Linux
+&lt;/code>&lt;/pre>
+&lt;ol start="4">
+&lt;li>Now you need to download the desired Linux distro and place it in this directory. Go to
+&lt;a href="https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distros" target="_blank" rel="noopener">this&lt;/a> page, choose what you want, right-click and save it or again you can use the PowerShell: copy the link address and substitute it in the command below.&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-powershell">Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing
+&lt;/code>&lt;/pre>
+&lt;ol start="5">
+&lt;li>Rename the downloaded &amp;ldquo;.appx&amp;rdquo; file in &amp;ldquo;.zip&amp;rdquo; file and extract it (here shown on example of Debian distro)
+&lt;img src="Extract.png" alt="Extract the renamed archive">&lt;/li>
+&lt;/ol>
+&lt;p>or&lt;/p>
+&lt;pre>&lt;code class="language-powershell">Rename-Item .\Ubuntu.appx Ubuntu.zip
 Expand-Archive .\Ubuntu.zip -Verbose
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;Congratulations! You&amp;rsquo;ve almost done. Now you can change to the extracted directory and double click the &amp;ldquo;&lt;em&gt;linux_distro&lt;/em&gt;.exe&amp;rdquo; file
-&lt;img src=&#34;Execute.png&#34; alt=&#34;Run to finish the installation&#34;&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;or execute in the PowerShell&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;.\Ubuntu\ubuntu2004.exe
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Input you username and password (remember them well or save them immediately in your password manager, like KeePass), and after some time the installation will be finished.&lt;/p&gt;
-&lt;p&gt;You can use your WSL2 now!&lt;/p&gt;
-&lt;p&gt;7.(OPTIONAL) Because I had still traces of the old WSL system (although I have uninstalled it), I needed to issue the following command to make my new WSL2 act as default Linux subsystem (&lt;em&gt;e.g.&lt;/em&gt; I can invoke it by typing &lt;code&gt;bash&lt;/code&gt; in terminal):&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;wsl --set-default-version 2
+&lt;/code>&lt;/pre>
+&lt;ol start="6">
+&lt;li>Congratulations! You&amp;rsquo;ve almost done. Now you can change to the extracted directory and double click the &amp;ldquo;&lt;em>linux_distro&lt;/em>.exe&amp;rdquo; file
+&lt;img src="Execute.png" alt="Run to finish the installation">&lt;/li>
+&lt;/ol>
+&lt;p>or execute in the PowerShell&lt;/p>
+&lt;pre>&lt;code class="language-powershell">.\Ubuntu\ubuntu2004.exe
+&lt;/code>&lt;/pre>
+&lt;p>Input you username and password (remember them well or save them immediately in your password manager, like KeePass), and after some time the installation will be finished.&lt;/p>
+&lt;p>You can use your WSL2 now!&lt;/p>
+&lt;p>7.(OPTIONAL) Because I had still traces of the old WSL system (although I have uninstalled it), I needed to issue the following command to make my new WSL2 act as default Linux subsystem (&lt;em>e.g.&lt;/em> I can invoke it by typing &lt;code>bash&lt;/code> in terminal):&lt;/p>
+&lt;pre>&lt;code class="language-powershell">wsl --set-default-version 2
 wslconfig /s Ubuntu-20.04
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    You can also launch it by executing &lt;code&gt;wsl&lt;/code&gt; or &lt;code&gt;ubuntu&lt;/code&gt; commands
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Also I recommend to instal the new 
-&lt;a href=&#34;https://aka.ms/terminal&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Windows Terminal&lt;/a&gt;, where you will have immediately easy access to all you Linuxes :-)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;WindowsTerminal.png&#34; alt=&#34;Using Windows Terminal and WSL2&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;how-to-install-official-release-of-julia-in-your-wsl&#34;&gt;How to install &amp;ldquo;official&amp;rdquo; release of Julia in your WSL&lt;/h2&gt;
-&lt;p&gt;To install Julia in your WSL, you can use the packages provided by the distro, but chances are high you&amp;rsquo;ve got some old version. Instead, install the latest stable release from jullialang.org.&lt;/p&gt;
-&lt;p&gt;Basically, you need to follow the 
-&lt;a href=&#34;https://julialang.org/downloads/platform/#linux_and_freebsd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;instructions from their webpage&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For more detailed instruction, 
-&lt;a href=&#34;https://ferrolho.github.io/blog/2019-01-26/how-to-install-julia-on-ubuntu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;follow this tutorial.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;To summarize, it&amp;rsquo;s as easy as downloading, unpacking, copying to &lt;code&gt;/opt&lt;/code&gt; directory, and making a link:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.2-linux-x86_64.tar.gz
-
+&lt;/code>&lt;/pre>
+&lt;div class="alert alert-note">
+&lt;div>
+You can also launch it by executing &lt;code>wsl&lt;/code> or &lt;code>ubuntu&lt;/code> commands
+&lt;/div>
+&lt;/div>
+&lt;p>Also I recommend to instal the new
+&lt;a href="https://aka.ms/terminal" target="_blank" rel="noopener">Windows Terminal&lt;/a>, where you will have immediately easy access to all you Linuxes :-)&lt;/p>
+&lt;p>&lt;img src="WindowsTerminal.png" alt="Using Windows Terminal and WSL2">&lt;/p>
+&lt;h2 id="how-to-install-official-release-of-julia-in-your-wsl">How to install &amp;ldquo;official&amp;rdquo; release of Julia in your WSL&lt;/h2>
+&lt;p>To install Julia in your WSL, you can use the packages provided by the distro, but chances are high you&amp;rsquo;ve got some old version. Instead, install the latest stable release from jullialang.org.&lt;/p>
+&lt;p>Basically, you need to follow the
+&lt;a href="https://julialang.org/downloads/platform/#linux_and_freebsd" target="_blank" rel="noopener">instructions from their webpage&lt;/a>.&lt;/p>
+&lt;p>For more detailed instruction,
+&lt;a href="https://ferrolho.github.io/blog/2019-01-26/how-to-install-julia-on-ubuntu" target="_blank" rel="noopener">follow this tutorial.&lt;/a>&lt;/p>
+&lt;p>To summarize, it&amp;rsquo;s as easy as downloading, unpacking, copying to &lt;code>/opt&lt;/code> directory, and making a link:&lt;/p>
+&lt;pre>&lt;code class="language-bash">$ wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.2-linux-x86_64.tar.gz
 $ tar -xvzf julia-1.5.2-linux-x86_64.tar.gz
-
 $ sudo cp -r julia-1.5.2 /opt/
-
 $ sudo ln -s /opt/julia-1.5.2/bin/julia /usr/local/bin/julia
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now you can try to type &lt;code&gt;julia&lt;/code&gt; and see it working!&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; in Debian installation, I was not able to use &lt;code&gt;wget&lt;/code&gt; command shown above; the system complained about not valid security certificates of julialang.org. The problem was solved by installing CA-certificates:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo apt-get install ca-certificates
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-info&#34;&gt;
-  &lt;div&gt;
-    My Ubuntu 20.04 installation appeared to be extremely slow in installing julia packages (&amp;ldquo;updating registry&amp;rdquo;); julia itself was running fast.
+&lt;/code>&lt;/pre>
+&lt;p>Now you can try to type &lt;code>julia&lt;/code> and see it working!&lt;/p>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;p>&lt;strong>Note:&lt;/strong> in Debian installation, I was not able to use &lt;code>wget&lt;/code> command shown above; the system complained about not valid security certificates of julialang.org. The problem was solved by installing CA-certificates:&lt;/p>
+&lt;pre>&lt;code class="language-bash">$ sudo apt-get install ca-certificates
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;/div>
+&lt;div class="alert alert-info">
+&lt;div>
+My Ubuntu 20.04 installation appeared to be extremely slow in installing julia packages (&amp;ldquo;updating registry&amp;rdquo;); julia itself was running fast.
 Debian installation does not have such problem and is now my default WSL.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;how-to-use-your-installation-in-vs-code-or-jupyter-lab&#34;&gt;How to use your installation in VS code or Jupyter lab&lt;/h2&gt;
-&lt;h2 id=&#34;vs-code&#34;&gt;VS Code&lt;/h2&gt;
-&lt;p&gt;To connect VS Code to WSL, I followed its 
-&lt;a href=&#34;https://code.visualstudio.com/docs/remote/wsl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;manual page&lt;/a&gt;.
-As I&amp;rsquo;ve had VS Code already installed, I needed to add &lt;code&gt;%USERPROFILE%\AppData\Local\Programs\Microsoft VS Code\bin&lt;/code&gt; to my path manually.&lt;/p&gt;
-&lt;p&gt;Then I navigated to my Windows folder with Julia projects (thus &lt;em&gt;not in WSL filesystem&lt;/em&gt;) and opened it from bash by executing &lt;code&gt;code .&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;In addition, I installed in this version of VS Code the julia extension (see 
-&lt;a href=&#34;https://techytok.com/julia-vscode/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; for more detailed instructions).&lt;/p&gt;
-&lt;h3 id=&#34;jupyter-lab&#34;&gt;Jupyter lab&lt;/h3&gt;
-&lt;p&gt;You can install in your distro conda, Python and Jupyter as usual, and set julia to use them, but in this case, I decided to keep everything within the julia installation.&lt;/p&gt;
-&lt;p&gt;First as usual, &lt;code&gt;] add IJulia&lt;/code&gt; and launch Jupyter lab from within julia:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; using IJulia
-
+&lt;/div>
+&lt;/div>
+&lt;h2 id="how-to-use-your-installation-in-vs-code-or-jupyter-lab">How to use your installation in VS code or Jupyter lab&lt;/h2>
+&lt;h2 id="vs-code">VS Code&lt;/h2>
+&lt;p>To connect VS Code to WSL, I followed its
+&lt;a href="https://code.visualstudio.com/docs/remote/wsl" target="_blank" rel="noopener">manual page&lt;/a>.
+As I&amp;rsquo;ve had VS Code already installed, I needed to add &lt;code>%USERPROFILE%\AppData\Local\Programs\Microsoft VS Code\bin&lt;/code> to my path manually.&lt;/p>
+&lt;p>Then I navigated to my Windows folder with Julia projects (thus &lt;em>not in WSL filesystem&lt;/em>) and opened it from bash by executing &lt;code>code .&lt;/code>.&lt;/p>
+&lt;p>In addition, I installed in this version of VS Code the julia extension (see
+&lt;a href="https://techytok.com/julia-vscode/" target="_blank" rel="noopener">here&lt;/a> for more detailed instructions).&lt;/p>
+&lt;h3 id="jupyter-lab">Jupyter lab&lt;/h3>
+&lt;p>You can install in your distro conda, Python and Jupyter as usual, and set julia to use them, but in this case, I decided to keep everything within the julia installation.&lt;/p>
+&lt;p>First as usual, &lt;code>] add IJulia&lt;/code> and launch Jupyter lab from within julia:&lt;/p>
+&lt;pre>&lt;code class="language-julia">julia&amp;gt; using IJulia
 julia&amp;gt; IJulia.jupyterlab()
 install Jupyter via Conda, y/n? [y]: y
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Give julia some time to install everything necessary and wait until  the activity in the terminal ends with a message beginning like&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;[ Info: running setenv(`/home/oleg/.julia/conda/3/bin/jupyter lab`,[&amp;quot;PATH=/home/oleg/.julia/conda/3/bin: 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Actually, now the jupyter server is installed and running, but if you don&amp;rsquo;t have a browser installed in WSL, you cannot go further. Press Ctrl+C here. Now we are going  to create and edit jupyter config file so any existing Windows browser could be used.&lt;/p&gt;
-&lt;p&gt;To create the config file, execute in bash&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ~/.julia/conda/3/bin/jupyter notebook --generate-config
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The system will display something like&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Writing default config to: /home/oleg/.jupyter/jupyter_notebook_config.py
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now open this file in VS Code&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ code ~/.jupyter/jupyter_notebook_config.py
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and find and edit there the default browser setting (line beginning with &lt;code&gt;c.NotebookApp.browser &lt;/code&gt;). I set it to MS Edge, which I don&amp;rsquo;t use usually, so my Jupyter lab activities are kept separately from my usual web browsing:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;c.NotebookApp.browser = u&#39;/mnt/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe %s&#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In addition, disable the redirect file behaviour by changing the line starting with &lt;code&gt;c.NotebookApp.use_redirect_file&lt;/code&gt; to&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;c.NotebookApp.use_redirect_file = False
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now yuo should be able to launch Jupyter lab either from julia&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; using IJulia
+&lt;/code>&lt;/pre>
+&lt;p>Give julia some time to install everything necessary and wait until the activity in the terminal ends with a message beginning like&lt;/p>
+&lt;pre>&lt;code class="language-bash">[ Info: running setenv(`/home/oleg/.julia/conda/3/bin/jupyter lab`,[&amp;quot;PATH=/home/oleg/.julia/conda/3/bin:
+&lt;/code>&lt;/pre>
+&lt;p>Actually, now the jupyter server is installed and running, but if you don&amp;rsquo;t have a browser installed in WSL, you cannot go further. Press Ctrl+C here. Now we are going to create and edit jupyter config file so any existing Windows browser could be used.&lt;/p>
+&lt;p>To create the config file, execute in bash&lt;/p>
+&lt;pre>&lt;code class="language-bash">$ ~/.julia/conda/3/bin/jupyter notebook --generate-config
+&lt;/code>&lt;/pre>
+&lt;p>The system will display something like&lt;/p>
+&lt;pre>&lt;code class="language-bash">Writing default config to: /home/oleg/.jupyter/jupyter_notebook_config.py
+&lt;/code>&lt;/pre>
+&lt;p>Now open this file in VS Code&lt;/p>
+&lt;pre>&lt;code class="language-bash">$ code ~/.jupyter/jupyter_notebook_config.py
+&lt;/code>&lt;/pre>
+&lt;p>and find and edit there the default browser setting (line beginning with &lt;code>c.NotebookApp.browser &lt;/code>). I set it to MS Edge, which I don&amp;rsquo;t use usually, so my Jupyter lab activities are kept separately from my usual web browsing:&lt;/p>
+&lt;pre>&lt;code class="language-python">c.NotebookApp.browser = u'/mnt/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe %s'
+&lt;/code>&lt;/pre>
+&lt;p>In addition, disable the redirect file behaviour by changing the line starting with &lt;code>c.NotebookApp.use_redirect_file&lt;/code> to&lt;/p>
+&lt;pre>&lt;code class="language-python">c.NotebookApp.use_redirect_file = False
+&lt;/code>&lt;/pre>
+&lt;p>Now yuo should be able to launch Jupyter lab either from julia&lt;/p>
+&lt;pre>&lt;code class="language-julia">julia&amp;gt; using IJulia
 julia&amp;gt; IJulia.jupyerlab()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;or from bash&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ~/.julia/conda/3/bin/jupyter lab
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;/code>&lt;/pre>
+&lt;p>or from bash&lt;/p>
+&lt;pre>&lt;code class="language-bash">$ ~/.julia/conda/3/bin/jupyter lab
+&lt;/code>&lt;/pre></description></item></channel></rss>

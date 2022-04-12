@@ -1,1387 +1,529 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Oleg Soloviev</title>
-    <link>https://olejorik.github.io/</link>
-      <atom:link href="https://olejorik.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Oleg Soloviev</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url>
-      <title>Oleg Soloviev</title>
-      <link>https://olejorik.github.io/</link>
-    </image>
-    
-    <item>
-      <title>Puzzle 1</title>
-      <link>https://olejorik.github.io/red/puzzles/puzzle1/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://olejorik.github.io/red/puzzles/puzzle1/</guid>
-      <description>&lt;meta name=viewport content=&#34;width=device-width,initial-scale=1&#34;&gt;  
-&lt;meta charset=&#34;utf-8&#34;/&gt;
-&lt;script src=&#34;https://cdn.geogebra.org/apps/deployggb.js&#34;&gt;&lt;/script&gt;
-&lt;p&gt;Let set $\mathcal P$ be defined by a ray originated in point $O$ and passing through point $I$, and $\mathcal Q$ be some bounded convex set (shown as an ellipse here for sake of programming easiness). Let $p_0 \in \mathcal P$, and define iteratively $\{p_n\}, \{q_n\}, \ n \in \mathbb{N} $ as:&lt;/p&gt;
-&lt;p&gt;$$p_n \to q_{n+1} = \Pr_{\mathcal Q} p_n,$$
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Oleg Soloviev</title><link>https://olejorik.github.io/</link><atom:link href="https://olejorik.github.io/index.xml" rel="self" type="application/rss+xml"/><description>Oleg Soloviev</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><image><url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url><title>Oleg Soloviev</title><link>https://olejorik.github.io/</link></image><item><title>Puzzle 1</title><link>https://olejorik.github.io/red/puzzles/puzzle1/</link><pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate><guid>https://olejorik.github.io/red/puzzles/puzzle1/</guid><description>&lt;meta name=viewport content="width=device-width,initial-scale=1">
+&lt;meta charset="utf-8"/>
+&lt;script src="https://cdn.geogebra.org/apps/deployggb.js">&lt;/script>
+&lt;p>Let set $\mathcal P$ be defined by a ray originated in point $O$ and passing through point $I$, and $\mathcal Q$ be some bounded convex set (shown as an ellipse here for sake of programming easiness). Let $p_0 \in \mathcal P$, and define iteratively $\{p_n\}, \{q_n\}, \ n \in \mathbb{N} $ as:&lt;/p>
+&lt;p>$$p_n \to q_{n+1} = \Pr_{\mathcal Q} p_n,$$
 $$ q_n \to p_n : p_n\in\mathcal{P}, (p_n-q_n, q_n) = 0,$$
-that is the next $q$ point is obtained by projection the last $p$ point on $\mathcal Q,$ and the next $p$ point is obtained by intersection of the perpendicular to line $O q$ in point $q$ and line $O I$.&lt;/p&gt;
-&lt;p&gt;Prove that&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;$\exists\ \hat q = \lim_{n\to\inf}  q_n$ and&lt;/li&gt;
-&lt;li&gt;If $\mathcal P \cap \mathcal Q \neq \varnothing$, then $\hat q \in \mathcal P$; otherwise,  line $O \hat q$ is tangent to $\mathcal Q$.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;You can click and drag objects in the illustration below.&lt;/p&gt;
-&lt;div id=&#34;ggb-element&#34;&gt;&lt;/div&gt; 
-&lt;script&gt;  
-    var ggbApp = new GGBApplet({&#34;width&#34;: 691, &#34;height&#34;: 630, &#34;showToolBar&#34;: false, &#34;showAlgebraInput&#34;: false, &#34;showMenuBar&#34;: false, 
-    &#34;showZoomButtons&#34;: true, &#34;showFullScreenButton&#34;: true,
-    &#34;enableShiftDragZoom&#34;: true, &#34;showResetIcon&#34;:true,
-    // &#34;allowUpScale&#34;: true,
-    &#34;material_id&#34;:&#34;xbrnhk7r&#34; }, true);
-    window.addEventListener(&#34;load&#34;, function() { 
-        ggbApp.inject(&#39;ggb-element&#39;);
-    });
-&lt;/script&gt;&lt;blockquote&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Puzzle 2</title>
-      <link>https://olejorik.github.io/red/puzzles/puzzle2/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://olejorik.github.io/red/puzzles/puzzle2/</guid>
-      <description>&lt;p&gt;Puzzle 2 will be published soon&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Extended scene deep learning wavefront sensing</title>
-      <link>https://olejorik.github.io/publication/de-bruijne-22/</link>
-      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/de-bruijne-22/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dimensionality Augmentation for Phase Retrieval With Applications</title>
-      <link>https://olejorik.github.io/talk/dimensionality-augmentation-for-phase-retrieval-with-applications/</link>
-      <pubDate>Tue, 22 Mar 2022 16:40:00 +0200</pubDate>
-      <guid>https://olejorik.github.io/talk/dimensionality-augmentation-for-phase-retrieval-with-applications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Particle detection using closed-loop active model diagnosis</title>
-      <link>https://olejorik.github.io/publication/10-1117-12-2605452/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/10-1117-12-2605452/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phase retrieval from overexposed PSF: a projection-based approach</title>
-      <link>https://olejorik.github.io/publication/10-1117-12-2609697/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/10-1117-12-2609697/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Making presentation template in Ipe</title>
-      <link>https://olejorik.github.io/post/ipe_presentation_template/</link>
-      <pubDate>Mon, 27 Dec 2021 16:08:14 +0100</pubDate>
-      <guid>https://olejorik.github.io/post/ipe_presentation_template/</guid>
-      <description>&lt;p&gt;For approximately 50% or more, doing science is communicating your findings and results to the others.
+that is the next $q$ point is obtained by projection the last $p$ point on $\mathcal Q,$ and the next $p$ point is obtained by intersection of the perpendicular to line $O q$ in point $q$ and line $O I$.&lt;/p>
+&lt;p>Prove that&lt;/p>
+&lt;ol>
+&lt;li>$\exists\ \hat q = \lim_{n\to\inf} q_n$ and&lt;/li>
+&lt;li>If $\mathcal P \cap \mathcal Q \neq \varnothing$, then $\hat q \in \mathcal P$; otherwise, line $O \hat q$ is tangent to $\mathcal Q$.&lt;/li>
+&lt;/ol>
+&lt;p>You can click and drag objects in the illustration below.&lt;/p>
+&lt;div id="ggb-element">&lt;/div>
+&lt;script>
+var ggbApp = new GGBApplet({"width": 691, "height": 630, "showToolBar": false, "showAlgebraInput": false, "showMenuBar": false,
+"showZoomButtons": true, "showFullScreenButton": true,
+"enableShiftDragZoom": true, "showResetIcon":true,
+// "allowUpScale": true,
+"material_id":"xbrnhk7r" }, true);
+window.addEventListener("load", function() {
+ggbApp.inject('ggb-element');
+});
+&lt;/script>&lt;blockquote>
+&lt;/blockquote></description></item><item><title>Puzzle 2</title><link>https://olejorik.github.io/red/puzzles/puzzle2/</link><pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate><guid>https://olejorik.github.io/red/puzzles/puzzle2/</guid><description>&lt;p>Puzzle 2 will be published soon&lt;/p></description></item><item><title>Extended scene deep learning wavefront sensing</title><link>https://olejorik.github.io/publication/de-bruijne-22/</link><pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/de-bruijne-22/</guid><description/></item><item><title>Dimensionality Augmentation for Phase Retrieval With Applications</title><link>https://olejorik.github.io/talk/dimensionality-augmentation-for-phase-retrieval-with-applications/</link><pubDate>Tue, 22 Mar 2022 16:40:00 +0200</pubDate><guid>https://olejorik.github.io/talk/dimensionality-augmentation-for-phase-retrieval-with-applications/</guid><description/></item><item><title>Particle detection using closed-loop active model diagnosis</title><link>https://olejorik.github.io/publication/10-1117-12-2605452/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/10-1117-12-2605452/</guid><description/></item><item><title>Phase retrieval from overexposed PSF: a projection-based approach</title><link>https://olejorik.github.io/publication/10-1117-12-2609697/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/10-1117-12-2609697/</guid><description/></item><item><title>Making presentation template in Ipe</title><link>https://olejorik.github.io/post/ipe_presentation_template/</link><pubDate>Mon, 27 Dec 2021 16:08:14 +0100</pubDate><guid>https://olejorik.github.io/post/ipe_presentation_template/</guid><description>&lt;p>For approximately 50% or more, doing science is communicating your findings and results to the others.
 Besides &amp;ldquo;summing it up&amp;rdquo; in a paper, we need from time to time to make presentations to be shown on screen for our team members, students, bosses, and our colleagues from other organisations.
 Those of us who need to insert a lot of math in their presentations, eventually meet the dilemma of choosing between the convenience of visual arrangement
-of things in MS PowerPoint and the easiness of typesetting beautiful math expressions provided by $\LaTeX$ (combined with  
-&lt;a href=&#34;https://ctan.org/pkg/beamer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Beamer&lt;/a&gt;, its excellent package for preparing presentations).&lt;/p&gt;
-&lt;p&gt;For my TU-related presentations, I&amp;rsquo;ve completely switched to Beamer approximately 7 years ago, and after some steep learning curve (&lt;em&gt;not of $\LaTeX$&lt;/em&gt;, which I managed to master somewhere in 20th century, but of Beamer, which has 247 page-long 
-&lt;a href=&#34;https://mirror.koddos.net/CTAN/macros/latex/contrib/beamer/doc/beameruserguide.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;manual&lt;/a&gt;), I&amp;rsquo;ve got used to it, made some convenient keyboard shortcuts in 
-&lt;a href=&#34;https://www.texstudio.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TeXstudio&lt;/a&gt; and was quite satisfied with my tool.&lt;/p&gt;
-&lt;p&gt;Except for some minor but quite irritating and time demanding issues of alignment between different views of the same slide and difficulties of visually fine-tuning content of a slide (read: move a couple of pixel this to the left and rotate slightly clockwise that object and draw an arrow from this word to that part of the picture in another column and make it not jumping when a new portion of the figure is revealed in the following view).&lt;/p&gt;
-&lt;p&gt;Most of the pictures for my presentations and lectures I was drawing in my favourite graphics editor with ability to embed $\LaTeX$ labels named 
-&lt;a href=&#34;https://ipe.otfried.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ipe&lt;/a&gt;, which I was using since my PhD times. And maybe because I was using it for so long time, I was completely not aware that  besides preparing nice pictures for a presentation, I could do the whole presentation in it too!&lt;/p&gt;
-&lt;p&gt;Last month, after recommending Ipe to one more colleague, I’ve looked again in its manual and I’ve discovered that it has this nice functionality. Of course, the very next presentation I’ve done for my TU Delft colleagues was made completely in Ipe.  And it was quite a relief, I should say! Everything was very easy to fine-tune visually, you can enjoy a lot of snapping modes, you can add new views and reveal parts of the drawing without fear that everything would jump suddenly, and of course you can type everything you need in $\LaTeX$!&lt;/p&gt;
-&lt;p&gt;The only thing I needed to learn is how to make a template for a presentation according to the recommended TU Delft house style. As I’ve spent quite a long time on this (
-&lt;a href=&#34;https://i11git.iti.kit.edu/anon-gitweb/?p=Misc/ipe.git;a=summary&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this resource&lt;/a&gt; of Karlsruhe Institute of Technology was extremely helpful), I thought it would be good to share it here with everyone interested in using Ipe for presentations and preparing their own templates. So I made this&lt;/p&gt;
-&lt;h2 id=&#34;mini-tutorial-on-making-custom-templates-in-ipe&#34;&gt;Mini-tutorial on making custom templates in Ipe&lt;/h2&gt;
-&lt;p&gt;The instructions below are for TU Delft style, but of course, they can be easily adjusted to your needs.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Open IPE and save the empty file in a separate folder. I have folder &lt;code&gt;TUD-slides&lt;/code&gt; and file name &lt;code&gt;TUD-slides-template.ipe&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;As recommended in 
-&lt;a href=&#34;https://ipe.otfried.org/manual/onepage.html#sec:stylesheets&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ipe manual on stylesheets&lt;/a&gt;, let’s create &lt;code&gt;TUD-slides.isy&lt;/code&gt; file in the same folder: open a text editor with good XML support (notepad++ or VS code), type the following lines&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;ipestyle name=&amp;quot;TUD-slides&amp;quot;&amp;gt;
-
+of things in MS PowerPoint and the easiness of typesetting beautiful math expressions provided by $\LaTeX$ (combined with
+&lt;a href="https://ctan.org/pkg/beamer" target="_blank" rel="noopener">Beamer&lt;/a>, its excellent package for preparing presentations).&lt;/p>
+&lt;p>For my TU-related presentations, I&amp;rsquo;ve completely switched to Beamer approximately 7 years ago, and after some steep learning curve (&lt;em>not of $\LaTeX$&lt;/em>, which I managed to master somewhere in 20th century, but of Beamer, which has 247 page-long
+&lt;a href="https://mirror.koddos.net/CTAN/macros/latex/contrib/beamer/doc/beameruserguide.pdf" target="_blank" rel="noopener">manual&lt;/a>), I&amp;rsquo;ve got used to it, made some convenient keyboard shortcuts in
+&lt;a href="https://www.texstudio.org/" target="_blank" rel="noopener">TeXstudio&lt;/a> and was quite satisfied with my tool.&lt;/p>
+&lt;p>Except for some minor but quite irritating and time demanding issues of alignment between different views of the same slide and difficulties of visually fine-tuning content of a slide (read: move a couple of pixel this to the left and rotate slightly clockwise that object and draw an arrow from this word to that part of the picture in another column and make it not jumping when a new portion of the figure is revealed in the following view).&lt;/p>
+&lt;p>Most of the pictures for my presentations and lectures I was drawing in my favourite graphics editor with ability to embed $\LaTeX$ labels named
+&lt;a href="https://ipe.otfried.org/" target="_blank" rel="noopener">Ipe&lt;/a>, which I was using since my PhD times. And maybe because I was using it for so long time, I was completely not aware that besides preparing nice pictures for a presentation, I could do the whole presentation in it too!&lt;/p>
+&lt;p>Last month, after recommending Ipe to one more colleague, I’ve looked again in its manual and I’ve discovered that it has this nice functionality. Of course, the very next presentation I’ve done for my TU Delft colleagues was made completely in Ipe. And it was quite a relief, I should say! Everything was very easy to fine-tune visually, you can enjoy a lot of snapping modes, you can add new views and reveal parts of the drawing without fear that everything would jump suddenly, and of course you can type everything you need in $\LaTeX$!&lt;/p>
+&lt;p>The only thing I needed to learn is how to make a template for a presentation according to the recommended TU Delft house style. As I’ve spent quite a long time on this (
+&lt;a href="https://i11git.iti.kit.edu/anon-gitweb/?p=Misc/ipe.git;a=summary" target="_blank" rel="noopener">this resource&lt;/a> of Karlsruhe Institute of Technology was extremely helpful), I thought it would be good to share it here with everyone interested in using Ipe for presentations and preparing their own templates. So I made this&lt;/p>
+&lt;h2 id="mini-tutorial-on-making-custom-templates-in-ipe">Mini-tutorial on making custom templates in Ipe&lt;/h2>
+&lt;p>The instructions below are for TU Delft style, but of course, they can be easily adjusted to your needs.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open IPE and save the empty file in a separate folder. I have folder &lt;code>TUD-slides&lt;/code> and file name &lt;code>TUD-slides-template.ipe&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>As recommended in
+&lt;a href="https://ipe.otfried.org/manual/onepage.html#sec:stylesheets" target="_blank" rel="noopener">Ipe manual on stylesheets&lt;/a>, let’s create &lt;code>TUD-slides.isy&lt;/code> file in the same folder: open a text editor with good XML support (notepad++ or VS code), type the following lines&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code>&amp;lt;ipestyle name=&amp;quot;TUD-slides&amp;quot;&amp;gt;
 &amp;lt;/ipestyle&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and save it in the same folder as &lt;code&gt;TUD-slides.isy&lt;/code&gt;&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;in Ipe, go to &lt;em&gt;Edit -&amp;gt; stylesheets&lt;/em&gt;, delete &lt;code&gt;basic&lt;/code&gt;, add &lt;code&gt;presentation&lt;/code&gt; and our new &lt;code&gt;TUD-slides&lt;/code&gt;:
-&lt;img src=&#34;style_sheets.png&#34; alt=&#34;image-20211128111847175&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Let’s start with adding styles and symbols to our style sheet to make a template according to 
-&lt;a href=&#34;https://www.tudelft.nl/huisstijl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TU Delft house style&lt;/a&gt;.
-First, let’s define 
-&lt;a href=&#34;https://www.tudelft.nl/huisstijl/bouwstenen/kleur&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the primary and secondary colours&lt;/a&gt;. For this, we need to convert the given RGB values from the range  0..255 to the range 0..1. A simple way to do it is to create a filled rectangle in Ipe, set it absolute colour as RGB given by TUD style (e.g. &lt;code&gt;0,163,144&lt;/code&gt;), then right-click it and show it as XML &lt;img src=&#34;set_color.png&#34; alt=&#34;image-20211128115342504&#34;&gt;
+&lt;/code>&lt;/pre>
+&lt;p>and save it in the same folder as &lt;code>TUD-slides.isy&lt;/code>&lt;/p>
+&lt;ol start="3">
+&lt;li>
+&lt;p>in Ipe, go to &lt;em>Edit -&amp;gt; stylesheets&lt;/em>, delete &lt;code>basic&lt;/code>, add &lt;code>presentation&lt;/code> and our new &lt;code>TUD-slides&lt;/code>:
+&lt;img src="style_sheets.png" alt="image-20211128111847175">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Let’s start with adding styles and symbols to our style sheet to make a template according to
+&lt;a href="https://www.tudelft.nl/huisstijl" target="_blank" rel="noopener">TU Delft house style&lt;/a>.
+First, let’s define
+&lt;a href="https://www.tudelft.nl/huisstijl/bouwstenen/kleur" target="_blank" rel="noopener">the primary and secondary colours&lt;/a>. For this, we need to convert the given RGB values from the range 0..255 to the range 0..1. A simple way to do it is to create a filled rectangle in Ipe, set it absolute colour as RGB given by TUD style (e.g. &lt;code>0,163,144&lt;/code>), then right-click it and show it as XML &lt;img src="set_color.png" alt="image-20211128115342504">
 From this you can copy-paste the values &amp;ldquo;0 0.639 0.565&amp;rdquo; to the style file, like
-&lt;code&gt;&amp;lt;color name=&amp;quot;TUD-green&amp;quot; value=&amp;quot;0 0.639 0.565&amp;quot;/&amp;gt;&lt;/code&gt;. You can select a fancier name using  
-&lt;a href=&#34;https://chir.ag/projects/name-that-color/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this site&lt;/a&gt;, for instance here it gives “persian-green”.
-Now our style file looks like&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;ipestyle name=&amp;quot;TUD-slides&amp;quot;&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-cyan&amp;quot; value=&amp;quot;0 0.651 0.839&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-black&amp;quot; value=&amp;quot;0 0 0&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-white&amp;quot; value=&amp;quot;1 1 1&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-allports&amp;quot; value=&amp;quot;0 0.4 0.635&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-persian-green&amp;quot; value=&amp;quot;0 0.639 0.565&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-blue-lagoon&amp;quot; value=&amp;quot;0 0.443 0.533&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-bermuda&amp;quot; value=&amp;quot;0.51 0.843 0.776&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-hippie-blue&amp;quot; value=&amp;quot;0.38 0.643 0.706&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-cerulean&amp;quot; value=&amp;quot;0 0.718 0.827&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-feijoa&amp;quot; value=&amp;quot;0.6 0.824 0.549&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-saffron&amp;quot; value=&amp;quot;0.945 0.745 0.243&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-persian-red&amp;quot; value=&amp;quot;0.765 0.192 0.184&amp;quot;/&amp;gt;
- &amp;lt;color name=&amp;quot;TUD-burnt-sienna&amp;quot; value=&amp;quot;0.922 0.447 0.275&amp;quot;/&amp;gt;
+&lt;code>&amp;lt;color name=&amp;quot;TUD-green&amp;quot; value=&amp;quot;0 0.639 0.565&amp;quot;/&amp;gt;&lt;/code>. You can select a fancier name using
+&lt;a href="https://chir.ag/projects/name-that-color/" target="_blank" rel="noopener">this site&lt;/a>, for instance here it gives “persian-green”.
+Now our style file looks like&lt;/p>
+&lt;pre>&lt;code>&amp;lt;ipestyle name=&amp;quot;TUD-slides&amp;quot;&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-cyan&amp;quot; value=&amp;quot;0 0.651 0.839&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-black&amp;quot; value=&amp;quot;0 0 0&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-white&amp;quot; value=&amp;quot;1 1 1&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-allports&amp;quot; value=&amp;quot;0 0.4 0.635&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-persian-green&amp;quot; value=&amp;quot;0 0.639 0.565&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-blue-lagoon&amp;quot; value=&amp;quot;0 0.443 0.533&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-bermuda&amp;quot; value=&amp;quot;0.51 0.843 0.776&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-hippie-blue&amp;quot; value=&amp;quot;0.38 0.643 0.706&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-cerulean&amp;quot; value=&amp;quot;0 0.718 0.827&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-feijoa&amp;quot; value=&amp;quot;0.6 0.824 0.549&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-saffron&amp;quot; value=&amp;quot;0.945 0.745 0.243&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-persian-red&amp;quot; value=&amp;quot;0.765 0.192 0.184&amp;quot;/&amp;gt;
+&amp;lt;color name=&amp;quot;TUD-burnt-sienna&amp;quot; value=&amp;quot;0.922 0.447 0.275&amp;quot;/&amp;gt;
 &amp;lt;/ipestyle&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Save it and use &lt;em&gt;Edit -&amp;gt; Update style sheets&lt;/em&gt;. Now all TUD colours should be available in Ipe:
-&lt;img src=&#34;TUD_colors.png&#34; alt=&#34;image-20211128120234622&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Now let’s proceed with a slide layout according to 
-&lt;a href=&#34;https://www.tudelft.nl/en/tu-delft-corporate-design/presentations&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;power-point examples&lt;/a&gt; or 
-&lt;a href=&#34;https://www.tudelft.nl/en/tu-delft-corporate-design/downloads&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;latex-beamer examples&lt;/a&gt;. Although the beamer examples are a little bit outdated, they seem to me more suitable for presenting scientific information.
-Let’s make a horizontal colour band with white TUD logo on it.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Draw the band with TUD-cyan fill colour.&lt;/li&gt;
-&lt;li&gt;For placing a logo, we can either place a png image (&lt;em&gt;File -&amp;gt; Insert image&lt;/em&gt;)or use an ability of IPE of &lt;code&gt;\includegraphics&lt;/code&gt; command from Latex package &lt;code&gt;pgf&lt;/code&gt; or convert the eps file to IPE. I’ve used the second option. For this:
-&lt;ol&gt;
-&lt;li&gt;Make &lt;code&gt;figs&lt;/code&gt; subfolder and download there the logo in eps format.&lt;/li&gt;
-&lt;li&gt;I’ve added &lt;code&gt;\usepackage{pgf}&lt;/code&gt; to the preamble using Edit -&amp;gt; Document properties&lt;/li&gt;
-&lt;li&gt;I’ve converted the &lt;code&gt;.eps&lt;/code&gt; logo to &lt;code&gt;.pdf&lt;/code&gt; format using utility &lt;code&gt;ps2pdf&lt;/code&gt; (you should have it installed if you have MikTeX):
-&lt;code&gt; ps2pdf14 -dEPSCrop TU_P5_white.eps TU_P5_white.pdf&lt;/code&gt;
-Then I created a text label and entered there &lt;code&gt;\includegraphics[height=48pt]{figs/TU_P5_white.pdf}&lt;/code&gt;, where 48 pt was the height of my colour bar.&lt;/li&gt;
-&lt;li&gt;To make the log exactly 48 pt height, enter any absolute value for the text label size. The reason is that it is stretched in the presentation stylesheet.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Now let’s add useful information to this colour bar, like name of the presenter and the presentation short title (useful if someone joins your talk in its middle) and page numbers. Name and presentation title we might want to use in several places, so let’s code them in the preamble as Latex commands first: &lt;em&gt;Edit-&amp;gt;Document properties&lt;/em&gt; and add there&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;   \newcommand{\name}{My Name}
-   \newcommand{\prestitle}{Template for Ipe Presentations}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now you can create a text label with something like
-&lt;code&gt;\name{} $\cdot$ \prestitle&lt;/code&gt; inside. Make it centre-aligned and of white colour.
+&lt;/code>&lt;/pre>
+&lt;p>Save it and use &lt;em>Edit -&amp;gt; Update style sheets&lt;/em>. Now all TUD colours should be available in Ipe:
+&lt;img src="TUD_colors.png" alt="image-20211128120234622">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Now let’s proceed with a slide layout according to
+&lt;a href="https://www.tudelft.nl/en/tu-delft-corporate-design/presentations" target="_blank" rel="noopener">power-point examples&lt;/a> or
+&lt;a href="https://www.tudelft.nl/en/tu-delft-corporate-design/downloads" target="_blank" rel="noopener">latex-beamer examples&lt;/a>. Although the beamer examples are a little bit outdated, they seem to me more suitable for presenting scientific information.
+Let’s make a horizontal colour band with white TUD logo on it.&lt;/p>
+&lt;ol>
+&lt;li>Draw the band with TUD-cyan fill colour.&lt;/li>
+&lt;li>For placing a logo, we can either place a png image (&lt;em>File -&amp;gt; Insert image&lt;/em>)or use an ability of IPE of &lt;code>\includegraphics&lt;/code> command from Latex package &lt;code>pgf&lt;/code> or convert the eps file to IPE. I’ve used the second option. For this:
+&lt;ol>
+&lt;li>Make &lt;code>figs&lt;/code> subfolder and download there the logo in eps format.&lt;/li>
+&lt;li>I’ve added &lt;code>\usepackage{pgf}&lt;/code> to the preamble using Edit -&amp;gt; Document properties&lt;/li>
+&lt;li>I’ve converted the &lt;code>.eps&lt;/code> logo to &lt;code>.pdf&lt;/code> format using utility &lt;code>ps2pdf&lt;/code> (you should have it installed if you have MikTeX):
+&lt;code> ps2pdf14 -dEPSCrop TU_P5_white.eps TU_P5_white.pdf&lt;/code>
+Then I created a text label and entered there &lt;code>\includegraphics[height=48pt]{figs/TU_P5_white.pdf}&lt;/code>, where 48 pt was the height of my colour bar.&lt;/li>
+&lt;li>To make the log exactly 48 pt height, enter any absolute value for the text label size. The reason is that it is stretched in the presentation stylesheet.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>Now let’s add useful information to this colour bar, like name of the presenter and the presentation short title (useful if someone joins your talk in its middle) and page numbers. Name and presentation title we might want to use in several places, so let’s code them in the preamble as Latex commands first: &lt;em>Edit-&amp;gt;Document properties&lt;/em> and add there&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code> \newcommand{\name}{My Name}
+\newcommand{\prestitle}{Template for Ipe Presentations}
+&lt;/code>&lt;/pre>
+&lt;p>Now you can create a text label with something like
+&lt;code>\name{} $\cdot$ \prestitle&lt;/code> inside. Make it centre-aligned and of white colour.
 Your canvas should look like this now:
-&lt;img src=&#34;footer.png&#34; alt=&#34;image-20211128132009314&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;The font used does not correspond to the house style of TU Delft. It should use Arial for body text and Georgia for quotes. This can be done if we will use $Lua\LaTeX$ or $Xe\LaTeX$ as compiler and use package &lt;code&gt;fontspec&lt;/code&gt;. Provided you have installed the fonts in your system, add to the Latex preamble the following:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-\usepackage{fontspec}&#34;&gt;\usepackage{fontspec}
-    \newfontfamily\tudtitlefamily[
-        Extension = .ttf%,
-    ]{TUDelft-UltraLight}
-    \newfontfamily\tudrmfamily[
-        Extension = .ttf,
-        BoldFont = *_Bold,
-        ItalicFont = *_Italic,
-        BoldItalicFont = *_Bold_Italic]{Georgia}
-    \newfontfamily\tudsffamily[
-        Extension = .ttf,
-        BoldFont = *_Bold,
-        ItalicFont = *_Italic,
-        BoldItalicFont = *_Bold_Italic]{Arial}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and change the Latex engine to lualatex:
-&lt;img src=&#34;lualatex.png&#34; alt=&#34;image-20211128132717986&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;(I’ve changed it, please see later).
-Set the absolute value for the line to 20 pt.&lt;/p&gt;
-&lt;p&gt;Finally, add a text label with dummy page numbering. Now you should have something like that:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;pagenumbers.png&#34; alt=&#34;image-20211128134901169&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;9&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;Now let’s make a symbol from the colour bar, logo, and status line. Select them (without the page number) and group together (&lt;em&gt;Ctrl+G&lt;/em&gt;). Make a symbol from this group: &lt;em&gt;Ipelets-&amp;gt;symbol&amp;gt;create symbol (in top stylesheet)&lt;/em&gt; with the name &lt;code&gt;Background&lt;/code&gt; (note the capital “B”).
-Check that the symbol works by creating a new page. It should have this colour bar.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Save the changes in the style file: &lt;em&gt;Edit -&amp;gt;  Style sheets&lt;/em&gt;, select TUD-slides and press save. Overwrite your old file. Notepad++ should show your the updated version&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Now you can delete this group but still see the same symbol.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Let’s style the page number. Switch on the page numbering in &lt;em&gt;Document properties&lt;/em&gt;. You will see black number in the lower left corner. We are going to change it to our style. First, update the stylesheet. Now, according to &lt;a href=&#34;https://ipe.otfried.org/manual/onepage.html#sec:presentations&#34;&gt;https://ipe.otfried.org/manual/onepage.html#sec:presentations&lt;/a&gt; add&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;pagenumberstyle pos=&amp;quot;20 820&amp;quot; size=&amp;quot;Huge&amp;quot; color=&amp;quot;0.5 0 0&amp;quot; 
-  valign=&amp;quot;top&amp;quot;&amp;gt;\arabic{ipePage}/\arabic{ipePages}&amp;lt;/pagenumberstyle&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;to the stylesheet. Right-click your dummy page number, select &lt;em&gt;Edit as Xml&lt;/em&gt; and copy the parameters to the &lt;code&gt;pagenumberstyle&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;pagenumberstyle pos=&amp;quot;736 16&amp;quot; color=&amp;quot;TUD-white&amp;quot; type=&amp;quot;label&amp;quot; width=&amp;quot;38.78&amp;quot; 
-   height=&amp;quot;14.509&amp;quot; depth=&amp;quot;0.24&amp;quot; halign=&amp;quot;right&amp;quot; valign=&amp;quot;baseline&amp;quot;
-   size=&amp;quot;20&amp;quot;&amp;gt;\arabic{ipePage}/\arabic{ipePages}&amp;lt;/pagenumberstyle&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now you can update the style sheet and delete your dummy page numbering and check how the page numbers are inserted automatically.&lt;/p&gt;
-&lt;p&gt;Before we proceed, let’s also move the Latex styling that user should not change to the style file. Make a new section in the style file&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;preamble&amp;gt;
-    
-&amp;lt;/preamble&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and move there font settings and packages.&lt;/p&gt;
-&lt;p&gt;On the first page, create a new layer called &lt;code&gt;BACKGROUND&lt;/code&gt; (note all capitals). Draw there the desired layout (you can use the defined commands like &lt;code&gt;\prestitle&lt;/code&gt; and &lt;code&gt;\name&lt;/code&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;title_page.png&#34; alt=&#34;image-20211128143010720&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Congratulations, the template is ready! To make a new presentation, just make a copy of the &lt;code&gt;TUD-slides&lt;/code&gt; folder (including &lt;code&gt;figs&lt;/code&gt;) subfolder, and edit &lt;code&gt;TUD-slides-template.ipe&lt;/code&gt; file.&lt;/p&gt;
-&lt;h3 id=&#34;possible-improvements&#34;&gt;Possible improvements&lt;/h3&gt;
-&lt;p&gt;You can convert the logo from PDF to Ipe format (using &lt;code&gt;pdftoipe&lt;/code&gt; script supplied with Ipe) and make a symbol of it, which you can save in a the stylesheet and make it self-contained and independent from a logo saved in external folder. You can then move the file to Ipe style folder (use &lt;em&gt;Help -&amp;gt; Show configuration&lt;/em&gt; to find out where it is located) and create new presentations in TU Delft style just by activating this stylesheet.&lt;/p&gt;
-&lt;p&gt;You can find the results of such modification 
-&lt;a href=&#34;https://github.com/olejorik/TU-Delft-slides-Ipe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Closed-Loop Active Model Diagnosis Using Bhattacharyya Coefficient: Application to Automated Visual Inspection</title>
-      <link>https://olejorik.github.io/publication/noom-2021/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/noom-2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Convex combination of alternating projection and Douglas–Rachford operators for phase retrieval</title>
-      <link>https://olejorik.github.io/publication/thao-2021/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/thao-2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phase retrieval of large-scale time-varying aberrations using a non-linear Kalman filtering framework</title>
-      <link>https://olejorik.github.io/publication/piscaer-21/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/piscaer-21/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Multi-aperture digital telescopic system with super-resolution</title>
-      <link>https://olejorik.github.io/publication/bezzubik-20/</link>
-      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/bezzubik-20/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Zernike Calculations in Julia</title>
-      <link>https://olejorik.github.io/post/zernikecalculations/</link>
-      <pubDate>Sun, 01 Nov 2020 13:58:59 +0100</pubDate>
-      <guid>https://olejorik.github.io/post/zernikecalculations/</guid>
-      <description>
-
-
-
-
-
-
-
-  
-  
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-
-  
-  
-  
-  
-    
-    
-    
-    
-    
-      
-    
-  &lt;a data-fancybox=&#34;gallery-Zernike&#34; href=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/Zenike66.png&#34; &gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/Zenike66_hu3fe1497f3dd4946ad613be645e724abd_763998_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;89&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-    
-  &lt;a data-fancybox=&#34;gallery-Zernike&#34; href=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/ZenikeCcc66.png&#34; &gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/ZenikeCcc66_hu4e8f541489b963a17c99c90659987393_1453049_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;89&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-Zernike&#34; href=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/zx_66.png&#34; data-caption=&#34;x-derivative of the first 66 Zernike polynomials&#34;&gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/zx_66_hu8a4212f563f5a20675dba754535cb1b7_642123_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;89&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-Zernike&#34; href=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/zy_66_Set1_6.png&#34; data-caption=&#34;y-derivative of the first 66 Zernike polynomials&#34;&gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/post/zernikecalculations/Zernike/zy_66_Set1_6_huc18919f13473b142b4f078e9671f9be9_1270963_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;89&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-
-  
-&lt;/div&gt;
-&lt;p&gt;In optics, Zernike polynomials play a big role, and in many computer simulations of optical problems, it&amp;rsquo;s very important to be able to calculate their values on a polar or Cartesian grid. While this problem seems trivial (the exact formulae for Zernike polynomials are known) and is often used as MSc student assignment, it might become challenging for higher degrees of the polynomials due to their fast oscillating nature.&lt;/p&gt;
-&lt;p&gt;Recently, a fast and robust method of calculation of the Zernike polynomials and their derivatives in Cartesian coordinates was published 
-&lt;a href=&#34;#1&#34;&gt;[1]&lt;/a&gt;. I decided to give it a try and to program it in Julia, as the existing Julia&amp;rsquo;s implementations were not so far from the MSc student&amp;rsquo;s homework versions and are quite slow.&lt;/p&gt;
-&lt;p&gt;It was indeed really easy to translate the published pseudo-code in Julia. The implementation appeared to be indeed very fast, so I could not resist to play with some visualisations.&lt;/p&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure id=&#34;figure-z_50xy&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://olejorik.github.io/post/zernikecalculations/z50_tab20_hua8df025c5b14ab8462bb7e3b72ef2e7d_147604_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;$Z_{50}(x,y)$&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://olejorik.github.io/post/zernikecalculations/z50_tab20_hua8df025c5b14ab8462bb7e3b72ef2e7d_147604_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;600&#34; height=&#34;400&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    $Z_{50}(x,y)$
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;If you have Julia and Pluto installed, you can test the Zernike generation on your computer by downloading 
-&lt;a href=&#34;https://gist.github.com/olejorik/211e9a8763dc8e4508ba6f13dd939aca&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this Pluto notebook.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Alternatively, if you just want to play with the visualisations,
+&lt;img src="footer.png" alt="image-20211128132009314">&lt;/p>
+&lt;ol start="7">
+&lt;li>
+&lt;p>The font used does not correspond to the house style of TU Delft. It should use Arial for body text and Georgia for quotes. This can be done if we will use $Lua\LaTeX$ or $Xe\LaTeX$ as compiler and use package &lt;code>fontspec&lt;/code>. Provided you have installed the fonts in your system, add to the Latex preamble the following:&lt;/p>
+&lt;pre>&lt;code class="language-\usepackage{fontspec}">\usepackage{fontspec}
+\newfontfamily\tudtitlefamily[
+Extension = .ttf%,
+]{TUDelft-UltraLight}
+\newfontfamily\tudrmfamily[
+Extension = .ttf,
+BoldFont = *_Bold,
+ItalicFont = *_Italic,
+BoldItalicFont = *_Bold_Italic]{Georgia}
+\newfontfamily\tudsffamily[
+Extension = .ttf,
+BoldFont = *_Bold,
+ItalicFont = *_Italic,
+BoldItalicFont = *_Bold_Italic]{Arial}
+&lt;/code>&lt;/pre>
+&lt;p>and change the Latex engine to lualatex:
+&lt;img src="lualatex.png" alt="image-20211128132717986">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>(I’ve changed it, please see later).
+Set the absolute value for the line to 20 pt.&lt;/p>
+&lt;p>Finally, add a text label with dummy page numbering. Now you should have something like that:&lt;/p>
+&lt;p>&lt;img src="pagenumbers.png" alt="image-20211128134901169">&lt;/p>
+&lt;ol start="9">
+&lt;li>
+&lt;p>Now let’s make a symbol from the colour bar, logo, and status line. Select them (without the page number) and group together (&lt;em>Ctrl+G&lt;/em>). Make a symbol from this group: &lt;em>Ipelets-&amp;gt;symbol&amp;gt;create symbol (in top stylesheet)&lt;/em> with the name &lt;code>Background&lt;/code> (note the capital “B”).
+Check that the symbol works by creating a new page. It should have this colour bar.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Save the changes in the style file: &lt;em>Edit -&amp;gt; Style sheets&lt;/em>, select TUD-slides and press save. Overwrite your old file. Notepad++ should show your the updated version&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Now you can delete this group but still see the same symbol.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Let’s style the page number. Switch on the page numbering in &lt;em>Document properties&lt;/em>. You will see black number in the lower left corner. We are going to change it to our style. First, update the stylesheet. Now, according to &lt;a href="https://ipe.otfried.org/manual/onepage.html#sec:presentations">https://ipe.otfried.org/manual/onepage.html#sec:presentations&lt;/a> add&lt;/p>
+&lt;pre>&lt;code>&amp;lt;pagenumberstyle pos=&amp;quot;20 820&amp;quot; size=&amp;quot;Huge&amp;quot; color=&amp;quot;0.5 0 0&amp;quot;
+valign=&amp;quot;top&amp;quot;&amp;gt;\arabic{ipePage}/\arabic{ipePages}&amp;lt;/pagenumberstyle&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/li>
+&lt;/ol>
+&lt;p>to the stylesheet. Right-click your dummy page number, select &lt;em>Edit as Xml&lt;/em> and copy the parameters to the &lt;code>pagenumberstyle&lt;/code>&lt;/p>
+&lt;pre>&lt;code>&amp;lt;pagenumberstyle pos=&amp;quot;736 16&amp;quot; color=&amp;quot;TUD-white&amp;quot; type=&amp;quot;label&amp;quot; width=&amp;quot;38.78&amp;quot;
+height=&amp;quot;14.509&amp;quot; depth=&amp;quot;0.24&amp;quot; halign=&amp;quot;right&amp;quot; valign=&amp;quot;baseline&amp;quot;
+size=&amp;quot;20&amp;quot;&amp;gt;\arabic{ipePage}/\arabic{ipePages}&amp;lt;/pagenumberstyle&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>Now you can update the style sheet and delete your dummy page numbering and check how the page numbers are inserted automatically.&lt;/p>
+&lt;p>Before we proceed, let’s also move the Latex styling that user should not change to the style file. Make a new section in the style file&lt;/p>
+&lt;pre>&lt;code>&amp;lt;preamble&amp;gt;
+&amp;lt;/preamble&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>and move there font settings and packages.&lt;/p>
+&lt;p>On the first page, create a new layer called &lt;code>BACKGROUND&lt;/code> (note all capitals). Draw there the desired layout (you can use the defined commands like &lt;code>\prestitle&lt;/code> and &lt;code>\name&lt;/code>)&lt;/p>
+&lt;p>&lt;img src="title_page.png" alt="image-20211128143010720">&lt;/p>
+&lt;p>Congratulations, the template is ready! To make a new presentation, just make a copy of the &lt;code>TUD-slides&lt;/code> folder (including &lt;code>figs&lt;/code>) subfolder, and edit &lt;code>TUD-slides-template.ipe&lt;/code> file.&lt;/p>
+&lt;h3 id="possible-improvements">Possible improvements&lt;/h3>
+&lt;p>You can convert the logo from PDF to Ipe format (using &lt;code>pdftoipe&lt;/code> script supplied with Ipe) and make a symbol of it, which you can save in a the stylesheet and make it self-contained and independent from a logo saved in external folder. You can then move the file to Ipe style folder (use &lt;em>Help -&amp;gt; Show configuration&lt;/em> to find out where it is located) and create new presentations in TU Delft style just by activating this stylesheet.&lt;/p>
+&lt;p>You can find the results of such modification
+&lt;a href="https://github.com/olejorik/TU-Delft-slides-Ipe" target="_blank" rel="noopener">here&lt;/a>.&lt;/p></description></item><item><title>Closed-Loop Active Model Diagnosis Using Bhattacharyya Coefficient: Application to Automated Visual Inspection</title><link>https://olejorik.github.io/publication/noom-2021/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/noom-2021/</guid><description/></item><item><title>Convex combination of alternating projection and Douglas–Rachford operators for phase retrieval</title><link>https://olejorik.github.io/publication/thao-2021/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/thao-2021/</guid><description/></item><item><title>Phase retrieval of large-scale time-varying aberrations using a non-linear Kalman filtering framework</title><link>https://olejorik.github.io/publication/piscaer-21/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/piscaer-21/</guid><description/></item><item><title>Multi-aperture digital telescopic system with super-resolution</title><link>https://olejorik.github.io/publication/bezzubik-20/</link><pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/bezzubik-20/</guid><description/></item><item><title>Zernike Calculations in Julia</title><link>https://olejorik.github.io/post/zernikecalculations/</link><pubDate>Sun, 01 Nov 2020 13:58:59 +0100</pubDate><guid>https://olejorik.github.io/post/zernikecalculations/</guid><description>
+&lt;div class="gallery">
+&lt;a data-fancybox="gallery-Zernike" href="https://olejorik.github.io/post/zernikecalculations/Zernike/Zenike66.png" >
+&lt;img data-src="https://olejorik.github.io/post/zernikecalculations/Zernike/Zenike66_hu3fe1497f3dd4946ad613be645e724abd_763998_0x190_resize_lanczos_2.png" class="lazyload" alt="" width="89" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-Zernike" href="https://olejorik.github.io/post/zernikecalculations/Zernike/ZenikeCcc66.png" >
+&lt;img data-src="https://olejorik.github.io/post/zernikecalculations/Zernike/ZenikeCcc66_hu4e8f541489b963a17c99c90659987393_1453049_0x190_resize_lanczos_2.png" class="lazyload" alt="" width="89" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-Zernike" href="https://olejorik.github.io/post/zernikecalculations/Zernike/zx_66.png" data-caption="x-derivative of the first 66 Zernike polynomials">
+&lt;img data-src="https://olejorik.github.io/post/zernikecalculations/Zernike/zx_66_hu8a4212f563f5a20675dba754535cb1b7_642123_0x190_resize_lanczos_2.png" class="lazyload" alt="" width="89" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-Zernike" href="https://olejorik.github.io/post/zernikecalculations/Zernike/zy_66_Set1_6.png" data-caption="y-derivative of the first 66 Zernike polynomials">
+&lt;img data-src="https://olejorik.github.io/post/zernikecalculations/Zernike/zy_66_Set1_6_huc18919f13473b142b4f078e9671f9be9_1270963_0x190_resize_lanczos_2.png" class="lazyload" alt="" width="89" height="190">
+&lt;/a>
+&lt;/div>
+&lt;p>In optics, Zernike polynomials play a big role, and in many computer simulations of optical problems, it&amp;rsquo;s very important to be able to calculate their values on a polar or Cartesian grid. While this problem seems trivial (the exact formulae for Zernike polynomials are known) and is often used as MSc student assignment, it might become challenging for higher degrees of the polynomials due to their fast oscillating nature.&lt;/p>
+&lt;p>Recently, a fast and robust method of calculation of the Zernike polynomials and their derivatives in Cartesian coordinates was published
+&lt;a href="#1">[1]&lt;/a>. I decided to give it a try and to program it in Julia, as the existing Julia&amp;rsquo;s implementations were not so far from the MSc student&amp;rsquo;s homework versions and are quite slow.&lt;/p>
+&lt;p>It was indeed really easy to translate the published pseudo-code in Julia. The implementation appeared to be indeed very fast, so I could not resist to play with some visualisations.&lt;/p>
+&lt;figure id="figure-z_50xy">
+&lt;a data-fancybox="" href="https://olejorik.github.io/post/zernikecalculations/z50_tab20_hua8df025c5b14ab8462bb7e3b72ef2e7d_147604_2000x2000_fit_lanczos_2.png" data-caption="$Z_{50}(x,y)$">
+&lt;img data-src="https://olejorik.github.io/post/zernikecalculations/z50_tab20_hua8df025c5b14ab8462bb7e3b72ef2e7d_147604_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="600" height="400">
+&lt;/a>
+&lt;figcaption>
+$Z_{50}(x,y)$
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>If you have Julia and Pluto installed, you can test the Zernike generation on your computer by downloading
+&lt;a href="https://gist.github.com/olejorik/211e9a8763dc8e4508ba6f13dd939aca" target="_blank" rel="noopener">this Pluto notebook.&lt;/a>&lt;/p>
+&lt;p>Alternatively, if you just want to play with the visualisations,
 you can use online Julia installation (warning: it will take some minutes to initialise, but then it runs quickly).
-For this, go to this page: &lt;a href=&#34;http://pluto-on-binder.glitch.me/&#34;&gt;http://pluto-on-binder.glitch.me/&lt;/a&gt; and enter this link in the input box &lt;a href=&#34;https://gist.github.com/olejorik/211e9a8763dc8e4508ba6f13dd939aca&#34;&gt;https://gist.github.com/olejorik/211e9a8763dc8e4508ba6f13dd939aca&lt;/a&gt;.
+For this, go to this page: &lt;a href="http://pluto-on-binder.glitch.me/">http://pluto-on-binder.glitch.me/&lt;/a> and enter this link in the input box &lt;a href="https://gist.github.com/olejorik/211e9a8763dc8e4508ba6f13dd939aca">https://gist.github.com/olejorik/211e9a8763dc8e4508ba6f13dd939aca&lt;/a>.
 The page will generate link to a virtual machine running my notebook with interactive Zernike calculations.
-You can change the notebooks inputs (use Shift+Enter to update the cells).&lt;/p&gt;
-&lt;p&gt;&lt;a name=&#34;1&#34;&gt;&lt;/a&gt;
-[1] T. B. Andersen, “Efficient and robust recurrence relations for the Zernike circle polynomials and their derivatives in Cartesian coordinates,” Opt. Express, vol. 26, no. 15, p. 18878, Jul. 2018&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Running Julia in WSL</title>
-      <link>https://olejorik.github.io/post/juliawsl/</link>
-      <pubDate>Mon, 05 Oct 2020 21:12:19 +0200</pubDate>
-      <guid>https://olejorik.github.io/post/juliawsl/</guid>
-      <description>&lt;p&gt;From its first days, Windows 10 provided a full-featured Linux (sub)system, called WSL. To get access to it and use it, one needed just to activate the developer mode and voilà &amp;mdash; you typed &lt;code&gt;bash&lt;/code&gt; and got Ubuntu 2016 (in terminal only). I tried it, installed python via conda, watched how the free space on my fast but small system drive (SSD) quickly disappeared and forgot it.&lt;/p&gt;
-&lt;p&gt;Recently, I&amp;rsquo;ve seen on Internet some news about WSL2, the second version of this Linux subsystem. Publications praised the diversity of the distributives (you are not limited to Ubuntu anymore), a closer integration with Windows (you can call Windows programs from Linux, and the filesystems of Windows and Linux can be accessed bidirectionally), and I also saw some manuals how to install WSL on another drive. Finally I&amp;rsquo;ve got some time to try it, and it worked even better than I expected! Namely, the benefit I&amp;rsquo;ve got is a faster version of Julia on my computer (not to mention enjoying 24K colours in REPL and normal work of all commands in the shell mode 😉).&lt;/p&gt;
-&lt;p&gt;Here are the results from a simple benchmarking of convolving a 512 x 512 image with a 48 x 48 blur kernel. (In our 
-&lt;a href=&#34;https://olejorik.github.io/project/madein4&#34;&gt;MADEin4&lt;/a&gt; project, we need to simulate a position-dependent blur, so the convolution speed is a very important parameter for us).&lt;/p&gt;
-&lt;p&gt;The screenshots below show (left to right) the speed of this convolution (two different algorithms) calculated by Julia running in WSL and Julia running in Windows, both versions 1.5.2 (and the same convolution made in &lt;em&gt;Mathematica 12.1&lt;/em&gt; for comparison purposes). You can see that the faster version of the algorithm (the second benchmark test) in WSL is almost twice faster as in its Windows version and is approximately as fast as &lt;em&gt;Mathematica&lt;/em&gt; implementation.&lt;/p&gt;
-&lt;!-- ![Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica](convolutions_speed.png) --&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure id=&#34;figure-convolution-speed-in-juliawsl-juliawindows-and-in-mathematica&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://olejorik.github.io/post/juliawsl/convolutions_speed_hu46d83dbd953546cbf5e5132c7f05ab5b_793815_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://olejorik.github.io/post/juliawsl/convolutions_speed_hu46d83dbd953546cbf5e5132c7f05ab5b_793815_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1989&#34; height=&#34;970&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-&lt;h2 id=&#34;how-to-install-wsl2-where-you-want-it&#34;&gt;How to install WSL2 where you want it&lt;/h2&gt;
-&lt;p&gt;Here are the successive steps that I did, following the nice instructions of 
-&lt;a href=&#34;https://damsteen.nl/blog/2018/08/29/installing-wsl-manually-on-non-system-drive&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; tutorial. Everything can be done directly in PowerShell, or, if you are not familiar with it, in a more Windows manner using your mouse.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Press Windows key and type &amp;ldquo;Optional Features&amp;rdquo;, press enter to open the following settings page and select there &amp;ldquo;More Windows features&amp;rdquo;:
-&lt;img src=&#34;Enable.png&#34; alt=&#34;Enabling WSL&#34;&gt;
-or just open PowerShell and enable the WSL2 by executing:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I needed to do it despite that I had already  the WSL enabled (WSL1, the &amp;ldquo;Legacy version&amp;rdquo;), and I needed to reboot after this command.&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;If you have not yet created a directory where you want to have your Linux, create it. You can use the following PowerShell command or a less exotic way like right-click in the explorer window and so on:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;New-Item D:\Linux -ItemType Directory
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;&lt;code&gt;cd&lt;/code&gt; there. Again, you can use the special PS command (it also can change the drive):&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Set-Location D:\Linux
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Now you need to download the desired Linux distro and place it in this directory. Go to 
-&lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; page, choose what you want, right-click and save it or again you can use the PowerShell: copy the link address and substitute it in the command below.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;Rename the downloaded &amp;ldquo;.appx&amp;rdquo; file in &amp;ldquo;.zip&amp;rdquo; file and extract it (here shown on example of Debian distro)
-&lt;img src=&#34;Extract.png&#34; alt=&#34;Extract the renamed archive&#34;&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;or&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;Rename-Item .\Ubuntu.appx Ubuntu.zip
+You can change the notebooks inputs (use Shift+Enter to update the cells).&lt;/p>
+&lt;p>&lt;a name="1">&lt;/a>
+[1] T. B. Andersen, “Efficient and robust recurrence relations for the Zernike circle polynomials and their derivatives in Cartesian coordinates,” Opt. Express, vol. 26, no. 15, p. 18878, Jul. 2018&lt;/p></description></item><item><title>Running Julia in WSL</title><link>https://olejorik.github.io/post/juliawsl/</link><pubDate>Mon, 05 Oct 2020 21:12:19 +0200</pubDate><guid>https://olejorik.github.io/post/juliawsl/</guid><description>&lt;p>From its first days, Windows 10 provided a full-featured Linux (sub)system, called WSL. To get access to it and use it, one needed just to activate the developer mode and voilà &amp;mdash; you typed &lt;code>bash&lt;/code> and got Ubuntu 2016 (in terminal only). I tried it, installed python via conda, watched how the free space on my fast but small system drive (SSD) quickly disappeared and forgot it.&lt;/p>
+&lt;p>Recently, I&amp;rsquo;ve seen on Internet some news about WSL2, the second version of this Linux subsystem. Publications praised the diversity of the distributives (you are not limited to Ubuntu anymore), a closer integration with Windows (you can call Windows programs from Linux, and the filesystems of Windows and Linux can be accessed bidirectionally), and I also saw some manuals how to install WSL on another drive. Finally I&amp;rsquo;ve got some time to try it, and it worked even better than I expected! Namely, the benefit I&amp;rsquo;ve got is a faster version of Julia on my computer (not to mention enjoying 24K colours in REPL and normal work of all commands in the shell mode 😉).&lt;/p>
+&lt;p>Here are the results from a simple benchmarking of convolving a 512 x 512 image with a 48 x 48 blur kernel. (In our
+&lt;a href="https://olejorik.github.io/project/madein4">MADEin4&lt;/a> project, we need to simulate a position-dependent blur, so the convolution speed is a very important parameter for us).&lt;/p>
+&lt;p>The screenshots below show (left to right) the speed of this convolution (two different algorithms) calculated by Julia running in WSL and Julia running in Windows, both versions 1.5.2 (and the same convolution made in &lt;em>Mathematica 12.1&lt;/em> for comparison purposes). You can see that the faster version of the algorithm (the second benchmark test) in WSL is almost twice faster as in its Windows version and is approximately as fast as &lt;em>Mathematica&lt;/em> implementation.&lt;/p>
+&lt;!-- ![Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica](convolutions_speed.png) -->
+&lt;figure id="figure-convolution-speed-in-juliawsl-juliawindows-and-in-mathematica">
+&lt;a data-fancybox="" href="https://olejorik.github.io/post/juliawsl/convolutions_speed_hu46d83dbd953546cbf5e5132c7f05ab5b_793815_2000x2000_fit_lanczos_2.png" data-caption="Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica">
+&lt;img data-src="https://olejorik.github.io/post/juliawsl/convolutions_speed_hu46d83dbd953546cbf5e5132c7f05ab5b_793815_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1989" height="970">
+&lt;/a>
+&lt;figcaption>
+Convolution speed in JuliaWSL, JuliaWindows, and in Mathematica
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="how-to-install-wsl2-where-you-want-it">How to install WSL2 where you want it&lt;/h2>
+&lt;p>Here are the successive steps that I did, following the nice instructions of
+&lt;a href="https://damsteen.nl/blog/2018/08/29/installing-wsl-manually-on-non-system-drive" target="_blank" rel="noopener">this&lt;/a> tutorial. Everything can be done directly in PowerShell, or, if you are not familiar with it, in a more Windows manner using your mouse.&lt;/p>
+&lt;ol>
+&lt;li>Press Windows key and type &amp;ldquo;Optional Features&amp;rdquo;, press enter to open the following settings page and select there &amp;ldquo;More Windows features&amp;rdquo;:
+&lt;img src="Enable.png" alt="Enabling WSL">
+or just open PowerShell and enable the WSL2 by executing:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-powershell">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+&lt;/code>&lt;/pre>
+&lt;p>I needed to do it despite that I had already the WSL enabled (WSL1, the &amp;ldquo;Legacy version&amp;rdquo;), and I needed to reboot after this command.&lt;/p>
+&lt;ol start="2">
+&lt;li>If you have not yet created a directory where you want to have your Linux, create it. You can use the following PowerShell command or a less exotic way like right-click in the explorer window and so on:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-powershell">New-Item D:\Linux -ItemType Directory
+&lt;/code>&lt;/pre>
+&lt;ol start="3">
+&lt;li>&lt;code>cd&lt;/code> there. Again, you can use the special PS command (it also can change the drive):&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-powershell">Set-Location D:\Linux
+&lt;/code>&lt;/pre>
+&lt;ol start="4">
+&lt;li>Now you need to download the desired Linux distro and place it in this directory. Go to
+&lt;a href="https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distros" target="_blank" rel="noopener">this&lt;/a> page, choose what you want, right-click and save it or again you can use the PowerShell: copy the link address and substitute it in the command below.&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-powershell">Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing
+&lt;/code>&lt;/pre>
+&lt;ol start="5">
+&lt;li>Rename the downloaded &amp;ldquo;.appx&amp;rdquo; file in &amp;ldquo;.zip&amp;rdquo; file and extract it (here shown on example of Debian distro)
+&lt;img src="Extract.png" alt="Extract the renamed archive">&lt;/li>
+&lt;/ol>
+&lt;p>or&lt;/p>
+&lt;pre>&lt;code class="language-powershell">Rename-Item .\Ubuntu.appx Ubuntu.zip
 Expand-Archive .\Ubuntu.zip -Verbose
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;Congratulations! You&amp;rsquo;ve almost done. Now you can change to the extracted directory and double click the &amp;ldquo;&lt;em&gt;linux_distro&lt;/em&gt;.exe&amp;rdquo; file
-&lt;img src=&#34;Execute.png&#34; alt=&#34;Run to finish the installation&#34;&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;or execute in the PowerShell&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;.\Ubuntu\ubuntu2004.exe
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Input you username and password (remember them well or save them immediately in your password manager, like KeePass), and after some time the installation will be finished.&lt;/p&gt;
-&lt;p&gt;You can use your WSL2 now!&lt;/p&gt;
-&lt;p&gt;7.(OPTIONAL) Because I had still traces of the old WSL system (although I have uninstalled it), I needed to issue the following command to make my new WSL2 act as default Linux subsystem (&lt;em&gt;e.g.&lt;/em&gt; I can invoke it by typing &lt;code&gt;bash&lt;/code&gt; in terminal):&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;wsl --set-default-version 2
+&lt;/code>&lt;/pre>
+&lt;ol start="6">
+&lt;li>Congratulations! You&amp;rsquo;ve almost done. Now you can change to the extracted directory and double click the &amp;ldquo;&lt;em>linux_distro&lt;/em>.exe&amp;rdquo; file
+&lt;img src="Execute.png" alt="Run to finish the installation">&lt;/li>
+&lt;/ol>
+&lt;p>or execute in the PowerShell&lt;/p>
+&lt;pre>&lt;code class="language-powershell">.\Ubuntu\ubuntu2004.exe
+&lt;/code>&lt;/pre>
+&lt;p>Input you username and password (remember them well or save them immediately in your password manager, like KeePass), and after some time the installation will be finished.&lt;/p>
+&lt;p>You can use your WSL2 now!&lt;/p>
+&lt;p>7.(OPTIONAL) Because I had still traces of the old WSL system (although I have uninstalled it), I needed to issue the following command to make my new WSL2 act as default Linux subsystem (&lt;em>e.g.&lt;/em> I can invoke it by typing &lt;code>bash&lt;/code> in terminal):&lt;/p>
+&lt;pre>&lt;code class="language-powershell">wsl --set-default-version 2
 wslconfig /s Ubuntu-20.04
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    You can also launch it by executing &lt;code&gt;wsl&lt;/code&gt; or &lt;code&gt;ubuntu&lt;/code&gt; commands
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Also I recommend to instal the new 
-&lt;a href=&#34;https://aka.ms/terminal&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Windows Terminal&lt;/a&gt;, where you will have immediately easy access to all you Linuxes :-)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;WindowsTerminal.png&#34; alt=&#34;Using Windows Terminal and WSL2&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;how-to-install-official-release-of-julia-in-your-wsl&#34;&gt;How to install &amp;ldquo;official&amp;rdquo; release of Julia in your WSL&lt;/h2&gt;
-&lt;p&gt;To install Julia in your WSL, you can use the packages provided by the distro, but chances are high you&amp;rsquo;ve got some old version. Instead, install the latest stable release from jullialang.org.&lt;/p&gt;
-&lt;p&gt;Basically, you need to follow the 
-&lt;a href=&#34;https://julialang.org/downloads/platform/#linux_and_freebsd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;instructions from their webpage&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For more detailed instruction, 
-&lt;a href=&#34;https://ferrolho.github.io/blog/2019-01-26/how-to-install-julia-on-ubuntu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;follow this tutorial.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;To summarize, it&amp;rsquo;s as easy as downloading, unpacking, copying to &lt;code&gt;/opt&lt;/code&gt; directory, and making a link:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.2-linux-x86_64.tar.gz
-
+&lt;/code>&lt;/pre>
+&lt;div class="alert alert-note">
+&lt;div>
+You can also launch it by executing &lt;code>wsl&lt;/code> or &lt;code>ubuntu&lt;/code> commands
+&lt;/div>
+&lt;/div>
+&lt;p>Also I recommend to instal the new
+&lt;a href="https://aka.ms/terminal" target="_blank" rel="noopener">Windows Terminal&lt;/a>, where you will have immediately easy access to all you Linuxes :-)&lt;/p>
+&lt;p>&lt;img src="WindowsTerminal.png" alt="Using Windows Terminal and WSL2">&lt;/p>
+&lt;h2 id="how-to-install-official-release-of-julia-in-your-wsl">How to install &amp;ldquo;official&amp;rdquo; release of Julia in your WSL&lt;/h2>
+&lt;p>To install Julia in your WSL, you can use the packages provided by the distro, but chances are high you&amp;rsquo;ve got some old version. Instead, install the latest stable release from jullialang.org.&lt;/p>
+&lt;p>Basically, you need to follow the
+&lt;a href="https://julialang.org/downloads/platform/#linux_and_freebsd" target="_blank" rel="noopener">instructions from their webpage&lt;/a>.&lt;/p>
+&lt;p>For more detailed instruction,
+&lt;a href="https://ferrolho.github.io/blog/2019-01-26/how-to-install-julia-on-ubuntu" target="_blank" rel="noopener">follow this tutorial.&lt;/a>&lt;/p>
+&lt;p>To summarize, it&amp;rsquo;s as easy as downloading, unpacking, copying to &lt;code>/opt&lt;/code> directory, and making a link:&lt;/p>
+&lt;pre>&lt;code class="language-bash">$ wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.2-linux-x86_64.tar.gz
 $ tar -xvzf julia-1.5.2-linux-x86_64.tar.gz
-
 $ sudo cp -r julia-1.5.2 /opt/
-
 $ sudo ln -s /opt/julia-1.5.2/bin/julia /usr/local/bin/julia
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now you can try to type &lt;code&gt;julia&lt;/code&gt; and see it working!&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; in Debian installation, I was not able to use &lt;code&gt;wget&lt;/code&gt; command shown above; the system complained about not valid security certificates of julialang.org. The problem was solved by installing CA-certificates:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo apt-get install ca-certificates
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-info&#34;&gt;
-  &lt;div&gt;
-    My Ubuntu 20.04 installation appeared to be extremely slow in installing julia packages (&amp;ldquo;updating registry&amp;rdquo;); julia itself was running fast.
+&lt;/code>&lt;/pre>
+&lt;p>Now you can try to type &lt;code>julia&lt;/code> and see it working!&lt;/p>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;p>&lt;strong>Note:&lt;/strong> in Debian installation, I was not able to use &lt;code>wget&lt;/code> command shown above; the system complained about not valid security certificates of julialang.org. The problem was solved by installing CA-certificates:&lt;/p>
+&lt;pre>&lt;code class="language-bash">$ sudo apt-get install ca-certificates
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;/div>
+&lt;div class="alert alert-info">
+&lt;div>
+My Ubuntu 20.04 installation appeared to be extremely slow in installing julia packages (&amp;ldquo;updating registry&amp;rdquo;); julia itself was running fast.
 Debian installation does not have such problem and is now my default WSL.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;how-to-use-your-installation-in-vs-code-or-jupyter-lab&#34;&gt;How to use your installation in VS code or Jupyter lab&lt;/h2&gt;
-&lt;h2 id=&#34;vs-code&#34;&gt;VS Code&lt;/h2&gt;
-&lt;p&gt;To connect VS Code to WSL, I followed its 
-&lt;a href=&#34;https://code.visualstudio.com/docs/remote/wsl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;manual page&lt;/a&gt;.
-As I&amp;rsquo;ve had VS Code already installed, I needed to add &lt;code&gt;%USERPROFILE%\AppData\Local\Programs\Microsoft VS Code\bin&lt;/code&gt; to my path manually.&lt;/p&gt;
-&lt;p&gt;Then I navigated to my Windows folder with Julia projects (thus &lt;em&gt;not in WSL filesystem&lt;/em&gt;) and opened it from bash by executing &lt;code&gt;code .&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;In addition, I installed in this version of VS Code the julia extension (see 
-&lt;a href=&#34;https://techytok.com/julia-vscode/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; for more detailed instructions).&lt;/p&gt;
-&lt;h3 id=&#34;jupyter-lab&#34;&gt;Jupyter lab&lt;/h3&gt;
-&lt;p&gt;You can install in your distro conda, Python and Jupyter as usual, and set julia to use them, but in this case, I decided to keep everything within the julia installation.&lt;/p&gt;
-&lt;p&gt;First as usual, &lt;code&gt;] add IJulia&lt;/code&gt; and launch Jupyter lab from within julia:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; using IJulia
-
+&lt;/div>
+&lt;/div>
+&lt;h2 id="how-to-use-your-installation-in-vs-code-or-jupyter-lab">How to use your installation in VS code or Jupyter lab&lt;/h2>
+&lt;h2 id="vs-code">VS Code&lt;/h2>
+&lt;p>To connect VS Code to WSL, I followed its
+&lt;a href="https://code.visualstudio.com/docs/remote/wsl" target="_blank" rel="noopener">manual page&lt;/a>.
+As I&amp;rsquo;ve had VS Code already installed, I needed to add &lt;code>%USERPROFILE%\AppData\Local\Programs\Microsoft VS Code\bin&lt;/code> to my path manually.&lt;/p>
+&lt;p>Then I navigated to my Windows folder with Julia projects (thus &lt;em>not in WSL filesystem&lt;/em>) and opened it from bash by executing &lt;code>code .&lt;/code>.&lt;/p>
+&lt;p>In addition, I installed in this version of VS Code the julia extension (see
+&lt;a href="https://techytok.com/julia-vscode/" target="_blank" rel="noopener">here&lt;/a> for more detailed instructions).&lt;/p>
+&lt;h3 id="jupyter-lab">Jupyter lab&lt;/h3>
+&lt;p>You can install in your distro conda, Python and Jupyter as usual, and set julia to use them, but in this case, I decided to keep everything within the julia installation.&lt;/p>
+&lt;p>First as usual, &lt;code>] add IJulia&lt;/code> and launch Jupyter lab from within julia:&lt;/p>
+&lt;pre>&lt;code class="language-julia">julia&amp;gt; using IJulia
 julia&amp;gt; IJulia.jupyterlab()
 install Jupyter via Conda, y/n? [y]: y
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Give julia some time to install everything necessary and wait until  the activity in the terminal ends with a message beginning like&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;[ Info: running setenv(`/home/oleg/.julia/conda/3/bin/jupyter lab`,[&amp;quot;PATH=/home/oleg/.julia/conda/3/bin: 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Actually, now the jupyter server is installed and running, but if you don&amp;rsquo;t have a browser installed in WSL, you cannot go further. Press Ctrl+C here. Now we are going  to create and edit jupyter config file so any existing Windows browser could be used.&lt;/p&gt;
-&lt;p&gt;To create the config file, execute in bash&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ~/.julia/conda/3/bin/jupyter notebook --generate-config
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The system will display something like&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Writing default config to: /home/oleg/.jupyter/jupyter_notebook_config.py
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now open this file in VS Code&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ code ~/.jupyter/jupyter_notebook_config.py
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and find and edit there the default browser setting (line beginning with &lt;code&gt;c.NotebookApp.browser &lt;/code&gt;). I set it to MS Edge, which I don&amp;rsquo;t use usually, so my Jupyter lab activities are kept separately from my usual web browsing:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;c.NotebookApp.browser = u&#39;/mnt/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe %s&#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In addition, disable the redirect file behaviour by changing the line starting with &lt;code&gt;c.NotebookApp.use_redirect_file&lt;/code&gt; to&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;c.NotebookApp.use_redirect_file = False
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now yuo should be able to launch Jupyter lab either from julia&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;julia&amp;gt; using IJulia
+&lt;/code>&lt;/pre>
+&lt;p>Give julia some time to install everything necessary and wait until the activity in the terminal ends with a message beginning like&lt;/p>
+&lt;pre>&lt;code class="language-bash">[ Info: running setenv(`/home/oleg/.julia/conda/3/bin/jupyter lab`,[&amp;quot;PATH=/home/oleg/.julia/conda/3/bin:
+&lt;/code>&lt;/pre>
+&lt;p>Actually, now the jupyter server is installed and running, but if you don&amp;rsquo;t have a browser installed in WSL, you cannot go further. Press Ctrl+C here. Now we are going to create and edit jupyter config file so any existing Windows browser could be used.&lt;/p>
+&lt;p>To create the config file, execute in bash&lt;/p>
+&lt;pre>&lt;code class="language-bash">$ ~/.julia/conda/3/bin/jupyter notebook --generate-config
+&lt;/code>&lt;/pre>
+&lt;p>The system will display something like&lt;/p>
+&lt;pre>&lt;code class="language-bash">Writing default config to: /home/oleg/.jupyter/jupyter_notebook_config.py
+&lt;/code>&lt;/pre>
+&lt;p>Now open this file in VS Code&lt;/p>
+&lt;pre>&lt;code class="language-bash">$ code ~/.jupyter/jupyter_notebook_config.py
+&lt;/code>&lt;/pre>
+&lt;p>and find and edit there the default browser setting (line beginning with &lt;code>c.NotebookApp.browser &lt;/code>). I set it to MS Edge, which I don&amp;rsquo;t use usually, so my Jupyter lab activities are kept separately from my usual web browsing:&lt;/p>
+&lt;pre>&lt;code class="language-python">c.NotebookApp.browser = u'/mnt/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe %s'
+&lt;/code>&lt;/pre>
+&lt;p>In addition, disable the redirect file behaviour by changing the line starting with &lt;code>c.NotebookApp.use_redirect_file&lt;/code> to&lt;/p>
+&lt;pre>&lt;code class="language-python">c.NotebookApp.use_redirect_file = False
+&lt;/code>&lt;/pre>
+&lt;p>Now yuo should be able to launch Jupyter lab either from julia&lt;/p>
+&lt;pre>&lt;code class="language-julia">julia&amp;gt; using IJulia
 julia&amp;gt; IJulia.jupyerlab()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;or from bash&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ~/.julia/conda/3/bin/jupyter lab
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>SH</title>
-      <link>https://olejorik.github.io/funnyplots/sh/</link>
-      <pubDate>Wed, 15 Apr 2020 18:31:24 +0200</pubDate>
-      <guid>https://olejorik.github.io/funnyplots/sh/</guid>
-      <description>&lt;p&gt;Each Shack-Hartmann pattern conceals a lot of beauty, you need just to look at differently. Here are some examples.&lt;/p&gt;
-
-
-
-
-
-
-
-
-  
-  
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-
-  
-  
-  
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed1.png&#34; data-caption=&#34;Automatic location of SH spots via local density&#34;&gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed1_hue7d832a91e66f87a6e3857a8b90907bb_119259_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;191&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed2.png&#34; data-caption=&#34;Automatic location of SH spots via local density&#34;&gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed2_hue7d832a91e66f87a6e3857a8b90907bb_121236_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;191&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed3.png&#34; data-caption=&#34;Automatic location of SH spots via local density&#34;&gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed3_hue7d832a91e66f87a6e3857a8b90907bb_172756_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;191&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed5.png&#34; data-caption=&#34;Automatic location of SH spots via local density with different window size&#34;&gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/ed5_hu13b4c6aa3dce0825013ac958701adab4_163515_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;141&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/matrix-reloaded.png&#34; data-caption=&#34;Fourier of a SH pattern with the alternative conjugation&#34;&gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/matrix-reloaded_hu731677f187c42da935a6203038799bf8_399364_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;190&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-        
-      
-    
-  &lt;a data-fancybox=&#34;gallery-SH-garden&#34; href=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/xmas-cookies.png&#34; data-caption=&#34;Rearrangement of a SH pattern into a plenoptic pattern&#34;&gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/sh/SH-garden/xmas-cookies_hubd41dc1e2c299e66c00823cf2acd2b89_934037_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;190&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-
-  
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Automatic Deployment</title>
-      <link>https://olejorik.github.io/post/automatic-deployment/</link>
-      <pubDate>Mon, 13 Apr 2020 09:41:52 +0000</pubDate>
-      <guid>https://olejorik.github.io/post/automatic-deployment/</guid>
-      <description>&lt;p&gt;When maintaining a static website with Hugo, the workflow is to create a source of a post in Markdown, run Hugo to generate the html pages, and upload the resulted html to the web. The repeating last two steps can be automated in a script or a batch file that can be run on a local computer, so every time the content is updated, its rendered version is uploaded to the web. If however, the content is edited with some online services, like Forestry, how can you update the rendered html pages?&lt;/p&gt;
-&lt;p&gt;This can be done with automated deployment workflows. For this, you need to have an account on one of the multiple services that provide you (often free of charge for a small or a personal project) a virtual machine, where the source of your site can be downloaded, Hugo installed and run on the source, and in case of success, the rendered html pages uploaded to the destination. Sounds really high tech and fantastic, but it seems to be quite a common practice amongst the professional developers, called Continuous Integration/Continuous Deployment (CI/CD). The links to instructions for several services are collected on 
-&lt;a href=&#34;https://forestry.io/docs/hosting/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a Forestry doc page&lt;/a&gt; and 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on Hugo doc pages&lt;/a&gt; as well.&lt;/p&gt;
-&lt;p&gt;For an occasional user of this method, however, it is easy to make a mistake in setting it up and running. Moreover, different services have different requirements and limitations. GitLab, for instance, provides built-in CI/CD, but publishes the results on their webpages which have way too long url, in my opinion. Here I describe the steps which finally lead me to a successful implementation.&lt;/p&gt;
-&lt;p&gt;I have followed the steps for 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;automatic deployment with Wercker&lt;/a&gt;, with some changes. My site source repo was already set up on GitHub, and I was hosting the rendered version on GitHub pages, so I proceeded directly to the step of 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#set-up-wercker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wercker setup&lt;/a&gt;. Wercker is a service that can monitor the status of my site source repo, and after I push some content to it, it performs the automated deployment steps. It seems that Wercker&amp;rsquo;s interface has been updated since the time the manual was written, and some steps that require changes are indicated below.&lt;/p&gt;
-&lt;p&gt;I have logged in with my GitHub account, so the link between Wercker and GitHub was automatically created. Then I proceeded till 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#add-your-project&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Add your project&lt;/a&gt; step, which now should be changed to &lt;em&gt;Add application&lt;/em&gt;.
-Use the boxed plus button in the top right corner:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;add_application_wercker.png&#34; alt=&#34;Use this button to add a new application&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The application is created in 4 steps, where I have pointed to the repo with my website source and accepted all default options. Now I was at 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#app-successfully-created&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;App successfully created&lt;/a&gt; step and there were some small differences. The screen I saw was like that: &lt;img src=&#34;get_build_running.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I saw there Hugo icon, clicked it, obtained some config file,and &amp;hellip; And actually I didn&amp;rsquo;t need it.&lt;/p&gt;
-&lt;p&gt;Instead, I needed to go to the &amp;ldquo;Steps store&amp;rdquo; (again top right corner), to find there &amp;ldquo;hugo build&amp;rdquo; steps script, and to read its documentation to understand how to use it. &lt;img src=&#34;steps_store.png&#34; alt=&#34;&amp;ldquo;Hugo build steps&amp;rdquo;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Finally, I understood that all I needed to do is simply to create  a file named &lt;code&gt;wercker.yml&lt;/code&gt; in the root of my source repo with the following content:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;box: debian
+&lt;/code>&lt;/pre>
+&lt;p>or from bash&lt;/p>
+&lt;pre>&lt;code class="language-bash">$ ~/.julia/conda/3/bin/jupyter lab
+&lt;/code>&lt;/pre></description></item><item><title>SH</title><link>https://olejorik.github.io/funnyplots/sh/</link><pubDate>Wed, 15 Apr 2020 18:31:24 +0200</pubDate><guid>https://olejorik.github.io/funnyplots/sh/</guid><description>&lt;p>Each Shack-Hartmann pattern conceals a lot of beauty, you need just to look at differently. Here are some examples.&lt;/p>
+&lt;div class="gallery">
+&lt;a data-fancybox="gallery-SH-garden" href="https://olejorik.github.io/funnyplots/sh/SH-garden/ed1.png" data-caption="Automatic location of SH spots via local density">
+&lt;img data-src="https://olejorik.github.io/funnyplots/sh/SH-garden/ed1_hue7d832a91e66f87a6e3857a8b90907bb_119259_0x190_resize_lanczos_2.png" class="lazyload" alt="" width="191" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-SH-garden" href="https://olejorik.github.io/funnyplots/sh/SH-garden/ed2.png" data-caption="Automatic location of SH spots via local density">
+&lt;img data-src="https://olejorik.github.io/funnyplots/sh/SH-garden/ed2_hue7d832a91e66f87a6e3857a8b90907bb_121236_0x190_resize_lanczos_2.png" class="lazyload" alt="" width="191" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-SH-garden" href="https://olejorik.github.io/funnyplots/sh/SH-garden/ed3.png" data-caption="Automatic location of SH spots via local density">
+&lt;img data-src="https://olejorik.github.io/funnyplots/sh/SH-garden/ed3_hue7d832a91e66f87a6e3857a8b90907bb_172756_0x190_resize_lanczos_2.png" class="lazyload" alt="" width="191" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-SH-garden" href="https://olejorik.github.io/funnyplots/sh/SH-garden/ed5.png" data-caption="Automatic location of SH spots via local density with different window size">
+&lt;img data-src="https://olejorik.github.io/funnyplots/sh/SH-garden/ed5_hu13b4c6aa3dce0825013ac958701adab4_163515_0x190_resize_lanczos_2.png" class="lazyload" alt="" width="141" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-SH-garden" href="https://olejorik.github.io/funnyplots/sh/SH-garden/matrix-reloaded.png" data-caption="Fourier of a SH pattern with the alternative conjugation">
+&lt;img data-src="https://olejorik.github.io/funnyplots/sh/SH-garden/matrix-reloaded_hu731677f187c42da935a6203038799bf8_399364_0x190_resize_lanczos_2.png" class="lazyload" alt="" width="190" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-SH-garden" href="https://olejorik.github.io/funnyplots/sh/SH-garden/xmas-cookies.png" data-caption="Rearrangement of a SH pattern into a plenoptic pattern">
+&lt;img data-src="https://olejorik.github.io/funnyplots/sh/SH-garden/xmas-cookies_hubd41dc1e2c299e66c00823cf2acd2b89_934037_0x190_resize_lanczos_2.png" class="lazyload" alt="" width="190" height="190">
+&lt;/a>
+&lt;/div></description></item><item><title>Automatic Deployment</title><link>https://olejorik.github.io/post/automatic-deployment/</link><pubDate>Mon, 13 Apr 2020 09:41:52 +0000</pubDate><guid>https://olejorik.github.io/post/automatic-deployment/</guid><description>&lt;p>When maintaining a static website with Hugo, the workflow is to create a source of a post in Markdown, run Hugo to generate the html pages, and upload the resulted html to the web. The repeating last two steps can be automated in a script or a batch file that can be run on a local computer, so every time the content is updated, its rendered version is uploaded to the web. If however, the content is edited with some online services, like Forestry, how can you update the rendered html pages?&lt;/p>
+&lt;p>This can be done with automated deployment workflows. For this, you need to have an account on one of the multiple services that provide you (often free of charge for a small or a personal project) a virtual machine, where the source of your site can be downloaded, Hugo installed and run on the source, and in case of success, the rendered html pages uploaded to the destination. Sounds really high tech and fantastic, but it seems to be quite a common practice amongst the professional developers, called Continuous Integration/Continuous Deployment (CI/CD). The links to instructions for several services are collected on
+&lt;a href="https://forestry.io/docs/hosting/" target="_blank" rel="noopener">a Forestry doc page&lt;/a> and
+&lt;a href="https://gohugo.io/hosting-and-deployment/" target="_blank" rel="noopener">on Hugo doc pages&lt;/a> as well.&lt;/p>
+&lt;p>For an occasional user of this method, however, it is easy to make a mistake in setting it up and running. Moreover, different services have different requirements and limitations. GitLab, for instance, provides built-in CI/CD, but publishes the results on their webpages which have way too long url, in my opinion. Here I describe the steps which finally lead me to a successful implementation.&lt;/p>
+&lt;p>I have followed the steps for
+&lt;a href="https://gohugo.io/hosting-and-deployment/deployment-with-wercker/" target="_blank" rel="noopener">automatic deployment with Wercker&lt;/a>, with some changes. My site source repo was already set up on GitHub, and I was hosting the rendered version on GitHub pages, so I proceeded directly to the step of
+&lt;a href="https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#set-up-wercker" target="_blank" rel="noopener">Wercker setup&lt;/a>. Wercker is a service that can monitor the status of my site source repo, and after I push some content to it, it performs the automated deployment steps. It seems that Wercker&amp;rsquo;s interface has been updated since the time the manual was written, and some steps that require changes are indicated below.&lt;/p>
+&lt;p>I have logged in with my GitHub account, so the link between Wercker and GitHub was automatically created. Then I proceeded till
+&lt;a href="https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#add-your-project" target="_blank" rel="noopener">Add your project&lt;/a> step, which now should be changed to &lt;em>Add application&lt;/em>.
+Use the boxed plus button in the top right corner:&lt;/p>
+&lt;p>&lt;img src="add_application_wercker.png" alt="Use this button to add a new application">&lt;/p>
+&lt;p>The application is created in 4 steps, where I have pointed to the repo with my website source and accepted all default options. Now I was at
+&lt;a href="https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#app-successfully-created" target="_blank" rel="noopener">&amp;ldquo;App successfully created&lt;/a> step and there were some small differences. The screen I saw was like that: &lt;img src="get_build_running.png" alt="">&lt;/p>
+&lt;p>I saw there Hugo icon, clicked it, obtained some config file,and &amp;hellip; And actually I didn&amp;rsquo;t need it.&lt;/p>
+&lt;p>Instead, I needed to go to the &amp;ldquo;Steps store&amp;rdquo; (again top right corner), to find there &amp;ldquo;hugo build&amp;rdquo; steps script, and to read its documentation to understand how to use it. &lt;img src="steps_store.png" alt="&amp;ldquo;Hugo build steps&amp;rdquo;">&lt;/p>
+&lt;p>Finally, I understood that all I needed to do is simply to create a file named &lt;code>wercker.yml&lt;/code> in the root of my source repo with the following content:&lt;/p>
+&lt;pre>&lt;code>box: debian
 build:
-  steps:
-      - arjen/hugo-build:
-        version: &amp;quot;0.68.3&amp;quot;
-        theme: academic
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and push it to the GitHub repo.&lt;/p&gt;
-&lt;p&gt;Wercker has started its job and&amp;hellip; failed.&lt;/p&gt;
-&lt;p&gt;After some investigation, I realized that the reason was that the &amp;ldquo;academic&amp;rdquo; theme which I use was installed as a submodule (so it is not a part of my repo), and thus it was not downloaded from git. To fix that, I added steps to the &lt;code&gt;wercker.yml&lt;/code&gt; which installed git and downloaded the submodule. Now the file looked as shown below, and Wercker has completed the build successfully!&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;box: debian
+steps:
+- arjen/hugo-build:
+version: &amp;quot;0.68.3&amp;quot;
+theme: academic
+&lt;/code>&lt;/pre>
+&lt;p>and push it to the GitHub repo.&lt;/p>
+&lt;p>Wercker has started its job and&amp;hellip; failed.&lt;/p>
+&lt;p>After some investigation, I realized that the reason was that the &amp;ldquo;academic&amp;rdquo; theme which I use was installed as a submodule (so it is not a part of my repo), and thus it was not downloaded from git. To fix that, I added steps to the &lt;code>wercker.yml&lt;/code> which installed git and downloaded the submodule. Now the file looked as shown below, and Wercker has completed the build successfully!&lt;/p>
+&lt;pre>&lt;code>box: debian
 build:
-  steps:
-    - script: 
-        name: install git
-        code: |
-            apt-get update
-            apt-get install git -y
-    - script:
-        name: initialize git submodules
-        code: |
-            git submodule update --init --recursive
-
-    - arjen/hugo-build:
-        version: &amp;quot;0.68.3&amp;quot;
-        theme: academic
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then I proceeded with the manual up to the step 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#set-the-apps-deploy-target&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Set the App’s Deploy Target&lt;/a&gt;, where I was stuck again, because there were no button &amp;ldquo;Deploy target&amp;rdquo; in the Wercker interface. Instead, I needed to create a new pipeine and to call it &lt;code&gt;deploy&lt;/code&gt;, and to add it to the workflow after the &lt;code&gt;build&lt;/code&gt; pipeline: &lt;img src=&#34;add_pipeline.png&#34; alt=&#34;Create new pipeline&#34;&gt; &lt;img src=&#34;deploy_pipeline.png&#34; alt=&#34;Setting of the deploy pipeline&#34;&gt; &lt;img src=&#34;add_deploy.png&#34; alt=&#34;Add deploy pipeline to the workflow&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Then I added the corresponding instructions to the Wercker config file as shown below, pushed it to GitHub and everything worked!&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;box: debian
+steps:
+- script:
+name: install git
+code: |
+apt-get update
+apt-get install git -y
+- script:
+name: initialize git submodules
+code: |
+git submodule update --init --recursive
+- arjen/hugo-build:
+version: &amp;quot;0.68.3&amp;quot;
+theme: academic
+&lt;/code>&lt;/pre>
+&lt;p>Then I proceeded with the manual up to the step
+&lt;a href="https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#set-the-apps-deploy-target" target="_blank" rel="noopener">Set the App’s Deploy Target&lt;/a>, where I was stuck again, because there were no button &amp;ldquo;Deploy target&amp;rdquo; in the Wercker interface. Instead, I needed to create a new pipeine and to call it &lt;code>deploy&lt;/code>, and to add it to the workflow after the &lt;code>build&lt;/code> pipeline: &lt;img src="add_pipeline.png" alt="Create new pipeline"> &lt;img src="deploy_pipeline.png" alt="Setting of the deploy pipeline"> &lt;img src="add_deploy.png" alt="Add deploy pipeline to the workflow">&lt;/p>
+&lt;p>Then I added the corresponding instructions to the Wercker config file as shown below, pushed it to GitHub and everything worked!&lt;/p>
+&lt;pre>&lt;code>box: debian
 build:
-  steps:
-    - script: 
-        name: install git
-        code: |
-            apt-get update
-            apt-get install git -y
-    - script:
-        name: initialize git submodules
-        code: |
-            git submodule update --init --recursive
-
-    - arjen/hugo-build:
-        version: &amp;quot;0.68.3&amp;quot;
-        theme: academic
+steps:
+- script:
+name: install git
+code: |
+apt-get update
+apt-get install git -y
+- script:
+name: initialize git submodules
+code: |
+git submodule update --init --recursive
+- arjen/hugo-build:
+version: &amp;quot;0.68.3&amp;quot;
+theme: academic
 deploy:
-  steps:
-    - install-packages:
-        packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
-        token: $GIT_TOKEN
-        basedir: public
-        repo: olejorik/olejorik.github.io
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Actually, it was a trial-and-error process (as can be seen in the commit history of the site), but I omit all these details 😉.&lt;/p&gt;
-&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;To make your rendered version of a Hugo website automatically updated after every change you push the source repo, log in to Wercker with your GitHub account, add an application with two pipelines in a workflow, named &lt;code&gt;build&lt;/code&gt; and &lt;code&gt;deploy&lt;/code&gt; and add a corresponding &lt;code&gt;wercker.yml&lt;/code&gt; file to the root of your source repo.&lt;/p&gt;
-&lt;p&gt;After everything works as expected, you might want to delete the submodule &lt;code&gt;public&lt;/code&gt; from the source repo.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Using forestry to manage my site</title>
-      <link>https://olejorik.github.io/post/using-forestry-to-manage-my-site/</link>
-      <pubDate>Fri, 10 Apr 2020 22:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/post/using-forestry-to-manage-my-site/</guid>
-      <description>&lt;p&gt;After entering forestry.io, granting them access to the source repo of website and performing initial setup, I&amp;rsquo;ve got an environment where I can create and edit posts. There is an opportunity to preview the post, and all the post meta-fields can be filled in here.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://olejorik.github.io/uploads/Screenshot_20200411-114213.png&#34; alt=&#34;&#34; title=&#34;Using forestry.io to edit this post&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This difference is minimal. It might be helpful for a company web-site, where the users should not bother about &lt;code&gt;git commit&lt;/code&gt; &lt;em&gt;etc.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I was not able to create a post as page bundle, maybe there should be some other template used, but I didn&amp;rsquo;t find it. In addition, every time I press &lt;strong&gt;Save draft,&lt;/strong&gt; a new commit is created? This might make the repo history unreadable (in case anyone would ever want to read it).&lt;/p&gt;
-&lt;p&gt;There is however one good thing&amp;mdash;I can use Grammarly tool to check my English. 😉&lt;/p&gt;
-&lt;p&gt;So my conclusion is &amp;ndash; it&amp;rsquo;s a good tool, and because of Grammarly, I might use it from time to time for &amp;ldquo;postprocessing&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; forestry might be also very helpful to edit posts from a mobile device. For the changes in source to become visible in the published site, an automated deployment should be arranged in some way. 
-&lt;a href=&#34;https://forestry.io/docs/hosting/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&lt;/a&gt; is a manual how to set it up.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Update2:&lt;/strong&gt; automated deployment took me some time to set up. I&amp;rsquo;ll describe it in a separate post.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Alias-free basis for modal sensorless adaptive optics using the second moment of intensity</title>
-      <link>https://olejorik.github.io/publication/soloviev-2020/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/soloviev-2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Anisoplanatic adaptive optics in parallelized laser scanning microscopy</title>
-      <link>https://olejorik.github.io/publication/pozzi-202014222/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/pozzi-202014222/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hartmann–Shack wavefront reconstruction with bitmap image processing</title>
-      <link>https://olejorik.github.io/publication/bezzubik-2020972/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/bezzubik-2020972/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phase retrieval based on the vectorial model of point spread function</title>
-      <link>https://olejorik.github.io/publication/hieu-thao-20/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/hieu-thao-20/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pop art</title>
-      <link>https://olejorik.github.io/funnyplots/popart/</link>
-      <pubDate>Sun, 08 Dec 2019 14:00:49 +0100</pubDate>
-      <guid>https://olejorik.github.io/funnyplots/popart/</guid>
-      <description>&lt;p&gt;I was trying to prove the convergence of TIP algorithm and suddenly realized I was doing pop art instead&amp;hellip;
-
-
-
-
-
-
-
-
-  
-  
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-
-  
-  
-  
-  
-    
-    
-    
-    
-    
-  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44349816_1858886554167122_442418628336287744_n.jpg&#34; &gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44349816_1858886554167122_442418628336287744_n_hu939aac388f19887d5bb25974568ae5a0_28098_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;187&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44372869_1858886540833790_3052665146846478336_n.jpg&#34; &gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44372869_1858886540833790_3052665146846478336_n_hu0c44ed0ba9c82cb1becadc663085922b_42629_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;190&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44389155_1858886484167129_3017508077864747008_n.jpg&#34; &gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44389155_1858886484167129_3017508077864747008_n_huf6bd8c4a31ae1a3128e6efe666acac56_80381_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;185&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44406446_1858886534167124_4096598184120287232_n.jpg&#34; &gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44406446_1858886534167124_4096598184120287232_n_hu7e2edb4b0d1cda4d4b5a0cd4fb63a174_39910_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;188&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44430891_1858886617500449_1930411718777765888_n.jpg&#34; &gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44430891_1858886617500449_1930411718777765888_n_hubc9671d915d3fa712c766b123f2e6dbe_34884_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;187&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44437758_1858886470833797_8798397839097987072_n.jpg&#34; &gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44437758_1858886470833797_8798397839097987072_n_hu61899c5e36c3b13adde496cb27537c39_50034_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;188&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44497055_1858886467500464_8931224972651659264_n.jpg&#34; &gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/44497055_1858886467500464_8931224972651659264_n_hu1b0bd5e2505faf7320a0daacd493ea54_35719_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;188&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-  &lt;a data-fancybox=&#34;gallery-TIP-merit&#34; href=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/default.jpg&#34; &gt;
-  &lt;img data-src=&#34;https://olejorik.github.io/funnyplots/popart/TIP-merit/default_hub5681d475b8bd8cb32b8dbd6260978a0_32082_0x190_resize_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;231&#34; height=&#34;190&#34;&gt;
-  &lt;/a&gt;
-  
-
-  
-&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Predictive wavefront sensorless adaptive optics for time-varying aberrations</title>
-      <link>https://olejorik.github.io/publication/piscaer-19/</link>
-      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/piscaer-19/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Madein4</title>
-      <link>https://olejorik.github.io/project/madein4/</link>
-      <pubDate>Mon, 21 Oct 2019 20:34:55 +0000</pubDate>
-      <guid>https://olejorik.github.io/project/madein4/</guid>
-      <description>&lt;p&gt;&lt;em&gt;MADEin4 stands for &lt;strong&gt;Metrology Advances for Digitized ECS industry 4.0&lt;/strong&gt;, an ECSEL JU project focussing on the productivity enhancement in &amp;ldquo;Industry 4.0&amp;rdquo;.&lt;/em&gt;&lt;/p&gt;
-&lt;h1 id=&#34;glasses-for-ai&#34;&gt;Glasses for AI&lt;/h1&gt;
-&lt;p&gt;Our part in the project is to increase the throughput of the quality control lines. Currently, the most important (&lt;em&gt;e.g.&lt;/em&gt; with the most impact on human safety) quality control is performed by humans. In Industry 4.0, this task will be delegated to AI, which will classify the parts being defect or not based on the video input. If a human inspector has myopia, we can prescribe eyeglasses. But what if AI has difficulties with recognising the important features in the image? Would simple increasing the image resolution and sharpness help the  AI in its classification job?&lt;/p&gt;
-&lt;p&gt;These are the problems we are going to address in this project.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Generic Programming in Julia</title>
-      <link>https://olejorik.github.io/talk/generic-programming-in-julia/</link>
-      <pubDate>Tue, 15 Oct 2019 15:00:00 +0200</pubDate>
-      <guid>https://olejorik.github.io/talk/generic-programming-in-julia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Frequency Identification With TFFT</title>
-      <link>https://olejorik.github.io/post/frequency-identification-with-tfft/</link>
-      <pubDate>Tue, 28 May 2019 07:06:44 +0000</pubDate>
-      <guid>https://olejorik.github.io/post/frequency-identification-with-tfft/</guid>
-      <description>&lt;!-- &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/mathematica.min.js&#34; &gt;&lt;/script&gt; --&gt;
-&lt;p&gt;In Mathematica&amp;rsquo;s 
-&lt;a href=&#34;https://reference.wolfram.com/language/ref/Fourier.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation devoted to &lt;code&gt;Fourier&lt;/code&gt; command&lt;/a&gt;, I&amp;rsquo;ve stumbled upon an curious example of the frequency identification from  noisy data.
+steps:
+- install-packages:
+packages: git ssh-client
+- lukevivier/gh-pages@0.2.1:
+token: $GIT_TOKEN
+basedir: public
+repo: olejorik/olejorik.github.io
+&lt;/code>&lt;/pre>
+&lt;p>Actually, it was a trial-and-error process (as can be seen in the commit history of the site), but I omit all these details 😉.&lt;/p>
+&lt;h3 id="summary">Summary&lt;/h3>
+&lt;p>To make your rendered version of a Hugo website automatically updated after every change you push the source repo, log in to Wercker with your GitHub account, add an application with two pipelines in a workflow, named &lt;code>build&lt;/code> and &lt;code>deploy&lt;/code> and add a corresponding &lt;code>wercker.yml&lt;/code> file to the root of your source repo.&lt;/p>
+&lt;p>After everything works as expected, you might want to delete the submodule &lt;code>public&lt;/code> from the source repo.&lt;/p></description></item><item><title>Using forestry to manage my site</title><link>https://olejorik.github.io/post/using-forestry-to-manage-my-site/</link><pubDate>Fri, 10 Apr 2020 22:00:00 +0000</pubDate><guid>https://olejorik.github.io/post/using-forestry-to-manage-my-site/</guid><description>&lt;p>After entering forestry.io, granting them access to the source repo of website and performing initial setup, I&amp;rsquo;ve got an environment where I can create and edit posts. There is an opportunity to preview the post, and all the post meta-fields can be filled in here.&lt;/p>
+&lt;p>&lt;img src="https://olejorik.github.io/uploads/Screenshot_20200411-114213.png" alt="" title="Using forestry.io to edit this post">&lt;/p>
+&lt;p>This difference is minimal. It might be helpful for a company web-site, where the users should not bother about &lt;code>git commit&lt;/code> &lt;em>etc.&lt;/em>&lt;/p>
+&lt;p>I was not able to create a post as page bundle, maybe there should be some other template used, but I didn&amp;rsquo;t find it. In addition, every time I press &lt;strong>Save draft,&lt;/strong> a new commit is created? This might make the repo history unreadable (in case anyone would ever want to read it).&lt;/p>
+&lt;p>There is however one good thing&amp;mdash;I can use Grammarly tool to check my English. 😉&lt;/p>
+&lt;p>So my conclusion is &amp;ndash; it&amp;rsquo;s a good tool, and because of Grammarly, I might use it from time to time for &amp;ldquo;postprocessing&amp;rdquo;.&lt;/p>
+&lt;p>&lt;strong>Update:&lt;/strong> forestry might be also very helpful to edit posts from a mobile device. For the changes in source to become visible in the published site, an automated deployment should be arranged in some way.
+&lt;a href="https://forestry.io/docs/hosting/" target="_blank" rel="noopener">Here&lt;/a> is a manual how to set it up.&lt;/p>
+&lt;p>&lt;strong>Update2:&lt;/strong> automated deployment took me some time to set up. I&amp;rsquo;ll describe it in a separate post.&lt;/p></description></item><item><title>Alias-free basis for modal sensorless adaptive optics using the second moment of intensity</title><link>https://olejorik.github.io/publication/soloviev-2020/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/soloviev-2020/</guid><description/></item><item><title>Anisoplanatic adaptive optics in parallelized laser scanning microscopy</title><link>https://olejorik.github.io/publication/pozzi-202014222/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/pozzi-202014222/</guid><description/></item><item><title>Hartmann–Shack wavefront reconstruction with bitmap image processing</title><link>https://olejorik.github.io/publication/bezzubik-2020972/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/bezzubik-2020972/</guid><description/></item><item><title>Phase retrieval based on the vectorial model of point spread function</title><link>https://olejorik.github.io/publication/hieu-thao-20/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/hieu-thao-20/</guid><description/></item><item><title>Pop art</title><link>https://olejorik.github.io/funnyplots/popart/</link><pubDate>Sun, 08 Dec 2019 14:00:49 +0100</pubDate><guid>https://olejorik.github.io/funnyplots/popart/</guid><description>&lt;p>I was trying to prove the convergence of TIP algorithm and suddenly realized I was doing pop art instead&amp;hellip;
+&lt;div class="gallery">
+&lt;a data-fancybox="gallery-TIP-merit" href="https://olejorik.github.io/funnyplots/popart/TIP-merit/44349816_1858886554167122_442418628336287744_n.jpg" >
+&lt;img data-src="https://olejorik.github.io/funnyplots/popart/TIP-merit/44349816_1858886554167122_442418628336287744_n_hu939aac388f19887d5bb25974568ae5a0_28098_0x190_resize_q90_lanczos.jpg" class="lazyload" alt="" width="187" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-TIP-merit" href="https://olejorik.github.io/funnyplots/popart/TIP-merit/44372869_1858886540833790_3052665146846478336_n.jpg" >
+&lt;img data-src="https://olejorik.github.io/funnyplots/popart/TIP-merit/44372869_1858886540833790_3052665146846478336_n_hu0c44ed0ba9c82cb1becadc663085922b_42629_0x190_resize_q90_lanczos.jpg" class="lazyload" alt="" width="190" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-TIP-merit" href="https://olejorik.github.io/funnyplots/popart/TIP-merit/44389155_1858886484167129_3017508077864747008_n.jpg" >
+&lt;img data-src="https://olejorik.github.io/funnyplots/popart/TIP-merit/44389155_1858886484167129_3017508077864747008_n_huf6bd8c4a31ae1a3128e6efe666acac56_80381_0x190_resize_q90_lanczos.jpg" class="lazyload" alt="" width="185" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-TIP-merit" href="https://olejorik.github.io/funnyplots/popart/TIP-merit/44406446_1858886534167124_4096598184120287232_n.jpg" >
+&lt;img data-src="https://olejorik.github.io/funnyplots/popart/TIP-merit/44406446_1858886534167124_4096598184120287232_n_hu7e2edb4b0d1cda4d4b5a0cd4fb63a174_39910_0x190_resize_q90_lanczos.jpg" class="lazyload" alt="" width="188" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-TIP-merit" href="https://olejorik.github.io/funnyplots/popart/TIP-merit/44430891_1858886617500449_1930411718777765888_n.jpg" >
+&lt;img data-src="https://olejorik.github.io/funnyplots/popart/TIP-merit/44430891_1858886617500449_1930411718777765888_n_hubc9671d915d3fa712c766b123f2e6dbe_34884_0x190_resize_q90_lanczos.jpg" class="lazyload" alt="" width="187" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-TIP-merit" href="https://olejorik.github.io/funnyplots/popart/TIP-merit/44437758_1858886470833797_8798397839097987072_n.jpg" >
+&lt;img data-src="https://olejorik.github.io/funnyplots/popart/TIP-merit/44437758_1858886470833797_8798397839097987072_n_hu61899c5e36c3b13adde496cb27537c39_50034_0x190_resize_q90_lanczos.jpg" class="lazyload" alt="" width="188" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-TIP-merit" href="https://olejorik.github.io/funnyplots/popart/TIP-merit/44497055_1858886467500464_8931224972651659264_n.jpg" >
+&lt;img data-src="https://olejorik.github.io/funnyplots/popart/TIP-merit/44497055_1858886467500464_8931224972651659264_n_hu1b0bd5e2505faf7320a0daacd493ea54_35719_0x190_resize_q90_lanczos.jpg" class="lazyload" alt="" width="188" height="190">
+&lt;/a>
+&lt;a data-fancybox="gallery-TIP-merit" href="https://olejorik.github.io/funnyplots/popart/TIP-merit/default.jpg" >
+&lt;img data-src="https://olejorik.github.io/funnyplots/popart/TIP-merit/default_hub5681d475b8bd8cb32b8dbd6260978a0_32082_0x190_resize_q90_lanczos.jpg" class="lazyload" alt="" width="231" height="190">
+&lt;/a>
+&lt;/div>&lt;/p></description></item><item><title>Predictive wavefront sensorless adaptive optics for time-varying aberrations</title><link>https://olejorik.github.io/publication/piscaer-19/</link><pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/piscaer-19/</guid><description/></item><item><title>Madein4</title><link>https://olejorik.github.io/project/madein4/</link><pubDate>Mon, 21 Oct 2019 20:34:55 +0000</pubDate><guid>https://olejorik.github.io/project/madein4/</guid><description>&lt;p>&lt;em>MADEin4 stands for &lt;strong>Metrology Advances for Digitized ECS industry 4.0&lt;/strong>, an ECSEL JU project focussing on the productivity enhancement in &amp;ldquo;Industry 4.0&amp;rdquo;.&lt;/em>&lt;/p>
+&lt;h1 id="glasses-for-ai">Glasses for AI&lt;/h1>
+&lt;p>Our part in the project is to increase the throughput of the quality control lines. Currently, the most important (&lt;em>e.g.&lt;/em> with the most impact on human safety) quality control is performed by humans. In Industry 4.0, this task will be delegated to AI, which will classify the parts being defect or not based on the video input. If a human inspector has myopia, we can prescribe eyeglasses. But what if AI has difficulties with recognising the important features in the image? Would simple increasing the image resolution and sharpness help the AI in its classification job?&lt;/p>
+&lt;p>These are the problems we are going to address in this project.&lt;/p></description></item><item><title>Generic Programming in Julia</title><link>https://olejorik.github.io/talk/generic-programming-in-julia/</link><pubDate>Tue, 15 Oct 2019 15:00:00 +0200</pubDate><guid>https://olejorik.github.io/talk/generic-programming-in-julia/</guid><description/></item><item><title>Frequency Identification With TFFT</title><link>https://olejorik.github.io/post/frequency-identification-with-tfft/</link><pubDate>Tue, 28 May 2019 07:06:44 +0000</pubDate><guid>https://olejorik.github.io/post/frequency-identification-with-tfft/</guid><description>&lt;!-- &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/mathematica.min.js" >&lt;/script> -->
+&lt;p>In Mathematica&amp;rsquo;s
+&lt;a href="https://reference.wolfram.com/language/ref/Fourier.html" target="_blank" rel="noopener">documentation devoted to &lt;code>Fourier&lt;/code> command&lt;/a>, I&amp;rsquo;ve stumbled upon an curious example of the frequency identification from noisy data.
 The most interesting part was that the frequency (or the period) was found with a high accuracy.
-And this was done by only changing the parameters of &lt;code&gt;Fourier&lt;/code&gt; command!&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mma&#34;&gt;Fourier[data, Parameters -&amp;gt; {a,b}];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;Fourier[data]&lt;/code&gt; calculates the Discrete Fourier Transform (DFT) of &lt;code&gt;data&lt;/code&gt; and has two optional parameters &lt;code&gt;{a,b}&lt;/code&gt;, which I always thought were used only to implement different definitions of DFT as used in mathematics or in signal processing, for instance.&lt;/p&gt;
-&lt;p&gt;The documentation page, however, gives a nice example of alternative use of the parameters. Below is a slightly modified version of the example.&lt;/p&gt;
-&lt;h2 id=&#34;code-example&#34;&gt;Code example&lt;/h2&gt;
-&lt;p&gt;Here is some periodic data with period $T =12.46$ with some noise added, plotted for the discrete values of $x = 1,\ldots,100$:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mma&#34;&gt;n = 1000;
+And this was done by only changing the parameters of &lt;code>Fourier&lt;/code> command!&lt;/p>
+&lt;pre>&lt;code class="language-mma">Fourier[data, Parameters -&amp;gt; {a,b}];
+&lt;/code>&lt;/pre>
+&lt;p>&lt;code>Fourier[data]&lt;/code> calculates the Discrete Fourier Transform (DFT) of &lt;code>data&lt;/code> and has two optional parameters &lt;code>{a,b}&lt;/code>, which I always thought were used only to implement different definitions of DFT as used in mathematics or in signal processing, for instance.&lt;/p>
+&lt;p>The documentation page, however, gives a nice example of alternative use of the parameters. Below is a slightly modified version of the example.&lt;/p>
+&lt;h2 id="code-example">Code example&lt;/h2>
+&lt;p>Here is some periodic data with period $T =12.46$ with some noise added, plotted for the discrete values of $x = 1,\ldots,100$:&lt;/p>
+&lt;pre>&lt;code class="language-mma">n = 1000;
 per = 12.46;
 pdata = Table[Sin[2 \[Pi] x/per], {x, n}] + RandomReal[{-1, 1}, {n}];
-ListPlot[pdata, AspectRatio -&amp;gt; 1/3, PlotStyle -&amp;gt; PointSize[.003], 
- ImageSize -&amp;gt; 900] 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;noisy_data.gif&#34; alt=&#34;Noisy data&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Looks quite random for us humans, doesn&amp;rsquo;t it? Let&amp;rsquo;s inspect it with Mathematica.&lt;/p&gt;
-&lt;p&gt;Find the maximum mode in the spectrum:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mma&#34;&gt;f = Abs[Fourier[pdata]];
+ListPlot[pdata, AspectRatio -&amp;gt; 1/3, PlotStyle -&amp;gt; PointSize[.003],
+ImageSize -&amp;gt; 900]
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="noisy_data.gif" alt="Noisy data">&lt;/p>
+&lt;p>Looks quite random for us humans, doesn&amp;rsquo;t it? Let&amp;rsquo;s inspect it with Mathematica.&lt;/p>
+&lt;p>Find the maximum mode in the spectrum:&lt;/p>
+&lt;pre>&lt;code class="language-mma">f = Abs[Fourier[pdata]];
 pos = Position[f, Max[f]][[1, 1]]
-
-Show[ListPlot[f], Graphics[{Red, Point[{pos, f[[pos]]}]}], 
- PlotRange -&amp;gt; All]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;max_freq.gif&#34; alt=&#34;Frequency with maximum absolute value in the data spectrum&#34;&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;rough = n/(pos - 1) // N
+Show[ListPlot[f], Graphics[{Red, Point[{pos, f[[pos]]}]}],
+PlotRange -&amp;gt; All]
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="max_freq.gif" alt="Frequency with maximum absolute value in the data spectrum">&lt;/p>
+&lt;pre>&lt;code>rough = n/(pos - 1) // N
 12.5
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So roughly, the period is 12.5.&lt;/p&gt;
-&lt;p&gt;Find a high-resolution spectrum between modes where the maximum was found  by changing $b$ parameter to 1/500:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;fr = Abs[Fourier[pdata Exp[2 Pi I (pos - 2) N[Range[0, n - 1]]/n], 
-    FourierParameters -&amp;gt; {0, 2/n}]];
+&lt;/code>&lt;/pre>
+&lt;p>So roughly, the period is 12.5.&lt;/p>
+&lt;p>Find a high-resolution spectrum between modes where the maximum was found by changing $b$ parameter to 1/500:&lt;/p>
+&lt;pre>&lt;code>fr = Abs[Fourier[pdata Exp[2 Pi I (pos - 2) N[Range[0, n - 1]]/n],
+FourierParameters -&amp;gt; {0, 2/n}]];
 frpos = Position[fr, Max[fr]][[1, 1]]
-
 617
-
-Show[ListPlot[fr], Graphics[{Red, Point[{frpos, fr[[frpos]]}]}], 
- PlotRange -&amp;gt; All]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;hiResFreq.gif&#34; alt=&#34;Interpolated spectrum near the maximum&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Now we can determine the period from the frequencies:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;N[n/(pos - 2 + 2 (frpos - 1)/n)]
-
+Show[ListPlot[fr], Graphics[{Red, Point[{frpos, fr[[frpos]]}]}],
+PlotRange -&amp;gt; All]
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="hiResFreq.gif" alt="Interpolated spectrum near the maximum">&lt;/p>
+&lt;p>Now we can determine the period from the frequencies:&lt;/p>
+&lt;pre>&lt;code>N[n/(pos - 2 + 2 (frpos - 1)/n)]
 12.4639
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;explanations&#34;&gt;Explanations&lt;/h2&gt;
-&lt;p&gt;What happens here is that we do interpolation of the initial Fourier spectrum with sines by padding the original sequence with zeroes as if the total number of points is $n/b$. With $b= 2/n$, we&amp;rsquo;ve half a million points. &lt;em&gt;Mathematica&lt;/em&gt; does not calculate the whole DFT of the &amp;ldquo;virtually&amp;rdquo; padded sequence, however, but estimates only the first $n$ values. That&amp;rsquo;s why we need to shift our spectrum there by multiplying the data with complex exponent sequence &lt;code&gt;Exp[2 Pi I (pos - 2) N[Range[0, n - 1]]/n]&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;I was not able to perform the same trick in Matlab, Python, or Julia. Please let me know if you know how to do it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fast calculation of computer generated holograms for 3D photostimulation through compressive-sensing Gerchberg–Saxton algorithm</title>
-      <link>https://olejorik.github.io/publication/pozzi-20191/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/pozzi-20191/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>High Accuracy Eye Tracker for Proton Clinic environment</title>
-      <link>https://olejorik.github.io/project/eye-tracker/</link>
-      <pubDate>Sun, 25 Nov 2018 22:06:48 +0100</pubDate>
-      <guid>https://olejorik.github.io/project/eye-tracker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phase retrieval for high NA cases</title>
-      <link>https://olejorik.github.io/project/high-na-phase-retrieval/</link>
-      <pubDate>Thu, 28 Jun 2018 21:06:48 +0000</pubDate>
-      <guid>https://olejorik.github.io/project/high-na-phase-retrieval/</guid>
-      <description>&lt;p&gt;For high values of numerical apertures (think microscopes), the standard phase retrieval methods are not reliable.&lt;/p&gt;
-&lt;p&gt;In this project, we work on adjusting and expanding the low-NA algorithms to the high values of NA.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Extended-image-based correction of aberrations using a deformable mirror with hysteresis</title>
-      <link>https://olejorik.github.io/publication/kazasidis-201827161/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/kazasidis-201827161/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hybrid adaptive and computational light-sheet fluorescence microscopy</title>
-      <link>https://olejorik.github.io/publication/wilding-2018/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/wilding-2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Modal-based phase retrieval using Gaussian radial basis functions</title>
-      <link>https://olejorik.github.io/publication/piscaer-20181233/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/piscaer-20181233/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Optimal model-based sensorless adaptive optics for epifluorescence microscopy</title>
-      <link>https://olejorik.github.io/publication/pozzi-2018/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/pozzi-2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Practical guidelines for implementing adaptive optics in fluorescence microscopy</title>
-      <link>https://olejorik.github.io/publication/wilding-2018-a/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/wilding-2018-a/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pupil mask diversity for image correction in microscopy</title>
-      <link>https://olejorik.github.io/publication/wilding-201814832/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/wilding-201814832/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shack-Hartmann reflective micro profilometer</title>
-      <link>https://olejorik.github.io/publication/gong-2018/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/gong-2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Use of digital micromirror devices as dynamic pinhole arrays for adaptive confocal fluorescence microscopy</title>
-      <link>https://olejorik.github.io/publication/pozzi-2018-a/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/pozzi-2018-a/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blind multi-frame deconvolution by tangential iterative projections (TIP)</title>
-      <link>https://olejorik.github.io/publication/wilding-201732305/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/wilding-201732305/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>High speed wavefront sensorless aberration correction in digital micromirror based confocal microscopy</title>
-      <link>https://olejorik.github.io/publication/pozzi-2017949/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/pozzi-2017949/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Model based wavefront sensorless adaptive optics in confocal microscopy with reflective pinhole</title>
-      <link>https://olejorik.github.io/publication/pozzi-2017/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/pozzi-2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nonlinear spline wavefront reconstruction through moment-based Shack-Hartmann sensor measurements</title>
-      <link>https://olejorik.github.io/publication/viegers-201711514/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/viegers-201711514/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Optical path difference microscopy with a Shack-Hartmann wavefront sensor</title>
-      <link>https://olejorik.github.io/publication/gong-20172122/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/gong-20172122/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phase diversity based object estimation in light-sheet fluorescence microscopy</title>
-      <link>https://olejorik.github.io/publication/wilding-2017/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/wilding-2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rapid identication of coherent pupil functions from multiple intensity measurements</title>
-      <link>https://olejorik.github.io/publication/wilding-2017-a/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/wilding-2017-a/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phase retrieval from multiple binary masks generated speckle patterns</title>
-      <link>https://olejorik.github.io/publication/gong-2016/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/gong-2016/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Helder zicht in turbulente media door integratie van optica, mechanica en regeltechniek</title>
-      <link>https://olejorik.github.io/publication/helder-zicht/</link>
-      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/helder-zicht/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    PDF provided by NTvN for publication on personal website.
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lensless coherent imaging by sampling of the optical field with digital micromirror device</title>
-      <link>https://olejorik.github.io/publication/vdovin-2015/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/vdovin-2015/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Model-based wavefront sensorless adaptive optics system for large aberrations and extended objects</title>
-      <link>https://olejorik.github.io/publication/yang-201524587/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/yang-201524587/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Structured film for compensation of anthropogenic radiative forcing</title>
-      <link>https://olejorik.github.io/publication/vdovin-20151702/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/vdovin-20151702/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wavefront coding with adaptive optics</title>
-      <link>https://olejorik.github.io/publication/agbana-2015/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/agbana-2015/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Optimal diffraction-limited focusing through static aberrations</title>
-      <link>https://olejorik.github.io/publication/patlan-2014/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/patlan-2014/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plenoptic wavefront sensor with scattering pupil</title>
-      <link>https://olejorik.github.io/publication/vdovin-20149314/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/vdovin-20149314/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stability of the micromachined membrane deformable mirror as a freeform optical element</title>
-      <link>https://olejorik.github.io/publication/vdovin-2014/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/vdovin-2014/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Adaptive optics combined with computer post-processing for horizontal turbulent imaging</title>
-      <link>https://olejorik.github.io/publication/loktev-2012/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/loktev-2012/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Turbulent surveillance-or how to see a Kalashnikov from a safe distance</title>
-      <link>https://olejorik.github.io/publication/vdovin-201231/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/vdovin-201231/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Experiments on speckle imaging using projection methods</title>
-      <link>https://olejorik.github.io/publication/loktev-2011/</link>
-      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/loktev-2011/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Imaging through turbulence with temporally and spatially multiplexed systems</title>
-      <link>https://olejorik.github.io/publication/vdovin-2011/</link>
-      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/vdovin-2011/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Optimal correction and feedforward control of low-order aberrations with piezoelectric and membrane deformable mirrors</title>
-      <link>https://olejorik.github.io/publication/vdovin-2011-a/</link>
-      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/vdovin-2011-a/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Speckle imaging through turbulent atmosphere based on adaptable pupil segmentation</title>
-      <link>https://olejorik.github.io/publication/loktev-20112656/</link>
-      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/loktev-20112656/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Correction of low order aberrations using continuous deformable mirrors</title>
-      <link>https://olejorik.github.io/publication/vdovin-20082859/</link>
-      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/vdovin-20082859/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Integrated adaptive optics system for small telescopes</title>
-      <link>https://olejorik.github.io/publication/loktev-2008/</link>
-      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/loktev-2008/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Improvement of dynamic features of an adaptive optical system for detection and correction of ophthalmic distortions</title>
-      <link>https://olejorik.github.io/publication/de-lima-monteiro-2006413/</link>
-      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/de-lima-monteiro-2006413/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CMOS integrator based lock-in pixel for heterodyne interferometry</title>
-      <link>https://olejorik.github.io/publication/soloviev-2005945/</link>
-      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/soloviev-2005945/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Estimation of the total error of modal wavefront reconstruction with Zernike polynomials and Hartmann-shack test</title>
-      <link>https://olejorik.github.io/publication/soloviev-2005/</link>
-      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/soloviev-2005/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hartmann-Shack test with random masks for modal wavefront reconstruction</title>
-      <link>https://olejorik.github.io/publication/soloviev-20059570/</link>
-      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/soloviev-20059570/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phase extraction from three and more interferograms registered with different unknown wavefront tilts</title>
-      <link>https://olejorik.github.io/publication/soloviev-20053743/</link>
-      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/soloviev-20053743/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phase extraction from three interferograms with different unknown tilts</title>
-      <link>https://olejorik.github.io/publication/soloviev-2005269/</link>
-      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/soloviev-2005269/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Y-nano X-micro technologies: Nanometric optical control</title>
-      <link>https://olejorik.github.io/publication/de-lima-monteiro-2005475/</link>
-      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/de-lima-monteiro-2005475/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Silicon micro-optics for smart light control</title>
-      <link>https://olejorik.github.io/publication/vdovin-2004135/</link>
-      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/vdovin-2004135/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Silicon micro-optics for smart light control</title>
-      <link>https://olejorik.github.io/publication/vdovin-2004209/</link>
-      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/vdovin-2004209/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fast sampling multipixel detector for a heterodyne interferometer with angstrom precision</title>
-      <link>https://olejorik.github.io/publication/soloviev-200225/</link>
-      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/publication/soloviev-200225/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;/code>&lt;/pre>
+&lt;h2 id="explanations">Explanations&lt;/h2>
+&lt;p>What happens here is that we do interpolation of the initial Fourier spectrum with sines by padding the original sequence with zeroes as if the total number of points is $n/b$. With $b= 2/n$, we&amp;rsquo;ve half a million points. &lt;em>Mathematica&lt;/em> does not calculate the whole DFT of the &amp;ldquo;virtually&amp;rdquo; padded sequence, however, but estimates only the first $n$ values. That&amp;rsquo;s why we need to shift our spectrum there by multiplying the data with complex exponent sequence &lt;code>Exp[2 Pi I (pos - 2) N[Range[0, n - 1]]/n]&lt;/code>.&lt;/p>
+&lt;p>I was not able to perform the same trick in Matlab, Python, or Julia. Please let me know if you know how to do it.&lt;/p></description></item><item><title>Fast calculation of computer generated holograms for 3D photostimulation through compressive-sensing Gerchberg–Saxton algorithm</title><link>https://olejorik.github.io/publication/pozzi-20191/</link><pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/pozzi-20191/</guid><description/></item><item><title>High Accuracy Eye Tracker for Proton Clinic environment</title><link>https://olejorik.github.io/project/eye-tracker/</link><pubDate>Sun, 25 Nov 2018 22:06:48 +0100</pubDate><guid>https://olejorik.github.io/project/eye-tracker/</guid><description/></item><item><title>Phase retrieval for high NA cases</title><link>https://olejorik.github.io/project/high-na-phase-retrieval/</link><pubDate>Thu, 28 Jun 2018 21:06:48 +0000</pubDate><guid>https://olejorik.github.io/project/high-na-phase-retrieval/</guid><description>&lt;p>For high values of numerical apertures (think microscopes), the standard phase retrieval methods are not reliable.&lt;/p>
+&lt;p>In this project, we work on adjusting and expanding the low-NA algorithms to the high values of NA.&lt;/p></description></item><item><title>Extended-image-based correction of aberrations using a deformable mirror with hysteresis</title><link>https://olejorik.github.io/publication/kazasidis-201827161/</link><pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/kazasidis-201827161/</guid><description/></item><item><title>Hybrid adaptive and computational light-sheet fluorescence microscopy</title><link>https://olejorik.github.io/publication/wilding-2018/</link><pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/wilding-2018/</guid><description/></item><item><title>Modal-based phase retrieval using Gaussian radial basis functions</title><link>https://olejorik.github.io/publication/piscaer-20181233/</link><pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/piscaer-20181233/</guid><description/></item><item><title>Optimal model-based sensorless adaptive optics for epifluorescence microscopy</title><link>https://olejorik.github.io/publication/pozzi-2018/</link><pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/pozzi-2018/</guid><description/></item><item><title>Practical guidelines for implementing adaptive optics in fluorescence microscopy</title><link>https://olejorik.github.io/publication/wilding-2018-a/</link><pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/wilding-2018-a/</guid><description/></item><item><title>Pupil mask diversity for image correction in microscopy</title><link>https://olejorik.github.io/publication/wilding-201814832/</link><pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/wilding-201814832/</guid><description/></item><item><title>Shack-Hartmann reflective micro profilometer</title><link>https://olejorik.github.io/publication/gong-2018/</link><pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/gong-2018/</guid><description/></item><item><title>Use of digital micromirror devices as dynamic pinhole arrays for adaptive confocal fluorescence microscopy</title><link>https://olejorik.github.io/publication/pozzi-2018-a/</link><pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/pozzi-2018-a/</guid><description/></item><item><title>Blind multi-frame deconvolution by tangential iterative projections (TIP)</title><link>https://olejorik.github.io/publication/wilding-201732305/</link><pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/wilding-201732305/</guid><description/></item><item><title>High speed wavefront sensorless aberration correction in digital micromirror based confocal microscopy</title><link>https://olejorik.github.io/publication/pozzi-2017949/</link><pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/pozzi-2017949/</guid><description/></item><item><title>Model based wavefront sensorless adaptive optics in confocal microscopy with reflective pinhole</title><link>https://olejorik.github.io/publication/pozzi-2017/</link><pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/pozzi-2017/</guid><description/></item><item><title>Nonlinear spline wavefront reconstruction through moment-based Shack-Hartmann sensor measurements</title><link>https://olejorik.github.io/publication/viegers-201711514/</link><pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/viegers-201711514/</guid><description/></item><item><title>Optical path difference microscopy with a Shack-Hartmann wavefront sensor</title><link>https://olejorik.github.io/publication/gong-20172122/</link><pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/gong-20172122/</guid><description/></item><item><title>Phase diversity based object estimation in light-sheet fluorescence microscopy</title><link>https://olejorik.github.io/publication/wilding-2017/</link><pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/wilding-2017/</guid><description/></item><item><title>Rapid identication of coherent pupil functions from multiple intensity measurements</title><link>https://olejorik.github.io/publication/wilding-2017-a/</link><pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/wilding-2017-a/</guid><description/></item><item><title>Phase retrieval from multiple binary masks generated speckle patterns</title><link>https://olejorik.github.io/publication/gong-2016/</link><pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/gong-2016/</guid><description/></item><item><title>Helder zicht in turbulente media door integratie van optica, mechanica en regeltechniek</title><link>https://olejorik.github.io/publication/helder-zicht/</link><pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/helder-zicht/</guid><description>&lt;div class="alert alert-note">
+&lt;div>
+PDF provided by NTvN for publication on personal website.
+&lt;/div>
+&lt;/div></description></item><item><title>Lensless coherent imaging by sampling of the optical field with digital micromirror device</title><link>https://olejorik.github.io/publication/vdovin-2015/</link><pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/vdovin-2015/</guid><description/></item><item><title>Model-based wavefront sensorless adaptive optics system for large aberrations and extended objects</title><link>https://olejorik.github.io/publication/yang-201524587/</link><pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/yang-201524587/</guid><description/></item><item><title>Structured film for compensation of anthropogenic radiative forcing</title><link>https://olejorik.github.io/publication/vdovin-20151702/</link><pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/vdovin-20151702/</guid><description/></item><item><title>Wavefront coding with adaptive optics</title><link>https://olejorik.github.io/publication/agbana-2015/</link><pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/agbana-2015/</guid><description/></item><item><title>Optimal diffraction-limited focusing through static aberrations</title><link>https://olejorik.github.io/publication/patlan-2014/</link><pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/patlan-2014/</guid><description/></item><item><title>Plenoptic wavefront sensor with scattering pupil</title><link>https://olejorik.github.io/publication/vdovin-20149314/</link><pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/vdovin-20149314/</guid><description/></item><item><title>Stability of the micromachined membrane deformable mirror as a freeform optical element</title><link>https://olejorik.github.io/publication/vdovin-2014/</link><pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/vdovin-2014/</guid><description/></item><item><title>Adaptive optics combined with computer post-processing for horizontal turbulent imaging</title><link>https://olejorik.github.io/publication/loktev-2012/</link><pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/loktev-2012/</guid><description/></item><item><title>Turbulent surveillance-or how to see a Kalashnikov from a safe distance</title><link>https://olejorik.github.io/publication/vdovin-201231/</link><pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/vdovin-201231/</guid><description/></item><item><title>Experiments on speckle imaging using projection methods</title><link>https://olejorik.github.io/publication/loktev-2011/</link><pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/loktev-2011/</guid><description/></item><item><title>Imaging through turbulence with temporally and spatially multiplexed systems</title><link>https://olejorik.github.io/publication/vdovin-2011/</link><pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/vdovin-2011/</guid><description/></item><item><title>Optimal correction and feedforward control of low-order aberrations with piezoelectric and membrane deformable mirrors</title><link>https://olejorik.github.io/publication/vdovin-2011-a/</link><pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/vdovin-2011-a/</guid><description/></item><item><title>Speckle imaging through turbulent atmosphere based on adaptable pupil segmentation</title><link>https://olejorik.github.io/publication/loktev-20112656/</link><pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/loktev-20112656/</guid><description/></item><item><title>Correction of low order aberrations using continuous deformable mirrors</title><link>https://olejorik.github.io/publication/vdovin-20082859/</link><pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/vdovin-20082859/</guid><description/></item><item><title>Integrated adaptive optics system for small telescopes</title><link>https://olejorik.github.io/publication/loktev-2008/</link><pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/loktev-2008/</guid><description/></item><item><title>Improvement of dynamic features of an adaptive optical system for detection and correction of ophthalmic distortions</title><link>https://olejorik.github.io/publication/de-lima-monteiro-2006413/</link><pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/de-lima-monteiro-2006413/</guid><description/></item><item><title>CMOS integrator based lock-in pixel for heterodyne interferometry</title><link>https://olejorik.github.io/publication/soloviev-2005945/</link><pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/soloviev-2005945/</guid><description/></item><item><title>Estimation of the total error of modal wavefront reconstruction with Zernike polynomials and Hartmann-shack test</title><link>https://olejorik.github.io/publication/soloviev-2005/</link><pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/soloviev-2005/</guid><description/></item><item><title>Hartmann-Shack test with random masks for modal wavefront reconstruction</title><link>https://olejorik.github.io/publication/soloviev-20059570/</link><pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/soloviev-20059570/</guid><description/></item><item><title>Phase extraction from three and more interferograms registered with different unknown wavefront tilts</title><link>https://olejorik.github.io/publication/soloviev-20053743/</link><pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/soloviev-20053743/</guid><description/></item><item><title>Phase extraction from three interferograms with different unknown tilts</title><link>https://olejorik.github.io/publication/soloviev-2005269/</link><pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/soloviev-2005269/</guid><description/></item><item><title>Y-nano X-micro technologies: Nanometric optical control</title><link>https://olejorik.github.io/publication/de-lima-monteiro-2005475/</link><pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/de-lima-monteiro-2005475/</guid><description/></item><item><title>Silicon micro-optics for smart light control</title><link>https://olejorik.github.io/publication/vdovin-2004135/</link><pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/vdovin-2004135/</guid><description/></item><item><title>Silicon micro-optics for smart light control</title><link>https://olejorik.github.io/publication/vdovin-2004209/</link><pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/vdovin-2004209/</guid><description/></item><item><title>Fast sampling multipixel detector for a heterodyne interferometer with angstrom precision</title><link>https://olejorik.github.io/publication/soloviev-200225/</link><pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate><guid>https://olejorik.github.io/publication/soloviev-200225/</guid><description/></item></channel></rss>

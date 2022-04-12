@@ -1,117 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>website | Oleg Soloviev</title>
-    <link>https://olejorik.github.io/tags/website/</link>
-      <atom:link href="https://olejorik.github.io/tags/website/index.xml" rel="self" type="application/rss+xml" />
-    <description>website</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Mon, 13 Apr 2020 09:41:52 +0000</lastBuildDate>
-    <image>
-      <url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url>
-      <title>website</title>
-      <link>https://olejorik.github.io/tags/website/</link>
-    </image>
-    
-    <item>
-      <title>Automatic Deployment</title>
-      <link>https://olejorik.github.io/post/automatic-deployment/</link>
-      <pubDate>Mon, 13 Apr 2020 09:41:52 +0000</pubDate>
-      <guid>https://olejorik.github.io/post/automatic-deployment/</guid>
-      <description>&lt;p&gt;When maintaining a static website with Hugo, the workflow is to create a source of a post in Markdown, run Hugo to generate the html pages, and upload the resulted html to the web. The repeating last two steps can be automated in a script or a batch file that can be run on a local computer, so every time the content is updated, its rendered version is uploaded to the web. If however, the content is edited with some online services, like Forestry, how can you update the rendered html pages?&lt;/p&gt;
-&lt;p&gt;This can be done with automated deployment workflows. For this, you need to have an account on one of the multiple services that provide you (often free of charge for a small or a personal project) a virtual machine, where the source of your site can be downloaded, Hugo installed and run on the source, and in case of success, the rendered html pages uploaded to the destination. Sounds really high tech and fantastic, but it seems to be quite a common practice amongst the professional developers, called Continuous Integration/Continuous Deployment (CI/CD). The links to instructions for several services are collected on 
-&lt;a href=&#34;https://forestry.io/docs/hosting/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a Forestry doc page&lt;/a&gt; and 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on Hugo doc pages&lt;/a&gt; as well.&lt;/p&gt;
-&lt;p&gt;For an occasional user of this method, however, it is easy to make a mistake in setting it up and running. Moreover, different services have different requirements and limitations. GitLab, for instance, provides built-in CI/CD, but publishes the results on their webpages which have way too long url, in my opinion. Here I describe the steps which finally lead me to a successful implementation.&lt;/p&gt;
-&lt;p&gt;I have followed the steps for 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;automatic deployment with Wercker&lt;/a&gt;, with some changes. My site source repo was already set up on GitHub, and I was hosting the rendered version on GitHub pages, so I proceeded directly to the step of 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#set-up-wercker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wercker setup&lt;/a&gt;. Wercker is a service that can monitor the status of my site source repo, and after I push some content to it, it performs the automated deployment steps. It seems that Wercker&amp;rsquo;s interface has been updated since the time the manual was written, and some steps that require changes are indicated below.&lt;/p&gt;
-&lt;p&gt;I have logged in with my GitHub account, so the link between Wercker and GitHub was automatically created. Then I proceeded till 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#add-your-project&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Add your project&lt;/a&gt; step, which now should be changed to &lt;em&gt;Add application&lt;/em&gt;.
-Use the boxed plus button in the top right corner:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;add_application_wercker.png&#34; alt=&#34;Use this button to add a new application&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The application is created in 4 steps, where I have pointed to the repo with my website source and accepted all default options. Now I was at 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#app-successfully-created&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;App successfully created&lt;/a&gt; step and there were some small differences. The screen I saw was like that: &lt;img src=&#34;get_build_running.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I saw there Hugo icon, clicked it, obtained some config file,and &amp;hellip; And actually I didn&amp;rsquo;t need it.&lt;/p&gt;
-&lt;p&gt;Instead, I needed to go to the &amp;ldquo;Steps store&amp;rdquo; (again top right corner), to find there &amp;ldquo;hugo build&amp;rdquo; steps script, and to read its documentation to understand how to use it. &lt;img src=&#34;steps_store.png&#34; alt=&#34;&amp;ldquo;Hugo build steps&amp;rdquo;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Finally, I understood that all I needed to do is simply to create  a file named &lt;code&gt;wercker.yml&lt;/code&gt; in the root of my source repo with the following content:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;box: debian
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>website | Oleg Soloviev</title><link>https://olejorik.github.io/tags/website/</link><atom:link href="https://olejorik.github.io/tags/website/index.xml" rel="self" type="application/rss+xml"/><description>website</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Oleg Soloviev 2018-2022</copyright><lastBuildDate>Mon, 13 Apr 2020 09:41:52 +0000</lastBuildDate><image><url>https://olejorik.github.io/images/icon_hu26380a8a42e981dc8df94547c8583a1c_243550_512x512_fill_lanczos_center_2.png</url><title>website</title><link>https://olejorik.github.io/tags/website/</link></image><item><title>Automatic Deployment</title><link>https://olejorik.github.io/post/automatic-deployment/</link><pubDate>Mon, 13 Apr 2020 09:41:52 +0000</pubDate><guid>https://olejorik.github.io/post/automatic-deployment/</guid><description>&lt;p>When maintaining a static website with Hugo, the workflow is to create a source of a post in Markdown, run Hugo to generate the html pages, and upload the resulted html to the web. The repeating last two steps can be automated in a script or a batch file that can be run on a local computer, so every time the content is updated, its rendered version is uploaded to the web. If however, the content is edited with some online services, like Forestry, how can you update the rendered html pages?&lt;/p>
+&lt;p>This can be done with automated deployment workflows. For this, you need to have an account on one of the multiple services that provide you (often free of charge for a small or a personal project) a virtual machine, where the source of your site can be downloaded, Hugo installed and run on the source, and in case of success, the rendered html pages uploaded to the destination. Sounds really high tech and fantastic, but it seems to be quite a common practice amongst the professional developers, called Continuous Integration/Continuous Deployment (CI/CD). The links to instructions for several services are collected on
+&lt;a href="https://forestry.io/docs/hosting/" target="_blank" rel="noopener">a Forestry doc page&lt;/a> and
+&lt;a href="https://gohugo.io/hosting-and-deployment/" target="_blank" rel="noopener">on Hugo doc pages&lt;/a> as well.&lt;/p>
+&lt;p>For an occasional user of this method, however, it is easy to make a mistake in setting it up and running. Moreover, different services have different requirements and limitations. GitLab, for instance, provides built-in CI/CD, but publishes the results on their webpages which have way too long url, in my opinion. Here I describe the steps which finally lead me to a successful implementation.&lt;/p>
+&lt;p>I have followed the steps for
+&lt;a href="https://gohugo.io/hosting-and-deployment/deployment-with-wercker/" target="_blank" rel="noopener">automatic deployment with Wercker&lt;/a>, with some changes. My site source repo was already set up on GitHub, and I was hosting the rendered version on GitHub pages, so I proceeded directly to the step of
+&lt;a href="https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#set-up-wercker" target="_blank" rel="noopener">Wercker setup&lt;/a>. Wercker is a service that can monitor the status of my site source repo, and after I push some content to it, it performs the automated deployment steps. It seems that Wercker&amp;rsquo;s interface has been updated since the time the manual was written, and some steps that require changes are indicated below.&lt;/p>
+&lt;p>I have logged in with my GitHub account, so the link between Wercker and GitHub was automatically created. Then I proceeded till
+&lt;a href="https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#add-your-project" target="_blank" rel="noopener">Add your project&lt;/a> step, which now should be changed to &lt;em>Add application&lt;/em>.
+Use the boxed plus button in the top right corner:&lt;/p>
+&lt;p>&lt;img src="add_application_wercker.png" alt="Use this button to add a new application">&lt;/p>
+&lt;p>The application is created in 4 steps, where I have pointed to the repo with my website source and accepted all default options. Now I was at
+&lt;a href="https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#app-successfully-created" target="_blank" rel="noopener">&amp;ldquo;App successfully created&lt;/a> step and there were some small differences. The screen I saw was like that: &lt;img src="get_build_running.png" alt="">&lt;/p>
+&lt;p>I saw there Hugo icon, clicked it, obtained some config file,and &amp;hellip; And actually I didn&amp;rsquo;t need it.&lt;/p>
+&lt;p>Instead, I needed to go to the &amp;ldquo;Steps store&amp;rdquo; (again top right corner), to find there &amp;ldquo;hugo build&amp;rdquo; steps script, and to read its documentation to understand how to use it. &lt;img src="steps_store.png" alt="&amp;ldquo;Hugo build steps&amp;rdquo;">&lt;/p>
+&lt;p>Finally, I understood that all I needed to do is simply to create a file named &lt;code>wercker.yml&lt;/code> in the root of my source repo with the following content:&lt;/p>
+&lt;pre>&lt;code>box: debian
 build:
-  steps:
-      - arjen/hugo-build:
-        version: &amp;quot;0.68.3&amp;quot;
-        theme: academic
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;and push it to the GitHub repo.&lt;/p&gt;
-&lt;p&gt;Wercker has started its job and&amp;hellip; failed.&lt;/p&gt;
-&lt;p&gt;After some investigation, I realized that the reason was that the &amp;ldquo;academic&amp;rdquo; theme which I use was installed as a submodule (so it is not a part of my repo), and thus it was not downloaded from git. To fix that, I added steps to the &lt;code&gt;wercker.yml&lt;/code&gt; which installed git and downloaded the submodule. Now the file looked as shown below, and Wercker has completed the build successfully!&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;box: debian
+steps:
+- arjen/hugo-build:
+version: &amp;quot;0.68.3&amp;quot;
+theme: academic
+&lt;/code>&lt;/pre>
+&lt;p>and push it to the GitHub repo.&lt;/p>
+&lt;p>Wercker has started its job and&amp;hellip; failed.&lt;/p>
+&lt;p>After some investigation, I realized that the reason was that the &amp;ldquo;academic&amp;rdquo; theme which I use was installed as a submodule (so it is not a part of my repo), and thus it was not downloaded from git. To fix that, I added steps to the &lt;code>wercker.yml&lt;/code> which installed git and downloaded the submodule. Now the file looked as shown below, and Wercker has completed the build successfully!&lt;/p>
+&lt;pre>&lt;code>box: debian
 build:
-  steps:
-    - script: 
-        name: install git
-        code: |
-            apt-get update
-            apt-get install git -y
-    - script:
-        name: initialize git submodules
-        code: |
-            git submodule update --init --recursive
-
-    - arjen/hugo-build:
-        version: &amp;quot;0.68.3&amp;quot;
-        theme: academic
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then I proceeded with the manual up to the step 
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#set-the-apps-deploy-target&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Set the App’s Deploy Target&lt;/a&gt;, where I was stuck again, because there were no button &amp;ldquo;Deploy target&amp;rdquo; in the Wercker interface. Instead, I needed to create a new pipeine and to call it &lt;code&gt;deploy&lt;/code&gt;, and to add it to the workflow after the &lt;code&gt;build&lt;/code&gt; pipeline: &lt;img src=&#34;add_pipeline.png&#34; alt=&#34;Create new pipeline&#34;&gt; &lt;img src=&#34;deploy_pipeline.png&#34; alt=&#34;Setting of the deploy pipeline&#34;&gt; &lt;img src=&#34;add_deploy.png&#34; alt=&#34;Add deploy pipeline to the workflow&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Then I added the corresponding instructions to the Wercker config file as shown below, pushed it to GitHub and everything worked!&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;box: debian
+steps:
+- script:
+name: install git
+code: |
+apt-get update
+apt-get install git -y
+- script:
+name: initialize git submodules
+code: |
+git submodule update --init --recursive
+- arjen/hugo-build:
+version: &amp;quot;0.68.3&amp;quot;
+theme: academic
+&lt;/code>&lt;/pre>
+&lt;p>Then I proceeded with the manual up to the step
+&lt;a href="https://gohugo.io/hosting-and-deployment/deployment-with-wercker/#set-the-apps-deploy-target" target="_blank" rel="noopener">Set the App’s Deploy Target&lt;/a>, where I was stuck again, because there were no button &amp;ldquo;Deploy target&amp;rdquo; in the Wercker interface. Instead, I needed to create a new pipeine and to call it &lt;code>deploy&lt;/code>, and to add it to the workflow after the &lt;code>build&lt;/code> pipeline: &lt;img src="add_pipeline.png" alt="Create new pipeline"> &lt;img src="deploy_pipeline.png" alt="Setting of the deploy pipeline"> &lt;img src="add_deploy.png" alt="Add deploy pipeline to the workflow">&lt;/p>
+&lt;p>Then I added the corresponding instructions to the Wercker config file as shown below, pushed it to GitHub and everything worked!&lt;/p>
+&lt;pre>&lt;code>box: debian
 build:
-  steps:
-    - script: 
-        name: install git
-        code: |
-            apt-get update
-            apt-get install git -y
-    - script:
-        name: initialize git submodules
-        code: |
-            git submodule update --init --recursive
-
-    - arjen/hugo-build:
-        version: &amp;quot;0.68.3&amp;quot;
-        theme: academic
+steps:
+- script:
+name: install git
+code: |
+apt-get update
+apt-get install git -y
+- script:
+name: initialize git submodules
+code: |
+git submodule update --init --recursive
+- arjen/hugo-build:
+version: &amp;quot;0.68.3&amp;quot;
+theme: academic
 deploy:
-  steps:
-    - install-packages:
-        packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
-        token: $GIT_TOKEN
-        basedir: public
-        repo: olejorik/olejorik.github.io
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Actually, it was a trial-and-error process (as can be seen in the commit history of the site), but I omit all these details 😉.&lt;/p&gt;
-&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;To make your rendered version of a Hugo website automatically updated after every change you push the source repo, log in to Wercker with your GitHub account, add an application with two pipelines in a workflow, named &lt;code&gt;build&lt;/code&gt; and &lt;code&gt;deploy&lt;/code&gt; and add a corresponding &lt;code&gt;wercker.yml&lt;/code&gt; file to the root of your source repo.&lt;/p&gt;
-&lt;p&gt;After everything works as expected, you might want to delete the submodule &lt;code&gt;public&lt;/code&gt; from the source repo.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Using forestry to manage my site</title>
-      <link>https://olejorik.github.io/post/using-forestry-to-manage-my-site/</link>
-      <pubDate>Fri, 10 Apr 2020 22:00:00 +0000</pubDate>
-      <guid>https://olejorik.github.io/post/using-forestry-to-manage-my-site/</guid>
-      <description>&lt;p&gt;After entering forestry.io, granting them access to the source repo of website and performing initial setup, I&amp;rsquo;ve got an environment where I can create and edit posts. There is an opportunity to preview the post, and all the post meta-fields can be filled in here.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://olejorik.github.io/uploads/Screenshot_20200411-114213.png&#34; alt=&#34;&#34; title=&#34;Using forestry.io to edit this post&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This difference is minimal. It might be helpful for a company web-site, where the users should not bother about &lt;code&gt;git commit&lt;/code&gt; &lt;em&gt;etc.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I was not able to create a post as page bundle, maybe there should be some other template used, but I didn&amp;rsquo;t find it. In addition, every time I press &lt;strong&gt;Save draft,&lt;/strong&gt; a new commit is created? This might make the repo history unreadable (in case anyone would ever want to read it).&lt;/p&gt;
-&lt;p&gt;There is however one good thing&amp;mdash;I can use Grammarly tool to check my English. 😉&lt;/p&gt;
-&lt;p&gt;So my conclusion is &amp;ndash; it&amp;rsquo;s a good tool, and because of Grammarly, I might use it from time to time for &amp;ldquo;postprocessing&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; forestry might be also very helpful to edit posts from a mobile device. For the changes in source to become visible in the published site, an automated deployment should be arranged in some way. 
-&lt;a href=&#34;https://forestry.io/docs/hosting/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&lt;/a&gt; is a manual how to set it up.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Update2:&lt;/strong&gt; automated deployment took me some time to set up. I&amp;rsquo;ll describe it in a separate post.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+steps:
+- install-packages:
+packages: git ssh-client
+- lukevivier/gh-pages@0.2.1:
+token: $GIT_TOKEN
+basedir: public
+repo: olejorik/olejorik.github.io
+&lt;/code>&lt;/pre>
+&lt;p>Actually, it was a trial-and-error process (as can be seen in the commit history of the site), but I omit all these details 😉.&lt;/p>
+&lt;h3 id="summary">Summary&lt;/h3>
+&lt;p>To make your rendered version of a Hugo website automatically updated after every change you push the source repo, log in to Wercker with your GitHub account, add an application with two pipelines in a workflow, named &lt;code>build&lt;/code> and &lt;code>deploy&lt;/code> and add a corresponding &lt;code>wercker.yml&lt;/code> file to the root of your source repo.&lt;/p>
+&lt;p>After everything works as expected, you might want to delete the submodule &lt;code>public&lt;/code> from the source repo.&lt;/p></description></item><item><title>Using forestry to manage my site</title><link>https://olejorik.github.io/post/using-forestry-to-manage-my-site/</link><pubDate>Fri, 10 Apr 2020 22:00:00 +0000</pubDate><guid>https://olejorik.github.io/post/using-forestry-to-manage-my-site/</guid><description>&lt;p>After entering forestry.io, granting them access to the source repo of website and performing initial setup, I&amp;rsquo;ve got an environment where I can create and edit posts. There is an opportunity to preview the post, and all the post meta-fields can be filled in here.&lt;/p>
+&lt;p>&lt;img src="https://olejorik.github.io/uploads/Screenshot_20200411-114213.png" alt="" title="Using forestry.io to edit this post">&lt;/p>
+&lt;p>This difference is minimal. It might be helpful for a company web-site, where the users should not bother about &lt;code>git commit&lt;/code> &lt;em>etc.&lt;/em>&lt;/p>
+&lt;p>I was not able to create a post as page bundle, maybe there should be some other template used, but I didn&amp;rsquo;t find it. In addition, every time I press &lt;strong>Save draft,&lt;/strong> a new commit is created? This might make the repo history unreadable (in case anyone would ever want to read it).&lt;/p>
+&lt;p>There is however one good thing&amp;mdash;I can use Grammarly tool to check my English. 😉&lt;/p>
+&lt;p>So my conclusion is &amp;ndash; it&amp;rsquo;s a good tool, and because of Grammarly, I might use it from time to time for &amp;ldquo;postprocessing&amp;rdquo;.&lt;/p>
+&lt;p>&lt;strong>Update:&lt;/strong> forestry might be also very helpful to edit posts from a mobile device. For the changes in source to become visible in the published site, an automated deployment should be arranged in some way.
+&lt;a href="https://forestry.io/docs/hosting/" target="_blank" rel="noopener">Here&lt;/a> is a manual how to set it up.&lt;/p>
+&lt;p>&lt;strong>Update2:&lt;/strong> automated deployment took me some time to set up. I&amp;rsquo;ll describe it in a separate post.&lt;/p></description></item></channel></rss>
