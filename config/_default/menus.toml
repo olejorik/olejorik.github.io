@@ -29,6 +29,24 @@
   weight = 40
 
 [[main]]
+  name = "Recent"
+  url = "#publications"
+  parent = "Publications"
+  weight = 10
+
+[[main]]
+  name = "Featured"
+  url = "#featured"
+  parent = "Publications"
+  weight = 20
+
+[[main]]
+  name = "All"
+  url = "publication/"
+  parent = "Publications"
+  weight = 20
+
+[[main]]
     name = "Fun"
     identifier = "Fun"
     url = "#fun"
