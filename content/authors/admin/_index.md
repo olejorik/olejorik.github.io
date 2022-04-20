@@ -88,6 +88,6 @@ email: oleg.soloviev@gmail.com
 # - Visitors
 ---
 
-Oleg Soloviev is a Senior  Research Fellow at  DCSC/3mE, TU Delft and a Senior Associate at Flexible Optical BV. His research interests include adaptive optics, wavefront sensing, phase retrieval, imaging through turbulence, and computational imaging. He leads the *Smart Imaging Lab* of DCSC and enjoys participating in the Carlas Smith Lab, which develops new methods for *smart microscopy*.
+Oleg Soloviev is a Senior  Research Fellow at  DCSC/3mE, TU Delft and a Senior Associate at Flexible Optical BV. His research interests include adaptive optics, wavefront sensing, phase retrieval, imaging through turbulence, and computational imaging. He leads the *Smart Imaging Lab* of DCSC and enjoys participating in the [Carlas Smith's Quantitative Nanoscopy Lab](https://www.tudelft.nl/3me/over/afdelingen/delft-center-for-systems-and-control/research/numerics-for-control-identification/quantitative-nanoscopy), which develops new methods for *smart microscopy*.
 
 He  obtained his PhD degree from TU Delft in 2006, with the thesis ['Methods and sensors for accurate wavefront measurements'](http://resolver.tudelft.nl/uuid:aa105336-b322-48ad-b059-06baa3d2a96e). 
