@@ -69,3 +69,7 @@ subtitle = ""
 {{% alert note %}}
 Quickly discover relevant content by [filtering publications]({{< ref "/publication/_index.md" >}}).
 {{% /alert %}}
+
+{{% alert info %}}
+Most of the publications are available as Open Access through the [TU Delft Research Portal](https://research.tudelft.nl/en/persons/oa-soloviev/publications/).
+{{% /alert %}}
