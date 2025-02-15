@@ -1,6 +1,7 @@
 # IDEs
 .idea/
 .forestry/
+.history/
 
 # Hugo
 resources/
