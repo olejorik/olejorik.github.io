@@ -31,7 +31,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/master'
-       with:
+        with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           external_repository: olejorik/olejorik.github.io
